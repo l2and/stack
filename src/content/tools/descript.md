@@ -2,9 +2,10 @@
 title: "Descript"
 status: "Currently Using"
 category: "Other"
-description: "Audio/video editing & transcription tool with AI features"
-howToUse: "- Creating tutorial videos\n- Transcribing audio content\n- Cleaning up voice tracks\n- Basic video editing"
-caveats: "Advanced video editing might require professional tools like Premiere Pro"
+description: "Audio/video editing and transcription with AI features"
+howToUse: "- Creating tutorial videos\n- Transcribing audio content\n- Studio Sound cleanup\n- Quick video edits"
+caveats: "Advanced video editing might require other tools"
+url: "https://www.descript.com/"
 ---
 
 Descript is my go-to tool for audio/video editing and transcription, particularly useful for its AI-powered features.

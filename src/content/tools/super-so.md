@@ -4,46 +4,37 @@ status: "Currently Using"
 category: "Development"
 description: "Wraps Notion pages on a custom domain with additional styling/themes"
 howToUse: "- Creating polished docs sites from Notion pages\n- Adding custom scripts and analytics\n- Custom domain hosting"
-caveats: "- Requires thorough Notion maintenance\n- Some advanced features behind a paywall"
+caveats: "Requires thorough Notion maintenance\nSome advanced features behind a paywall"
+url: "https://super.so/"
 ---
 
-Super.so helps me transform Notion pages into polished, public-facing documentation sites.
+super.so is my tool for creating polished documentation sites from Notion pages.
 
 ## Key Features
 
 1. **Notion Integration**
-   - Custom domains
+   - Custom domain hosting
    - Theme customization
    - Analytics integration
-   - Performance optimization
+   - Script injection
 
-2. **Customization**
-   - Custom CSS/JS
-   - Theme settings
-   - Font selection
-   - Layout options
+2. **Use Cases**
+   - Documentation sites
+   - Personal websites
+   - Project portfolios
+   - Knowledge bases
 
-3. **Publishing Features**
-   - Fast deployment
-   - SEO optimization
-   - Mobile responsiveness
-   - Custom metadata
+3. **Advantages**
+   - Quick setup
+   - Notion-powered content
+   - Easy maintenance
+   - Professional look
 
 ## Best Practices
 
-- Maintain Notion pages regularly
+- Keep Notion pages organized
 - Use consistent formatting
-- Plan page hierarchy
-- Optimize for mobile
-- Set up redirects
-- Monitor analytics
 - Regular content updates
-
-## Use Cases
-
-- Documentation sites
-- Personal websites
-- Knowledge bases
-- Project documentation
-- Team resources
-- Public portfolios 
+- Monitor analytics
+- Test custom scripts
+- Backup important content 

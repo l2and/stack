@@ -76,6 +76,18 @@ export default async function ToolPage({ params }: PageProps) {
           <div className="flex gap-2 flex-wrap">
             <Badge variant="outline">{tool.category}</Badge>
           </div>
+          {tool.url && (
+            <div className="mt-2">
+              <a 
+                href={tool.url} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              >
+                {tool.url} ↗
+              </a>
+            </div>
+          )}
         </CardHeader>
         <CardContent className="space-y-8">
           <div className="grid gap-4 md:grid-cols-2">

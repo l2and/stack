@@ -5,6 +5,7 @@ category: "Communication"
 description: "Custom soulful e-card platform for maintaining genuine connections"
 howToUse: "- Send personalized voice or text e-cards\n- Post-meeting appreciation notes\n- Holiday and special occasion greetings\n- Maintain genuine connections"
 caveats: "Must consistently remember to use it to stay top-of-mind in relationships"
+url: "https://www.blessout.com"
 ---
 
 BlessOut is my actively maintained platform that helps maintain genuine connections through thoughtful, personalized communication.

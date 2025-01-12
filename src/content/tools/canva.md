@@ -4,7 +4,8 @@ status: "Currently Using"
 category: "Design"
 description: "Online design platform with templates and quick editing capabilities"
 howToUse: "- Creating visuals with specific dimensions\n- Social media banners and images\n- Background removal\n- Quick graphic design tasks"
-caveats: "- Heavy customization can be cumbersome\n- Mostly template-oriented"
+caveats: "Heavy customization can be cumbersome, mostly template-oriented"
+url: "https://www.canva.com/"
 ---
 
 Canva is my quick-access design tool for creating social media assets and simple graphics.

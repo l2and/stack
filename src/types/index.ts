@@ -6,6 +6,7 @@ export interface Tool {
   howToUse: string;
   caveats?: string;
   category: 'AI' | 'Productivity' | 'Development' | 'Communication' | 'Design' | 'Other';
+  url?: string;
 }
 
 export interface Process {

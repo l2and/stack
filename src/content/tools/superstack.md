@@ -4,7 +4,8 @@ status: "Plan to Build"
 category: "Development"
 description: "Your future platform to share and document tools/processes"
 howToUse: "- One-click sharing of your entire toolkit\n- Track and test recommendations\n- Document tool usage and workflows"
-caveats: "Currently in planning phase"
+caveats: "Currently a concept/prototype"
+url: "https://www.superstack.so/"
 ---
 
 SuperStack is my vision for a platform that will make it easy to share and discover personal tool stacks and workflows.

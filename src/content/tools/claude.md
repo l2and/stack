@@ -1,10 +1,11 @@
 ---
-title: "Claude 3.5 Sonnet"
+title: "Claude"
 status: "Currently Using"
 category: "AI"
-description: "Specialized LLM for coding assistance and complex queries"
-howToUse: "- Coding assistance for nuanced tasks\n- Complex problem solving\n- Technical documentation\n- Code review and refactoring"
-caveats: "Still has limitations and can produce incorrect answers"
+description: "Anthropic's LLM specialized in coding and complex queries"
+howToUse: "- Complex coding assistance\n- Detailed technical writing\n- Research and analysis\n- Long-form content generation"
+caveats: "Can still produce incorrect answers despite high confidence"
+url: "https://claude.ai/"
 ---
 
 Claude 3.5 Sonnet is my go-to AI assistant for coding tasks and complex technical queries.

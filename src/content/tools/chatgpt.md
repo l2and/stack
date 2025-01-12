@@ -2,9 +2,10 @@
 title: "ChatGPT"
 status: "Currently Using"
 category: "AI"
-description: "AI language model with voice mode and specialized variants (01 and 40)"
-howToUse: "- Brainstorming new product ideas\n- Drafting blog post outlines & initial copy\n- Generating design docs\n- Voice mode for hands-free interaction"
-caveats: "Knowledge cutoff date limits newest info, requires human editing to refine output"
+description: "OpenAI's flagship conversational AI model"
+howToUse: "- Brainstorming new product ideas\n- Drafting blog post outlines\n- Generating design docs\n- Voice mode for hands-free use"
+caveats: "Knowledge cutoff date limits newest info"
+url: "https://chat.openai.com/"
 ---
 
 ChatGPT is my primary AI language model for various tasks, with different variants for specific needs.

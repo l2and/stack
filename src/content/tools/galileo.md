@@ -2,9 +2,10 @@
 title: "Galileo"
 status: "Plan to Try"
 category: "Design"
-description: "AI tool for quickly generating UI scaffolds and app visuals"
-howToUse: "- Rapid UI prototyping\n- App screen visualization\n- Design direction exploration"
-caveats: "Still testing how it integrates into development workflow"
+description: "AI tool for generating UI scaffolds quickly"
+howToUse: "- Rapid UI prototyping\n- Screen generation\n- Visual exploration"
+caveats: "Still testing integration with development workflow"
+url: "https://www.usegalileo.ai/explore"
 ---
 
 Galileo is an AI-powered design tool I\'m exploring for rapid UI prototyping and visual direction.

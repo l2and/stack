@@ -5,6 +5,7 @@ category: "AI"
 description: "Premium AI voice synthesis for high-quality, emotionally nuanced voiceovers"
 howToUse: "- Creating professional voiceovers\n- Generating emotional voice content\n- High-fidelity audio synthesis"
 caveats: "Relatively expensive compared to other voice synthesis options"
+url: "https://elevenlabs.io/"
 ---
 
 Eleven Labs is my go-to solution for premium AI voice synthesis when quality and emotional nuance are critical.

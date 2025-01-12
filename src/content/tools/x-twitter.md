@@ -1,45 +1,40 @@
 ---
-title: "X (Twitter)"
+title: "X"
 status: "Currently Using"
-category: "Other"
-description: "Social platform for staying updated in AI/tech ecosystem"
-howToUse: "- Track AI/tech updates\n- Find opportunities\n- Network with professionals\n- Share insights"
+category: "Communication"
+description: "Social platform for tech and AI ecosystem updates"
+howToUse: "- Stay updated on AI/tech news\n- Find opportunities\n- Network with professionals\n- Share updates"
 caveats: "Rapidly changing features and policies"
+url: "https://twitter.com/"
 ---
 
-X (formerly Twitter) is my window into the AI and tech ecosystem, helping me stay current and connected.
+X (formerly Twitter) is my primary platform for staying connected with the tech and AI ecosystem.
 
 ## Key Features
 
 1. **Information Flow**
-   - Real-time updates
-   - Tech discussions
-   - Industry news
+   - Real-time tech updates
+   - Industry discussions
    - Thought leadership
+   - Community engagement
 
-2. **Use Cases**
-   - Industry tracking
-   - Opportunity finding
-   - Professional networking
+2. **Professional Uses**
+   - Industry networking
+   - Opportunity discovery
    - Knowledge sharing
+   - Brand building
 
-3. **Benefits**
-   - Quick updates
-   - Direct connections
-   - Community access
-   - Trend tracking
+3. **Tech Focus**
+   - AI developments
+   - New tools
+   - Industry trends
+   - Developer community
 
 ## Best Practices
 
-- Curate feed carefully
+- Follow key thought leaders
 - Engage meaningfully
-- Share valuable content
-- Build genuine connections
-- Stay professional
-
-## Focus Areas
-
-- AI developments
-- Tech industry news
-- Career opportunities
-- Professional growth 
+- Share valuable insights
+- Stay professionally focused
+- Filter signal from noise
+- Build genuine connections 

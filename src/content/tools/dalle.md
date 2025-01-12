@@ -3,8 +3,9 @@ title: "DALL·E"
 status: "Currently Using"
 category: "Design"
 description: "OpenAI's image generation tool, ideal for illustrations and conceptual art"
-howToUse: "- Logo generation\n- Conceptual illustration creation\n- Abstract visual design"
-caveats: "- Struggles with hyper-realism\n- Best suited for abstract and artistic visuals"
+howToUse: "- Logo generation\n- Conceptual illustration creation\n- Abstract visual design\n- Quick image iterations"
+caveats: "Struggles with hyper-realism, best suited for abstract and artistic visuals"
+url: "https://labs.openai.com/"
 ---
 
 DALL·E is my go-to tool for creating conceptual illustrations and abstract artistic visuals.

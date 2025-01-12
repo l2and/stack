@@ -2,9 +2,10 @@
 title: "Perplexity"
 status: "Currently Using"
 category: "AI"
-description: "AI-powered search engine for quick research and tool discovery"
-howToUse: "- Default search for quick person/product research\n- Tool discovery ('What tool does XYZ?')\n- Initial research queries"
-caveats: "Sometimes need to revert to Google if answers are off-target"
+description: "AI-powered search engine for quick research and discovery"
+howToUse: "- Quick person/product research\n- Finding new tools\n- Understanding concepts\n- Exploring topics"
+caveats: "Sometimes falls back to Google for better results"
+url: "https://www.perplexity.ai/"
 ---
 
 Perplexity is my go-to search engine for quick research and tool discovery, powered by AI for more direct answers.

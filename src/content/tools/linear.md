@@ -5,6 +5,7 @@ category: "Development"
 description: "Minimalist project management tool known for speed and keyboard shortcuts"
 howToUse: "- Project management\n- Task tracking\n- Development workflow\n- Team collaboration"
 caveats: "Some teams prefer more feature-rich tools like Asana/Jira"
+url: "https://linear.app/"
 ---
 
 Linear is a sleek project management tool I\'m considering for serious project organization.

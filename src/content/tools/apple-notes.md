@@ -3,8 +3,9 @@ title: "Apple Notes"
 status: "Currently Using"
 category: "Productivity"
 description: "Native iOS note-taking app for quick, disorganized thoughts"
-howToUse: "- Quick capture for random notes\n- Fast access due to native integration\n- Temporary note storage"
+howToUse: "- Quick capture for random notes\n- Fast access due to native integration\n- Temporary note storage\n- Rapid idea capture"
 caveats: "Less structured than dedicated note-taking apps like Notion"
+url: "https://www.icloud.com/notes"
 ---
 
 Apple Notes is my quick-capture tool for ephemeral thoughts and quick notes.

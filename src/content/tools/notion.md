@@ -5,6 +5,7 @@ category: "Productivity"
 description: "All-in-one workspace for docs, wikis, and simple project management"
 howToUse: "- Personal relationship manager\n- Documentation and notes\n- Project planning and tracking\n- Knowledge base"
 caveats: "- Can be cumbersome to keep up-to-date\n- Not the fastest for capturing ephemeral notes"
+url: "https://www.notion.so/"
 ---
 
 Notion serves as my central hub for documentation, relationship management, and knowledge organization.

@@ -5,6 +5,7 @@ category: "AI"
 description: "Alternative LLM used when OpenAI is too expensive or overkill"
 howToUse: "- Cost-effective alternative to ChatGPT\n- General-purpose AI assistance\n- Basic code generation and editing"
 caveats: "- Less training data than leading models\n- Quality might not match state-of-the-art LLMs"
+url: "https://chat.deepseek.com/"
 ---
 
 Deepseek serves as my cost-effective alternative to more expensive LLMs when I need "good enough" results.

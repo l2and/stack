@@ -5,6 +5,7 @@ category: "AI"
 description: "Cost-effective voice synthesis for simpler text-to-speech needs"
 howToUse: "- Basic text-to-speech conversion\n- Simple audio content generation\n- Non-critical voice synthesis tasks"
 caveats: "Quality not as high as premium options like Eleven Labs"
+url: "https://deepgram.com/"
 ---
 
 DeepGram is my cost-effective solution for voice synthesis when emotional nuance isn't critical.

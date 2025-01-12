@@ -5,6 +5,7 @@ category: "Productivity"
 description: "Voice learning journal for capturing and connecting daily reflections"
 howToUse: "- Record 2-min voice reflections\n- Review auto-transcribed entries\n- Chat across your day's voice entries\n- Track learning streaks"
 caveats: "Limited to voice-based input, so text-only use cases still require another tool"
+url: "https://www.anno.so/"
 ---
 
 Anno is my actively maintained voice learning journal that helps capture and connect daily reflections through quick voice memos.

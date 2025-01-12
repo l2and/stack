@@ -2,9 +2,10 @@
 title: "Midjourney"
 status: "Currently Using"
 category: "Design"
-description: "AI image generation, excelling at artistic and imaginative visuals"
-howToUse: "- Generating images for blog posts\n- Creating artistic visuals\n- Imaginative concept art"
-caveats: "Requires prompt engineering for the best style results"
+description: "AI image generation specialized in artistic and imaginative visuals"
+howToUse: "- Blog post illustrations\n- Concept visualization\n- Creative exploration\n- Visual brainstorming"
+caveats: "Requires Discord and prompt engineering skills"
+url: "https://www.midjourney.com/"
 ---
 
 Midjourney is my preferred AI image generation tool for creating artistic and imaginative visuals.

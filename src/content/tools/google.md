@@ -2,9 +2,10 @@
 title: "Google"
 status: "Currently Using"
 category: "Other"
-description: "General-purpose fallback search engine for deep research"
-howToUse: "- When AI search isn't sufficient\n- Deep-dive research needs\n- Finding specific documentation\n- Accessing latest information"
+description: "General-purpose search engine for deep research"
+howToUse: "- Deep-dive research\n- Fallback from Perplexity\n- Advanced search queries\n- Academic research"
 caveats: "Can be cluttered with ads, less direct answers than AI search"
+url: "https://www.google.com/"
 ---
 
 Google serves as my reliable fallback search engine when AI-powered alternatives don't provide sufficient results.

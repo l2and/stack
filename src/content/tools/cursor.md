@@ -5,6 +5,7 @@ category: "Development"
 description: "AI-powered code editor (VS Code fork) for enhanced development flow"
 howToUse: "- Flow-state coding environment\n- AI-powered auto-completion\n- Code refactoring assistance\n- Intelligent code suggestions"
 caveats: "As with any AI coding tool, outputs must be verified"
+url: "https://cursor.com/"
 ---
 
 Cursor is my preferred code editor, offering AI-enhanced development capabilities while maintaining a familiar VS Code experience.
