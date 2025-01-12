@@ -7,6 +7,12 @@ import { GlowCard } from "@/components/ui/glow-card"
 import { ToolLogo } from "@/components/ui/tool-logo"
 import { ExternalLink } from "@/components/ui/external-link"
 import { Tool } from "@/types"
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip"
 
 interface ToolCardProps {
   tool: Tool
@@ -33,6 +39,25 @@ const getToolLogo = (slug: string): string => {
   return `/images/tools/${logoMap[slug] || slug}.svg`
 }
 
+const getStatusTooltip = (status: Tool['status']): string => {
+  switch (status) {
+    case 'Using':
+      return 'I actively use this tool in my workflow'
+    case 'Plan to Try':
+      return 'I plan to evaluate this tool in the future'
+    case 'Building':
+      return 'I am currently developing this app and it is currently in an alpha or later stage'
+    case 'Plan to Build':
+      return 'I plan to develop this tool in the future'
+    case 'Retired':
+      return 'I no longer use this tool but it was once part of my workflow'
+    case 'Trying':
+      return 'I am currently evaluating this tool'
+    default:
+      return ''
+  }
+}
+
 export function ToolCard({ tool, showContent = false }: ToolCardProps) {
   return (
     <div className="group">
@@ -50,30 +75,41 @@ export function ToolCard({ tool, showContent = false }: ToolCardProps) {
                     {tool.title}
                   </CardTitle>
                 </div>
-                <Badge
-                  variant={
-                    tool.status === "Using"
-                      ? "default"
-                      : tool.status === "Plan to Try"
-                      ? "secondary"
-                      : tool.status === "Building"
-                      ? "gold"
-                      : tool.status === "Plan to Build"
-                      ? "monochrome"
-                      : tool.status === "Trying"
-                      ? "default"
-                      : "destructive"
-                  }
-                  className={`w-fit ${
-                    tool.status === "Building"
-                      ? "bg-amber-500 hover:bg-amber-600 animate-pulse shadow-lg shadow-amber-200/50 dark:shadow-amber-900/50"
-                      : tool.status === "Trying"
-                      ? "bg-blue-500 hover:bg-blue-600"
-                      : ""
-                  }`}
-                >
-                  {tool.status}
-                </Badge>
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <div>
+                        <Badge
+                          variant={
+                            tool.status === "Using"
+                              ? "default"
+                              : tool.status === "Plan to Try"
+                              ? "secondary"
+                              : tool.status === "Building"
+                              ? "gold"
+                              : tool.status === "Plan to Build"
+                              ? "monochrome"
+                              : tool.status === "Trying"
+                              ? "default"
+                              : "destructive"
+                          }
+                          className={`w-fit ${
+                            tool.status === "Building"
+                              ? "bg-amber-500 hover:bg-amber-600 animate-pulse shadow-lg shadow-amber-200/50 dark:shadow-amber-900/50"
+                              : tool.status === "Trying"
+                              ? "bg-blue-500 hover:bg-blue-600"
+                              : ""
+                          }`}
+                        >
+                          {tool.status}
+                        </Badge>
+                      </div>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>{getStatusTooltip(tool.status)}</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
               </div>
               <div className="flex gap-2 flex-wrap">
                 <Badge variant="outline">{tool.category}</Badge>
