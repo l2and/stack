@@ -1,7 +1,7 @@
 export interface Tool {
   title: string;
   slug: string;
-  status: 'Using' | 'Plan to Try' | 'Plan to Build' | 'Building' | 'Retired';
+  status: 'Using' | 'Plan to Try' | 'Plan to Build' | 'Building' | 'Retired' | 'Trying';
   description: string;
   howToUse: string;
   caveats?: string;

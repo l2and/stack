@@ -60,11 +60,15 @@ export function ToolCard({ tool, showContent = false }: ToolCardProps) {
                       ? "gold"
                       : tool.status === "Plan to Build"
                       ? "monochrome"
+                      : tool.status === "Trying"
+                      ? "default"
                       : "destructive"
                   }
                   className={`w-fit ${
                     tool.status === "Building"
                       ? "bg-amber-500 hover:bg-amber-600 animate-pulse shadow-lg shadow-amber-200/50 dark:shadow-amber-900/50"
+                      : tool.status === "Trying"
+                      ? "bg-blue-500 hover:bg-blue-600"
                       : ""
                   }`}
                 >
