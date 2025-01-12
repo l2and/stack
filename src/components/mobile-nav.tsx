@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
@@ -12,6 +14,7 @@ import {
 import { MenuIcon } from "lucide-react"
 import { MoonIcon, SunIcon } from "@radix-ui/react-icons"
 import { useTheme } from "next-themes"
+import { useState } from "react"
 
 interface MobileNavProps {
   routes: {
@@ -23,9 +26,10 @@ interface MobileNavProps {
 export function MobileNav({ routes }: MobileNavProps) {
   const pathname = usePathname()
   const { theme, setTheme } = useTheme()
+  const [open, setOpen] = useState(false)
 
   return (
-    <Sheet>
+    <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
         <Button variant="ghost" size="icon" className="md:hidden">
           <MenuIcon className="h-5 w-5" />
@@ -41,6 +45,7 @@ export function MobileNav({ routes }: MobileNavProps) {
             <Link
               key={route.href}
               href={route.href}
+              onClick={() => setOpen(false)}
               className={cn(
                 "text-sm transition-colors hover:text-foreground/80",
                 pathname === route.href ? "text-foreground" : "text-foreground/60"
