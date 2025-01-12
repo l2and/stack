@@ -1,6 +1,6 @@
 ---
 title: "super.so"
-status: "Currently Using"
+status: "Using"
 category: "Development"
 description: "Wraps Notion pages on a custom domain with additional styling/themes"
 howToUse: "- Creating polished docs sites from Notion pages\n- Adding custom scripts and analytics\n- Custom domain hosting"

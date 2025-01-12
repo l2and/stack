@@ -48,7 +48,7 @@ npm run dev
 ```markdown
 ---
 title: "Tool Name"
-status: "Currently Using" | "Plan to Try" | "Plan to Build" | "Actively Maintained" | "Retired"
+status: "Using" | "Plan to Try" | "Plan to Build" | "Retired"
 category: "AI" | "Productivity" | "Development" | "Communication" | "Design" | "Other"
 description: "Brief description of the tool"
 howToUse: "- Key use case 1\n- Key use case 2\n- Key use case 3"

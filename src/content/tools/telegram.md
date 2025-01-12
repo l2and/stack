@@ -1,6 +1,6 @@
 ---
 title: "Telegram"
-status: "Currently Using"
+status: "Using"
 category: "Communication"
 description: "Cross-platform messaging app with bot integration capabilities"
 howToUse: "- Developer bot interactions\n- Cross-platform messaging\n- Group communication\n- File sharing"

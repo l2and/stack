@@ -1,6 +1,6 @@
 ---
 title: "Anno"
-status: "Actively Maintained"
+status: "Building"
 category: "Productivity"
 description: "Voice learning journal for capturing and connecting daily reflections"
 howToUse: "- Record 2-min voice reflections\n- Review auto-transcribed entries\n- Chat across your day's voice entries\n- Track learning streaks"

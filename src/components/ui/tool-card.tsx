@@ -38,9 +38,9 @@ export function ToolCard({ tool, showContent = false }: ToolCardProps) {
     <div className="group">
       <GlowCard>
         <Link href={`/tools/${tool.slug}`} className="block">
-          <Card className="h-full flex flex-col transition-colors group-hover:bg-muted/50">
+          <Card className="h-full min-h-[270px] flex flex-col transition-colors group-hover:bg-muted/50">
             <CardHeader className="space-y-4">
-              <div className="flex justify-between items-start gap-4">
+              <div className="flex flex-col gap-4">
                 <div className="flex items-center gap-3">
                   <ToolLogo
                     src={getToolLogo(tool.slug)}
@@ -52,21 +52,21 @@ export function ToolCard({ tool, showContent = false }: ToolCardProps) {
                 </div>
                 <Badge
                   variant={
-                    tool.status === "Currently Using"
+                    tool.status === "Using"
                       ? "default"
                       : tool.status === "Plan to Try"
                       ? "secondary"
-                      : tool.status === "Actively Maintained"
+                      : tool.status === "Building"
                       ? "gold"
                       : tool.status === "Plan to Build"
                       ? "monochrome"
                       : "destructive"
                   }
-                  className={
-                    tool.status === "Actively Maintained"
+                  className={`w-fit ${
+                    tool.status === "Building"
                       ? "bg-amber-500 hover:bg-amber-600 animate-pulse shadow-lg shadow-amber-200/50 dark:shadow-amber-900/50"
                       : ""
-                  }
+                  }`}
                 >
                   {tool.status}
                 </Badge>

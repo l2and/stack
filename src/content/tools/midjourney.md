@@ -1,6 +1,6 @@
 ---
 title: "Midjourney"
-status: "Currently Using"
+status: "Using"
 category: "Design"
 description: "AI image generation specialized in artistic and imaginative visuals"
 howToUse: "- Blog post illustrations\n- Concept visualization\n- Creative exploration\n- Visual brainstorming"

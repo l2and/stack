@@ -1,6 +1,6 @@
 ---
 title: "Google Calendar"
-status: "Currently Using"
+status: "Using"
 category: "Productivity"
 description: "Cloud-based calendar for scheduling and event management"
 howToUse: "- Schedule meetings and events\n- Share open invites\n- Track appointments\n- Set reminders"

@@ -1,6 +1,6 @@
 ---
 title: "Deepseek"
-status: "Currently Using"
+status: "Using"
 category: "AI"
 description: "Alternative LLM used when OpenAI is too expensive or overkill"
 howToUse: "- Cost-effective alternative to ChatGPT\n- General-purpose AI assistance\n- Basic code generation and editing"

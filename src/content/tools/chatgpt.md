@@ -1,6 +1,6 @@
 ---
 title: "ChatGPT"
-status: "Currently Using"
+status: "Using"
 category: "AI"
 description: "OpenAI's flagship conversational AI model"
 howToUse: "- Brainstorming new product ideas\n- Drafting blog post outlines\n- Generating design docs\n- Voice mode for hands-free use"
@@ -42,4 +42,4 @@ ChatGPT is my primary AI language model for various tasks, with different varian
 - Knowledge cutoff date
 - Occasional hallucinations
 - Requires verification
-- Cost considerations 
+- Cost considerations

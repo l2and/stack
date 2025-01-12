@@ -1,6 +1,6 @@
 ---
 title: "Google"
-status: "Currently Using"
+status: "Using"
 category: "Other"
 description: "General-purpose search engine for deep research"
 howToUse: "- Deep-dive research\n- Fallback from Perplexity\n- Advanced search queries\n- Academic research"

@@ -1,6 +1,6 @@
 ---
 title: "Cursor"
-status: "Currently Using"
+status: "Using"
 category: "Development"
 description: "AI-powered code editor (VS Code fork) for enhanced development flow"
 howToUse: "- Flow-state coding environment\n- AI-powered auto-completion\n- Code refactoring assistance\n- Intelligent code suggestions"

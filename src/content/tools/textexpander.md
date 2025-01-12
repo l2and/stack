@@ -1,6 +1,6 @@
 ---
 title: "TextExpander"
-status: "Currently Using"
+status: "Using"
 category: "Productivity"
 description: "Text expansion tool that turns shortcuts into pre-written content"
 url: "https://textexpander.com/"

@@ -1,6 +1,6 @@
 ---
 title: "Notion"
-status: "Currently Using"
+status: "Using"
 category: "Productivity"
 description: "All-in-one workspace for docs, wikis, and simple project management"
 howToUse: "- Personal relationship manager\n- Documentation and notes\n- Project planning and tracking\n- Knowledge base"

@@ -1,6 +1,6 @@
 ---
 title: "DeepGram"
-status: "Currently Using"
+status: "Using"
 category: "AI"
 description: "Cost-effective voice synthesis for simpler text-to-speech needs"
 howToUse: "- Basic text-to-speech conversion\n- Simple audio content generation\n- Non-critical voice synthesis tasks"

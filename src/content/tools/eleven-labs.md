@@ -1,6 +1,6 @@
 ---
 title: "Eleven Labs"
-status: "Currently Using"
+status: "Using"
 category: "AI"
 description: "Premium AI voice synthesis for high-quality, emotionally nuanced voiceovers"
 howToUse: "- Creating professional voiceovers\n- Generating emotional voice content\n- High-fidelity audio synthesis"
@@ -37,4 +37,4 @@ Eleven Labs is my go-to solution for premium AI voice synthesis when quality and
 - Test different voice models
 - Fine-tune emotional settings
 - Consider cost vs. quality needs
-- Use DeepGram for simpler needs 
+- Use DeepGram for simpler needs

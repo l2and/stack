@@ -1,6 +1,6 @@
 ---
 title: "Claude"
-status: "Currently Using"
+status: "Using"
 category: "AI"
 description: "Anthropic's LLM specialized in coding and complex queries"
 howToUse: "- Complex coding assistance\n- Detailed technical writing\n- Research and analysis\n- Long-form content generation"

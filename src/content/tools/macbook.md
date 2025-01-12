@@ -1,6 +1,6 @@
 ---
 title: "MacBook Pro"
-status: "Currently Using"
+status: "Using"
 category: "Development"
 description: "Primary development machine running macOS"
 url: "https://www.apple.com/macbook-pro/"
@@ -24,4 +24,4 @@ The MacBook Pro is my primary development machine, providing a powerful and reli
 
 ### Why I Use It
 
-I chose the MacBook Pro for its robust development environment, excellent build quality, and seamless integration with other Apple devices. The Unix-based macOS provides a great platform for software development, while the hardware performance ensures smooth multitasking and efficient workflow. 
+I chose the MacBook Pro for its robust development environment, excellent build quality, and seamless integration with other Apple devices. The Unix-based macOS provides a great platform for software development, while the hardware performance ensures smooth multitasking and efficient workflow.

@@ -1,6 +1,6 @@
 ---
 title: "Canva"
-status: "Currently Using"
+status: "Using"
 category: "Design"
 description: "Online design platform with templates and quick editing capabilities"
 howToUse: "- Creating visuals with specific dimensions\n- Social media banners and images\n- Background removal\n- Quick graphic design tasks"

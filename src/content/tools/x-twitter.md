@@ -1,6 +1,6 @@
 ---
 title: "X"
-status: "Currently Using"
+status: "Using"
 category: "Communication"
 description: "Social platform for tech and AI ecosystem updates"
 howToUse: "- Stay updated on AI/tech news\n- Find opportunities\n- Network with professionals\n- Share updates"

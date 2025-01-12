@@ -1,6 +1,6 @@
 ---
 title: "BlessOut"
-status: "Actively Maintained"
+status: "Building"
 category: "Communication"
 description: "Custom soulful e-card platform for maintaining genuine connections"
 howToUse: "- Send personalized voice or text e-cards\n- Post-meeting appreciation notes\n- Holiday and special occasion greetings\n- Maintain genuine connections"

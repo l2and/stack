@@ -1,6 +1,6 @@
 ---
 title: "DALL·E"
-status: "Currently Using"
+status: "Using"
 category: "Design"
 description: "OpenAI's image generation tool, ideal for illustrations and conceptual art"
 howToUse: "- Logo generation\n- Conceptual illustration creation\n- Abstract visual design\n- Quick image iterations"

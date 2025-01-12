@@ -1,6 +1,6 @@
 ---
 title: "iMessage"
-status: "Currently Using"
+status: "Using"
 category: "Communication"
 description: "Native iOS messaging platform for Apple ecosystem"
 howToUse: "- Quick communication with iPhone users\n- Share files and media\n- Group chats\n- Cross-device sync"

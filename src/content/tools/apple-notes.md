@@ -1,6 +1,6 @@
 ---
 title: "Apple Notes"
-status: "Currently Using"
+status: "Using"
 category: "Productivity"
 description: "Native iOS note-taking app for quick, disorganized thoughts"
 howToUse: "- Quick capture for random notes\n- Fast access due to native integration\n- Temporary note storage\n- Rapid idea capture"

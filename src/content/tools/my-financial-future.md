@@ -1,6 +1,6 @@
 ---
 title: "My Financial Future"
-status: "Actively Maintained"
+status: "Building"
 category: "Other"
 description: "Custom app for calculating living costs & target salary needs"
 howToUse: "- Calculate needed salary for goals\n- Track cost-of-living data\n- Maintain financial awareness\n- Set motivational targets"

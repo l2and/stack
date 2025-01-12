@@ -1,6 +1,6 @@
 ---
 title: "Microsoft To Do"
-status: "Currently Using"
+status: "Using"
 category: "Productivity"
 description: "Lightweight task manager for personal and project tasks"
 howToUse: "- Daily task tracking\n- Project task lists\n- Personal reminders\n- Quick capture of to-dos"

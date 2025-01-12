@@ -1,6 +1,6 @@
 ---
 title: "Granola"
-status: "Currently Using"
+status: "Using"
 category: "Productivity"
 description: "AI notepad that enhances meeting notes with transcription and GPT-4"
 howToUse: "- Take notes during meetings\n- Get automatic transcription\n- Use AI to enhance notes post-meeting\n- Create follow-up tasks and emails"
@@ -37,4 +37,4 @@ Granola is my current tool for managing meeting notes and transcriptions, with b
 - Review AI enhancements
 - Share notes via platform integrations
 - Maintain meeting context
-- Track action items 
+- Track action items

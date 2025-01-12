@@ -1,6 +1,6 @@
 ---
 title: "Descript"
-status: "Currently Using"
+status: "Using"
 category: "Other"
 description: "Audio/video editing and transcription with AI features"
 howToUse: "- Creating tutorial videos\n- Transcribing audio content\n- Studio Sound cleanup\n- Quick video edits"
@@ -43,4 +43,4 @@ Descript is my go-to tool for audio/video editing and transcription, particularl
 - Basic video features
 - Learning curve
 - Processing time
-- Storage needs 
+- Storage needs
