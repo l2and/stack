@@ -1,7 +1,7 @@
 import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
-import { Process } from "@/types"
+import { Process } from "@/types/index"
 import { notFound } from "next/navigation"
 import { ProcessCard } from "@/components/ui/process-card"
 import { Card, CardContent } from "@/components/ui/card"

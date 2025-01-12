@@ -17,6 +17,7 @@ export interface Process {
   steps: string[];
   notes?: string;
   category: 'Personal' | 'Professional' | 'Development' | 'Content' | 'Other';
+  content?: string;
 }
 
 export interface SiteConfig {
