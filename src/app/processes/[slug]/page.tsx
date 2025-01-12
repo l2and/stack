@@ -8,9 +8,9 @@ import { notFound } from "next/navigation"
 import Markdown from "react-markdown"
 
 interface PageProps {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
 async function getProcess(slug: string) {
@@ -23,7 +23,7 @@ async function getProcess(slug: string) {
       content,
       slug,
     } as Process & { content: string }
-  } catch (error) {
+  } catch {
     return null
   }
 }
@@ -37,8 +37,9 @@ export async function generateStaticParams() {
 }
 
 export default async function ProcessPage({ params }: PageProps) {
-  const process = await getProcess(params.slug)
-
+  const { slug } = await params
+  const process = await getProcess(slug)
+  
   if (!process) {
     notFound()
   }

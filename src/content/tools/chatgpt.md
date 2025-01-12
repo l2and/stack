@@ -2,33 +2,43 @@
 title: "ChatGPT"
 status: "Currently Using"
 category: "AI"
-description: "AI language model (includes 'voice mode')"
-howToUse: "- Brainstorming new product ideas\n- Drafting blog post outlines & initial copy\n- Generating design docs"
-caveats: "- Knowledge cutoff date: might be missing the newest docs/tools\n- Requires human editing to refine text"
+description: "AI language model with voice mode and specialized variants (01 and 40)"
+howToUse: "- Brainstorming new product ideas\n- Drafting blog post outlines & initial copy\n- Generating design docs\n- Voice mode for hands-free interaction"
+caveats: "Knowledge cutoff date limits newest info, requires human editing to refine output"
 ---
 
-ChatGPT is my go-to AI assistant for various tasks, from brainstorming to content creation. I primarily use it through the web interface and occasionally via voice mode on mobile.
+ChatGPT is my primary AI language model for various tasks, with different variants for specific needs.
 
-## Key Use Cases
+## Key Features
 
-1. **Product Ideation**
-   - Quick brainstorming sessions
-   - Feature exploration
-   - User story generation
+1. **Core Capabilities**
+   - Text generation and editing
+   - Code assistance
+   - Creative writing
+   - Voice interaction
 
-2. **Content Creation**
-   - Blog post outlines
-   - Documentation drafts
-   - Design document templates
+2. **Specialized Variants**
+   - "01" for detailed design docs
+   - "40" for general usage
+   - Voice mode for hands-free
 
-3. **Problem Solving**
-   - Code debugging suggestions
-   - Architecture discussions
-   - Technical research
+3. **Use Cases**
+   - Product ideation
+   - Content creation
+   - Documentation
+   - Design planning
 
-## Pro Tips
+## Best Practices
 
-- Use system prompts to set context
-- Break complex tasks into smaller chunks
-- Always verify technical information
-- Keep conversations focused on one topic 
+- Always review and edit outputs
+- Use "01" for precision tasks
+- Use "40" for quick iterations
+- Voice mode for natural dialogue
+- Combine with human expertise
+
+## Limitations
+
+- Knowledge cutoff date
+- Occasional hallucinations
+- Requires verification
+- Cost considerations 

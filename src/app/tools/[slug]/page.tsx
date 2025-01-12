@@ -8,9 +8,9 @@ import { notFound } from "next/navigation"
 import Markdown from "react-markdown"
 
 interface PageProps {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>  
 }
 
 async function getTool(slug: string) {
@@ -23,7 +23,7 @@ async function getTool(slug: string) {
       content,
       slug,
     } as Tool & { content: string }
-  } catch (error) {
+  } catch {
     return null
   }
 }
@@ -37,8 +37,9 @@ export async function generateStaticParams() {
 }
 
 export default async function ToolPage({ params }: PageProps) {
-  const tool = await getTool(params.slug)
-
+  const { slug } = await params
+  const tool = await getTool(slug)
+  
   if (!tool) {
     notFound()
   }

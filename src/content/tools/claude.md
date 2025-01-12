@@ -2,38 +2,44 @@
 title: "Claude 3.5 Sonnet"
 status: "Currently Using"
 category: "AI"
-description: "An LLM specialized in coding and complex queries"
-howToUse: "- Complex coding assistance\n- Technical documentation\n- Detailed problem-solving\n- Code review and refactoring"
-caveats: "Still has limitations and can produce incorrect answers, requiring verification"
+description: "Specialized LLM for coding assistance and complex queries"
+howToUse: "- Coding assistance for nuanced tasks\n- Complex problem solving\n- Technical documentation\n- Code review and refactoring"
+caveats: "Still has limitations and can produce incorrect answers"
 ---
 
-Claude 3.5 Sonnet is my go-to AI assistant for more nuanced coding tasks and technical discussions.
+Claude 3.5 Sonnet is my go-to AI assistant for coding tasks and complex technical queries.
 
-## Key Strengths
+## Key Features
 
-1. **Code Understanding**
-   - Deep comprehension of codebases
+1. **Code Capabilities**
+   - Nuanced code understanding
    - Context-aware suggestions
-   - Detailed explanations of complex code
-   - Pattern recognition
+   - Refactoring assistance
+   - Bug identification
 
-2. **Technical Writing**
-   - Documentation generation
-   - API documentation
-   - Technical specifications
-   - Code comments
-
-3. **Problem Solving**
-   - Debugging assistance
+2. **Technical Tasks**
    - Architecture discussions
-   - Performance optimization suggestions
-   - Best practices recommendations
+   - Documentation generation
+   - Problem solving
+   - Code review
+
+3. **Use Cases**
+   - Complex coding tasks
+   - Technical writing
+   - System design
+   - Code optimization
 
 ## Best Practices
 
-- Always verify generated code
-- Provide sufficient context
-- Break complex problems into smaller parts
-- Use clear, specific prompts
-- Cross-reference with documentation
-- Test suggestions before implementation 
+- Verify outputs carefully
+- Provide clear context
+- Break down complex tasks
+- Review generated code
+- Test suggestions thoroughly
+
+## Limitations
+
+- Can make mistakes
+- Requires verification
+- Context limitations
+- Not infallible 

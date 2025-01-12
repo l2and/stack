@@ -31,9 +31,7 @@ export function SiteHeader() {
       <div className="container flex h-14 items-center">
         <div className="mr-4 flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <span className="font-bold sm:inline-block">
-              Gary\'s <span className="gradient-text">Stack</span>
-            </span>
+            <span className="inline-block font-bold">Gary&apos;s Stack</span>
           </Link>
           <nav className="flex items-center space-x-6 text-sm font-medium">
             {routes.map((route) => (
