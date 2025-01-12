@@ -54,4 +54,22 @@
    - Created permanent site header with theme toggle
    - Added design tools (Midjourney, DALL·E, Canva)
    - Added staying open to suggestions process
-   - Improved site navigation 
+   - Improved site navigation
+
+10. Additional Tools
+    - Added productivity tools (Apple Notes)
+    - Added development tools (Linear, super.so)
+    - Added future platform (SuperStack)
+    - Fixed homepage text formatting
+
+11. Plan to Build Category
+    - Added new Plan to Build status type
+    - Updated SuperStack to Plan to Build status
+    - Added BlessOut as Plan to Build tool
+    - Updated Anno to Plan to Build status 
+
+8. Tool Status Updates
+   - Updated BlessOut, Anno, and SuperStack status to "Actively Maintained"
+   - Enhanced tool descriptions with current development status
+   - Added detailed roadmaps for each tool
+   - Improved feature documentation and organization 
