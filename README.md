@@ -1,37 +1,158 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Gary's Stack (Forkable)
 
-## Getting Started
+A minimal, static site built with Next.js 15+ that documents my personal toolkit and processes. Fork this template to showcase your own stack and share:
 
-First, run the development server:
+- Tools you currently use or plan to try
+- Your key processes and workflows
+- Tools you plan to build
+- Open suggestions for improvements
 
+## Why Fork This?
+
+- 🚀 **Ready to Use**: Built with Next.js 15+, TypeScript, and Tailwind CSS
+- 📝 **Easy to Customize**: Simple markdown-based content management
+- 🎨 **Beautiful UI**: Dark mode support and modern design with shadcn/ui
+- 📱 **Responsive**: Looks great on all devices
+- 🔄 **Future-Ready**: Structured for potential dynamic features
+
+## 🚀 Quick Start
+
+1. Fork this repository
+2. Clone your fork:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/stack.git
+cd stack
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+5. Open [http://localhost:3000](http://localhost:3000) to see your site.
 
-## Learn More
+6. Start customizing by updating the content in `src/content/`!
 
-To learn more about Next.js, take a look at the following resources:
+## 📝 Customizing Content
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Tools
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Navigate to `src/content/tools/`
+2. Create markdown files for your tools using this format:
 
-## Deploy on Vercel
+```markdown
+---
+title: "Tool Name"
+status: "Currently Using" | "Plan to Try" | "Plan to Build" | "Actively Maintained" | "Retired"
+category: "AI" | "Productivity" | "Development" | "Communication" | "Design" | "Other"
+description: "Brief description of the tool"
+howToUse: "- Key use case 1\n- Key use case 2\n- Key use case 3"
+caveats: "Optional notes about limitations"
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Detailed description of the tool goes here.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# stack
+## Key Features
+
+1. **Feature Category 1**
+   - Feature point
+   - Feature point
+   - Feature point
+
+2. **Feature Category 2**
+   - Feature point
+   - Feature point
+   - Feature point
+
+## Best Practices
+
+- Practice 1
+- Practice 2
+- Practice 3
+```
+
+### Processes
+
+1. Navigate to `src/content/processes/`
+2. Create markdown files for your processes using this format:
+
+```markdown
+---
+title: "Process Name"
+category: "Personal" | "Professional" | "Development" | "Content" | "Other"
+description: "Brief description of the process"
+toolsInvolved: ["Tool 1", "Tool 2", "Tool 3"]
+steps: [
+  "Step 1 description",
+  "Step 2 description",
+  "Step 3 description"
+]
+notes: "Optional additional notes"
+---
+
+Detailed description of the process goes here.
+
+## Key Components
+
+1. **Component 1**
+   - Detail
+   - Detail
+   - Detail
+
+2. **Component 2**
+   - Detail
+   - Detail
+   - Detail
+
+## Best Practices
+
+- Practice 1
+- Practice 2
+- Practice 3
+```
+
+## 🎨 Customizing Style
+
+1. Update site configuration in `src/config/site.ts`
+2. Modify theme colors in `tailwind.config.js`
+3. Update global styles in `src/app/globals.css`
+
+## 🏗️ Project Structure
+
+```
+stack/
+├─ src/
+│  ├─ app/                    # Next.js 15+ App Router pages
+│  ├─ components/             # React components
+│  ├─ config/                 # Site configuration
+│  ├─ content/               
+│  │  ├─ tools/              # Tool markdown files
+│  │  └─ processes/          # Process markdown files
+│  ├─ lib/                    # Utility functions
+│  └─ types/                 # TypeScript types
+├─ public/                    # Static assets
+└─ tailwind.config.js        # Tailwind configuration
+```
+
+## 🛠️ Built With
+
+- [Next.js 15+](https://nextjs.org/) - React framework
+- [Tailwind CSS](https://tailwindcss.com/) - CSS framework
+- [shadcn/ui](https://ui.shadcn.com/) - UI components
+- [gray-matter](https://github.com/jonschlinkert/gray-matter) - Markdown processing
+- [react-markdown](https://github.com/remarkjs/react-markdown) - Markdown rendering
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Design inspired by modern documentation sites
+- Built with Next.js App Router and Tailwind CSS
+- UI components from shadcn/ui
