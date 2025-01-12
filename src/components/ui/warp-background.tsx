@@ -1,7 +1,7 @@
 "use client"
 
 import { cn } from "@/lib/utils";
-import { motion, type HTMLMotionProps } from "framer-motion";
+import { motion } from "framer-motion";
 import React, { HTMLAttributes, useCallback, useMemo } from "react";
 
 interface BeamProps {
