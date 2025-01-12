@@ -7,10 +7,10 @@ export default function Home() {
     <WarpBackground>
       <main className={`grid place-items-center px-2 py-4 md:px-24 md:py-12`} style={{ height: `calc(100vh - 230px)` }}>
         <div className="relative flex flex-col items-center justify-center gap-1 md:gap-4 text-center">
-          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+          <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
             Gary&apos;s Stack
           </h1>
-          <p className="max-w-[400px] text-sm text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+          <p className="max-w-[400px] text-sm text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed mb-4">
             A curated collection of tools and processes I use to build, learn, and grow.
           </p>
           <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 w-full sm:w-auto sm:justify-center">

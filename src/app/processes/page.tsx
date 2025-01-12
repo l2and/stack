@@ -3,7 +3,7 @@ import path from "path"
 import matter from "gray-matter"
 import { Process } from "@/types"
 import { ProcessCard } from "@/components/ui/process-card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { TabFilter } from "@/components/ui/tab-filter"
 
 async function getProcesses() {
   const processesDir = path.join(process.cwd(), "src/content/processes")
@@ -33,31 +33,12 @@ export default async function ProcessesPage() {
         </p>
       </div>
 
-      <Tabs defaultValue="All" className="mt-8">
-        <TabsList className="flex flex-wrap justify-center gap-2 bg-transparent">
-          {categories.map((category) => (
-            <TabsTrigger
-              key={category}
-              value={category}
-              className="rounded-full bg-muted px-4 py-2 data-[state=active]:bg-emerald-600 data-[state=active]:text-white"
-            >
-              {category}
-            </TabsTrigger>
-          ))}
-        </TabsList>
-
-        {categories.map((category) => (
-          <TabsContent key={category} value={category} className="mt-16 sm:mt-20">
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {category === "All"
-                ? processes.map((process) => <ProcessCard key={process.slug} {...process} />)
-                : processes
-                    .filter((process) => process.category === category)
-                    .map((process) => <ProcessCard key={process.slug} {...process} />)}
-            </div>
-          </TabsContent>
-        ))}
-      </Tabs>
+      <TabFilter
+        items={processes}
+        categories={categories}
+        renderItem={(process) => <ProcessCard {...process} />}
+        filterItem={(process, category) => process.category === category}
+      />
     </div>
   )
 }

@@ -3,7 +3,7 @@ import path from "path"
 import matter from "gray-matter"
 import { Tool } from "@/types"
 import { ToolCard } from "@/components/ui/tool-card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { TabFilter } from "@/components/ui/tab-filter"
 
 async function getTools() {
   const toolsDir = path.join(process.cwd(), "src/content/tools")
@@ -35,31 +35,12 @@ export default async function ToolsPage() {
         </p>
       </div>
 
-      <Tabs defaultValue="All" className="mt-8">
-        <TabsList className="flex flex-wrap justify-center gap-2 bg-transparent">
-          {categories.map((category) => (
-            <TabsTrigger
-              key={category}
-              value={category}
-              className="rounded-full bg-muted px-4 py-2 data-[state=active]:bg-emerald-600 data-[state=active]:text-white"
-            >
-              {category}
-            </TabsTrigger>
-          ))}
-        </TabsList>
-
-        {categories.map((category) => (
-          <TabsContent key={category} value={category} className="mt-16 sm:mt-20">
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {category === "All"
-                ? tools.map((tool) => <ToolCard key={tool.slug} tool={tool} />)
-                : tools
-                    .filter((tool) => tool.category === category)
-                    .map((tool) => <ToolCard key={tool.slug} tool={tool} />)}
-            </div>
-          </TabsContent>
-        ))}
-      </Tabs>
+      <TabFilter
+        items={tools}
+        categories={categories}
+        renderItem={(tool) => <ToolCard tool={tool} />}
+        filterItem={(tool, category) => tool.category === category}
+      />
     </div>
   )
 }
