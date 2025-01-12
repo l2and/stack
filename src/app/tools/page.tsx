@@ -65,6 +65,8 @@ export default function ToolsPage() {
                                 ? "secondary"
                                 : tool.status === "Actively Maintained"
                                 ? "gold"
+                                : tool.status === "Plan to Build"
+                                ? "monochrome"
                                 : "destructive"
                             }
                             className={

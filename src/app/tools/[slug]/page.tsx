@@ -60,6 +60,8 @@ export default async function ToolPage({ params }: PageProps) {
                   ? "secondary"
                   : tool.status === "Actively Maintained"
                   ? "gold"
+                  : tool.status === "Plan to Build"
+                  ? "monochrome"
                   : "destructive"
               }
               className={
