@@ -1,10 +1,10 @@
 import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
-import { Badge } from "@/components/ui/badge"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tool } from "@/types"
 import { notFound } from "next/navigation"
+import { ToolCard } from "@/components/ui/tool-card"
+import { Card, CardContent } from "@/components/ui/card"
 import Markdown from "react-markdown"
 
 interface PageProps {
@@ -46,71 +46,16 @@ export default async function ToolPage({ params }: PageProps) {
 
   return (
     <main className="container mx-auto px-4 py-8">
-      <Card className="max-w-4xl mx-auto">
-        <CardHeader className="space-y-4">
-          <div className="flex justify-between items-start">
-            <CardTitle className="text-3xl font-bold">
-              {tool.title}
-            </CardTitle>
-            <Badge
-              variant={
-                tool.status === "Currently Using"
-                  ? "default"
-                  : tool.status === "Plan to Try"
-                  ? "secondary"
-                  : tool.status === "Actively Maintained"
-                  ? "gold"
-                  : tool.status === "Plan to Build"
-                  ? "monochrome"
-                  : "destructive"
-              }
-              className={
-                tool.status === "Actively Maintained"
-                  ? "bg-amber-500 hover:bg-amber-600 animate-pulse shadow-lg shadow-amber-200/50 dark:shadow-amber-900/50"
-                  : ""
-              }
-            >
-              {tool.status}
-            </Badge>
-          </div>
-          <div className="flex gap-2 flex-wrap">
-            <Badge variant="outline">{tool.category}</Badge>
-          </div>
-          {tool.url && (
-            <div className="mt-2">
-              <a 
-                href={tool.url} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                {tool.url} ↗
-              </a>
+      <div className="max-w-4xl mx-auto space-y-8">
+        <ToolCard tool={tool} showContent />
+        <Card>
+          <CardContent className="pt-6">
+            <div className="prose dark:prose-invert max-w-none">
+              <Markdown>{tool.content}</Markdown>
             </div>
-          )}
-        </CardHeader>
-        <CardContent className="space-y-8">
-          <div className="grid gap-4 md:grid-cols-2">
-            <div className="space-y-2">
-              <h3 className="font-semibold">How to Use</h3>
-              <div className="text-sm text-muted-foreground whitespace-pre-line">
-                {tool.howToUse}
-              </div>
-            </div>
-            {tool.caveats && (
-              <div className="space-y-2">
-                <h3 className="font-semibold">Caveats</h3>
-                <div className="text-sm text-muted-foreground whitespace-pre-line">
-                  {tool.caveats}
-                </div>
-              </div>
-            )}
-          </div>
-          <div className="prose dark:prose-invert max-w-none">
-            <Markdown>{tool.content}</Markdown>
-          </div>
-        </CardContent>
-      </Card>
+          </CardContent>
+        </Card>
+      </div>
     </main>
   )
 }

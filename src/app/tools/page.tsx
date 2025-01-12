@@ -1,29 +1,29 @@
 import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
-import { Badge } from "@/components/ui/badge"
-import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import Link from "next/link"
 import { Tool } from "@/types"
+import { ToolCard } from "@/components/ui/tool-card"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
-function getTools() {
+async function getTools() {
   const toolsDir = path.join(process.cwd(), "src/content/tools")
-  const filenames = fs.readdirSync(toolsDir)
-
-  return filenames.map((filename) => {
-    const filePath = path.join(toolsDir, filename)
+  const files = fs.readdirSync(toolsDir)
+  
+  const tools = files.map((file) => {
+    const filePath = path.join(toolsDir, file)
     const fileContents = fs.readFileSync(filePath, "utf8")
     const { data } = matter(fileContents)
     return {
       ...data,
-      slug: filename.replace(/\.md$/, ""),
+      slug: file.replace(/\.md$/, ""),
     } as Tool
   })
+
+  return tools
 }
 
-export default function ToolsPage() {
-  const tools = getTools()
+export default async function ToolsPage() {
+  const tools = await getTools()
   const categories = ["All", "AI", "Productivity", "Development", "Communication", "Design", "Other"]
 
   return (
@@ -52,38 +52,7 @@ export default function ToolsPage() {
               {tools
                 .filter((tool) => category === "All" || tool.category === category)
                 .map((tool) => (
-                  <Link key={tool.slug} href={`/tools/${tool.slug}`}>
-                    <Card className="h-full hover:shadow-lg transition-shadow">
-                      <CardHeader>
-                        <div className="flex justify-between items-start mb-2">
-                          <CardTitle className="text-xl">{tool.title}</CardTitle>
-                          <Badge
-                            variant={
-                              tool.status === "Currently Using"
-                                ? "default"
-                                : tool.status === "Plan to Try"
-                                ? "secondary"
-                                : tool.status === "Actively Maintained"
-                                ? "gold"
-                                : tool.status === "Plan to Build"
-                                ? "monochrome"
-                                : "destructive"
-                            }
-                            className={
-                              tool.status === "Actively Maintained"
-                                ? "bg-amber-500 hover:bg-amber-600 animate-pulse shadow-lg shadow-amber-200/50 dark:shadow-amber-900/50"
-                                : ""
-                            }
-                          >
-                            {tool.status}
-                          </Badge>
-                        </div>
-                        <CardDescription className="text-sm text-muted-foreground">
-                          {tool.description}
-                        </CardDescription>
-                      </CardHeader>
-                    </Card>
-                  </Link>
+                  <ToolCard key={tool.slug} tool={tool} />
                 ))}
             </div>
           </TabsContent>
