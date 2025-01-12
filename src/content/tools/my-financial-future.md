@@ -1,5 +1,5 @@
 ---
-title: "My Financial Future"
+title: "MyFinancialFuture"
 status: "Building"
 category: "Other"
 description: "Custom app for calculating living costs & target salary needs"
@@ -8,7 +8,7 @@ caveats: "Not used daily in app form, but output remains visible as motivation"
 url: "https://www.myfinancialfuture.xyz/"
 ---
 
-My Financial Future is my actively maintained app that helps maintain clarity on financial goals and living costs.
+MyFinancialFuture is my actively maintained app that helps maintain clarity on financial goals and living costs.
 
 ## Key Features
 

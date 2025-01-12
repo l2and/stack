@@ -11,14 +11,10 @@ interface ToolLogoProps {
 export function ToolLogo({ src, alt }: ToolLogoProps) {
   const [error, setError] = useState(false)
 
-  if (error) {
-    return null
-  }
-
   return (
     <div className="relative w-8 h-8 flex-shrink-0">
       <Image
-        src={src}
+        src={error ? "/images/tools/placeholder.svg" : src}
         alt={alt}
         fill
         className="object-contain dark:invert"

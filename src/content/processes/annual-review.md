@@ -31,7 +31,7 @@ My annual review process helps me stay focused on what matters most and make int
    - Side projects evaluation
 
 3. **Financial Planning**
-   - Use My Financial Future to calculate needs
+   - Use MyFinancialFuture to calculate needs
    - Set realistic income targets
    - Review and adjust expenses
    - Plan for major investments

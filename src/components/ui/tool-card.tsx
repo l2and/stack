@@ -27,7 +27,7 @@ const getToolLogo = (slug: string): string => {
     'telegram': 'telegram',
     'x-twitter': 'x',
     'google-calendar': 'google-calendar',
-    'microsoft-todo': 'microsoft',
+    'microsoft-todo': 'microsoft-todo',
     'canva': 'canva',
     'perplexity': 'perplexity',
     'google': 'google',
@@ -65,7 +65,7 @@ export function ToolCard({ tool, showContent = false }: ToolCardProps) {
         <Link href={`/tools/${tool.slug}`} className="block">
           <Card className="h-full min-h-[270px] flex flex-col transition-colors group-hover:bg-muted/50">
             <CardHeader className="space-y-4">
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-col items-center gap-4 text-center">
                 <div className="flex items-center gap-3">
                   <ToolLogo
                     src={getToolLogo(tool.slug)}
@@ -75,10 +75,18 @@ export function ToolCard({ tool, showContent = false }: ToolCardProps) {
                     {tool.title}
                   </CardTitle>
                 </div>
-                <TooltipProvider>
+                <TooltipProvider delayDuration={0}>
                   <Tooltip>
                     <TooltipTrigger asChild>
-                      <div>
+                      <button 
+                        type="button" 
+                        className="touch-manipulation"
+                        onClick={(e) => {
+                          // Prevent the link navigation when clicking the tooltip
+                          e.preventDefault()
+                          e.stopPropagation()
+                        }}
+                      >
                         <Badge
                           variant={
                             tool.status === "Using"
@@ -103,15 +111,15 @@ export function ToolCard({ tool, showContent = false }: ToolCardProps) {
                         >
                           {tool.status}
                         </Badge>
-                      </div>
+                      </button>
                     </TooltipTrigger>
-                    <TooltipContent>
+                    <TooltipContent sideOffset={5} className="text-center">
                       <p>{getStatusTooltip(tool.status)}</p>
                     </TooltipContent>
                   </Tooltip>
                 </TooltipProvider>
               </div>
-              <div className="flex gap-2 flex-wrap">
+              <div className="flex gap-2 flex-wrap justify-center">
                 <Badge variant="outline">{tool.category}</Badge>
               </div>
             </CardHeader>
