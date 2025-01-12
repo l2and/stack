@@ -1,33 +1,29 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { siteConfig } from "@/config/site"
+import { WarpBackground } from "@/components/ui/warp-background"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-6 lg:p-24">
-      <div className="container flex flex-col items-center gap-4 text-center">
-        <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl">
-          Welcome to{" "}
-          <span className="gradient-text">{siteConfig.name}</span>
-        </h1>
-        
-        <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
-          {siteConfig.description}
-        </p>
-
-        <div className="flex gap-4">
-          <Link href="/tools">
-            <Button variant="default" size="lg" className="gradient-bg">
-              View My Tools
+    <WarpBackground className="min-h-screen">
+      <main className="flex min-h-screen flex-col items-center justify-center p-8 relative">
+        <div className="container max-w-3xl mx-auto text-center space-y-8">
+          <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-foreground to-foreground/60">
+            {siteConfig.name}
+          </h1>
+          <p className="text-xl text-muted-foreground">
+            {siteConfig.description}
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Button asChild>
+              <Link href="/tools">View My Tools</Link>
             </Button>
-          </Link>
-          <Link href="/processes">
-            <Button variant="outline" size="lg">
-              View My Processes
+            <Button asChild variant="outline">
+              <Link href="/processes">View My Processes</Link>
             </Button>
-          </Link>
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
+    </WarpBackground>
   )
 }
