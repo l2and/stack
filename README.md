@@ -20,7 +20,7 @@ A minimal, static site built with Next.js 15+ that documents my personal toolkit
 1. Fork this repository
 2. Clone your fork:
 ```bash
-git clone https://github.com/yourusername/stack.git
+git clone https://github.com/garysheng/stack.git
 cd stack
 ```
 
@@ -48,11 +48,12 @@ npm run dev
 ```markdown
 ---
 title: "Tool Name"
-status: "Using" | "Plan to Try" | "Plan to Build" | "Retired"
+status: "Using" | "Plan to Try" | "Plan to Build" | "Building" | "Retired"
 category: "AI" | "Productivity" | "Development" | "Communication" | "Design" | "Other"
 description: "Brief description of the tool"
 howToUse: "- Key use case 1\n- Key use case 2\n- Key use case 3"
 caveats: "Optional notes about limitations"
+url: "https://tool-url.com/"
 ---
 
 Detailed description of the tool goes here.
@@ -135,7 +136,8 @@ stack/
 │  │  └─ processes/          # Process markdown files
 │  ├─ lib/                    # Utility functions
 │  └─ types/                 # TypeScript types
-├─ public/                    # Static assets
+├─ public/
+│  └─ images/                # Static assets and tool logos
 └─ tailwind.config.js        # Tailwind configuration
 ```
 

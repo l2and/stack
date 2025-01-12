@@ -5,6 +5,7 @@ import { siteConfig } from "@/config/site"
 import { ThemeProvider } from "@/components/theme-provider"
 import { SiteHeader } from "@/components/site-header"
 import { cn } from "@/lib/utils"
+import { SiteFooter } from "@/components/site-footer"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -69,6 +70,7 @@ export default function RootLayout({
           <div className="relative flex min-h-screen flex-col">
             <SiteHeader />
             <main className="flex-1">{children}</main>
+            <SiteFooter />
           </div>
         </ThemeProvider>
       </body>

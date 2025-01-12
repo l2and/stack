@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { WarpBackground } from "@/components/ui/warp-background"
+import { GITHUB_REPO_URL } from "@/lib/constants"
 
 export default function Home() {
   return (
@@ -26,9 +27,19 @@ export default function Home() {
               View My Processes
             </Link>
           </div>
-          <p className="mt-4 text-xs text-gray-500 dark:text-gray-400">
-            Fork this template to showcase your own stack!
-          </p>
+          <div className="flex flex-col gap-2 items-center">
+            <p className="mt-4 text-xs text-gray-500 dark:text-gray-400">
+              Fork this template to showcase your own stack!
+            </p>
+            <a
+              href={GITHUB_REPO_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-emerald-600 hover:text-emerald-700 dark:text-emerald-500 dark:hover:text-emerald-400"
+            >
+              View on GitHub ↗
+            </a>
+          </div>
         </div>
       </main>
     </WarpBackground>
