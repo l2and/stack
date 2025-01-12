@@ -57,13 +57,20 @@ export default function ToolsPage() {
                       <CardHeader>
                         <div className="flex justify-between items-start mb-2">
                           <CardTitle className="text-xl">{tool.title}</CardTitle>
-                          <Badge 
+                          <Badge
                             variant={
                               tool.status === "Currently Using"
                                 ? "default"
                                 : tool.status === "Plan to Try"
                                 ? "secondary"
+                                : tool.status === "Actively Maintained"
+                                ? "gold"
                                 : "destructive"
+                            }
+                            className={
+                              tool.status === "Actively Maintained"
+                                ? "bg-amber-500 hover:bg-amber-600 animate-pulse shadow-lg shadow-amber-200/50 dark:shadow-amber-900/50"
+                                : ""
                             }
                           >
                             {tool.status}
