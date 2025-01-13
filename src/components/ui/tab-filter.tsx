@@ -3,7 +3,6 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Tool } from "@/types"
 import { ToolCard } from "./tool-card"
 import { ProcessCard, ProcessCardProps } from "./process-card"
-import { Process } from "@/types"
 
 type ProcessCategory = ProcessCardProps["category"]
 
