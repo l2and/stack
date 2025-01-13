@@ -5,9 +5,10 @@ import { useRef, useState } from "react"
 interface GlowCardProps {
   children: React.ReactNode
   className?: string
+  onClick?: (e: React.MouseEvent) => void
 }
 
-export function GlowCard({ children, className = "" }: GlowCardProps) {
+export function GlowCard({ children, className = "", onClick }: GlowCardProps) {
   const [position, setPosition] = useState({ x: 0, y: 0 })
   const [opacity, setOpacity] = useState(0)
   const [rotation, setRotation] = useState({ x: 0, y: 0 })
@@ -47,6 +48,7 @@ export function GlowCard({ children, className = "" }: GlowCardProps) {
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       onMouseEnter={handleMouseEnter}
+      onClick={onClick}
       className={`relative ${className}`}
       style={{
         perspective: "1000px",

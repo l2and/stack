@@ -70,89 +70,87 @@ export function ToolCard({ tool, showContent = false }: ToolCardProps) {
 
   return (
     <div className="group select-none">
-      <GlowCard>
-        <div onClick={handleCardClick} className="cursor-pointer">
-          <Card className="h-full min-h-[250px] flex flex-col transition-colors group-hover:bg-muted/50">
-            <CardHeader className="space-y-4">
-              <div className="flex flex-col items-center gap-4 text-center">
-                <div className="flex items-center gap-3">
-                  <ToolLogo
-                    src={getToolLogo(tool.slug)}
-                    alt={`${tool.title} logo`}
-                  />
-                  <CardTitle className="text-2xl font-bold group-hover:text-primary transition-colors">
-                    {tool.title}
-                  </CardTitle>
-                </div>
-                <TooltipProvider delayDuration={0}>
-                  <Tooltip>
-                    <TooltipTrigger asChild>
-                      <button 
-                        type="button" 
-                        className="touch-manipulation"
-                        onClick={(e) => {
-                          e.stopPropagation();
-                        }}
+      <GlowCard onClick={handleCardClick}>
+        <Card className="h-full min-h-[250px] flex flex-col transition-colors group-hover:bg-muted/50">
+          <CardHeader className="space-y-4">
+            <div className="flex flex-col items-center gap-4 text-center">
+              <div className="flex items-center gap-3">
+                <ToolLogo
+                  src={getToolLogo(tool.slug)}
+                  alt={`${tool.title} logo`}
+                />
+                <CardTitle className="text-2xl font-bold group-hover:text-primary transition-colors">
+                  {tool.title}
+                </CardTitle>
+              </div>
+              <TooltipProvider delayDuration={0}>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <button 
+                      type="button" 
+                      className="touch-manipulation"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                      }}
+                    >
+                      <Badge
+                        variant={
+                          tool.status === "Using"
+                            ? "default"
+                            : tool.status === "Plan to Try"
+                            ? "secondary"
+                            : tool.status === "Building"
+                            ? "gold"
+                            : tool.status === "Plan to Build"
+                            ? "monochrome"
+                            : tool.status === "Trying"
+                            ? "default"
+                            : "destructive"
+                        }
+                        className={`w-fit badge ${
+                          tool.status === "Building"
+                            ? "bg-amber-500 hover:bg-amber-600 animate-pulse shadow-lg shadow-amber-200/50 dark:shadow-amber-900/50"
+                            : tool.status === "Trying"
+                            ? "bg-blue-500 hover:bg-blue-600"
+                            : ""
+                        }`}
                       >
-                        <Badge
-                          variant={
-                            tool.status === "Using"
-                              ? "default"
-                              : tool.status === "Plan to Try"
-                              ? "secondary"
-                              : tool.status === "Building"
-                              ? "gold"
-                              : tool.status === "Plan to Build"
-                              ? "monochrome"
-                              : tool.status === "Trying"
-                              ? "default"
-                              : "destructive"
-                          }
-                          className={`w-fit badge ${
-                            tool.status === "Building"
-                              ? "bg-amber-500 hover:bg-amber-600 animate-pulse shadow-lg shadow-amber-200/50 dark:shadow-amber-900/50"
-                              : tool.status === "Trying"
-                              ? "bg-blue-500 hover:bg-blue-600"
-                              : ""
-                          }`}
-                        >
-                          {tool.status}
-                        </Badge>
-                      </button>
-                    </TooltipTrigger>
-                    <TooltipContent sideOffset={5} className="text-center">
-                      <p>{getStatusTooltip(tool.status)}</p>
-                    </TooltipContent>
-                  </Tooltip>
-                </TooltipProvider>
-              </div>
-              <div className="flex gap-2 flex-wrap justify-center">
-                <Badge variant="outline">{tool.category}</Badge>
-              </div>
-            </CardHeader>
-            <CardContent className="flex-grow">
-              <p className="text-muted-foreground mb-4">{tool.description}</p>
-              {showContent && (
-                <div className="grid gap-4 md:grid-cols-2">
+                        {tool.status}
+                      </Badge>
+                    </button>
+                  </TooltipTrigger>
+                  <TooltipContent sideOffset={5} className="text-center">
+                    <p>{getStatusTooltip(tool.status)}</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+            </div>
+            <div className="flex gap-2 flex-wrap justify-center">
+              <Badge variant="outline">{tool.category}</Badge>
+            </div>
+          </CardHeader>
+          <CardContent className="flex-grow">
+            <p className="text-muted-foreground mb-4">{tool.description}</p>
+            {showContent && (
+              <div className="grid gap-4 md:grid-cols-2">
+                <div className="space-y-2">
+                  <h3 className="font-semibold">How to Use</h3>
+                  <div className="text-sm text-muted-foreground whitespace-pre-line">
+                    {tool.howToUse}
+                  </div>
+                </div>
+                {tool.caveats && (
                   <div className="space-y-2">
-                    <h3 className="font-semibold">How to Use</h3>
+                    <h3 className="font-semibold">Caveats</h3>
                     <div className="text-sm text-muted-foreground whitespace-pre-line">
-                      {tool.howToUse}
+                      {tool.caveats}
                     </div>
                   </div>
-                  {tool.caveats && (
-                    <div className="space-y-2">
-                      <h3 className="font-semibold">Caveats</h3>
-                      <div className="text-sm text-muted-foreground whitespace-pre-line">
-                        {tool.caveats}
-                      </div>
-                    </div>
-                  )}
-                </div>
-              )}
-            </CardContent>
-          </Card>
-        </div>
+                )}
+              </div>
+            )}
+          </CardContent>
+        </Card>
       </GlowCard>
       {tool.url && (
         <div className="mt-2 px-6 text-center">
