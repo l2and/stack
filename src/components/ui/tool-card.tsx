@@ -82,9 +82,11 @@ export function ToolCard({ tool, showContent = false }: ToolCardProps) {
                         type="button" 
                         className="touch-manipulation"
                         onClick={(e) => {
-                          // Prevent the link navigation when clicking the tooltip
-                          e.preventDefault()
-                          e.stopPropagation()
+                          // Only prevent navigation if the tooltip is being shown
+                          if (e.target === e.currentTarget) {
+                            e.preventDefault()
+                            e.stopPropagation()
+                          }
                         }}
                       >
                         <Badge
