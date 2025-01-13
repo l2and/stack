@@ -21,18 +21,20 @@ export function TabFilter<T>({
   return (
     <div className="relative mt-8">
       <Tabs defaultValue={defaultCategory} className="flex flex-col">
-        <div className="sticky top-0 z-10 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60 pb-4">
-          <TabsList className="flex flex-wrap justify-center gap-2 bg-transparent min-h-fit h-auto py-2">
-            {categories.map((category) => (
-              <TabsTrigger
-                key={category}
-                value={category}
-                className="rounded-full bg-muted px-4 py-2 data-[state=active]:bg-emerald-600 data-[state=active]:text-white"
-              >
-                {category}
-              </TabsTrigger>
-            ))}
-          </TabsList>
+        <div className="sticky top-14 z-10 -mx-2 px-2 md:mx-0 md:px-0">
+          <div className="bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 pb-4 rounded-xl">
+            <TabsList className="flex flex-wrap justify-center gap-2 bg-transparent min-h-fit h-auto py-2">
+              {categories.map((category) => (
+                <TabsTrigger
+                  key={category}
+                  value={category}
+                  className="rounded-full bg-muted px-4 py-2 data-[state=active]:bg-emerald-600 data-[state=active]:text-white"
+                >
+                  {category}
+                </TabsTrigger>
+              ))}
+            </TabsList>
+          </div>
         </div>
 
         <div className="mt-4">
