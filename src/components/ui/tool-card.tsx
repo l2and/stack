@@ -57,7 +57,7 @@ const getStatusTooltip = (status: Tool['status']): string => {
   }
 }
 
-export function ToolCard({ tool, showContent = false }: ToolCardProps) {
+export function ToolCard({ tool }: ToolCardProps) {
   const handleCardClick = (e: React.MouseEvent) => {
     // If clicking the badge, don't navigate
     if (e.target instanceof Element && e.target.closest('.badge')) {
