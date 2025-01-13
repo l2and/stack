@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { GlowCard } from "@/components/ui/glow-card"
 import { Process } from "@/types"
+import { CalendarCheck2, FileEdit, Goal, HeartHandshake, Lightbulb, ListTodo } from "lucide-react"
 
 interface ProcessCardProps {
   title: string
@@ -15,6 +16,18 @@ interface ProcessCardProps {
   notes?: string
   category: Process["category"]
   showContent?: boolean
+}
+
+const getProcessIcon = (slug: string) => {
+  const iconMap: Record<string, React.ReactNode> = {
+    'annual-review': <Goal className="w-6 h-6" />,
+    'blog-post-workflow': <FileEdit className="w-6 h-6" />,
+    'daily-task-management': <ListTodo className="w-6 h-6" />,
+    'project-evaluation': <Lightbulb className="w-6 h-6" />,
+    'relationship-management': <HeartHandshake className="w-6 h-6" />,
+    'staying-open': <CalendarCheck2 className="w-6 h-6" />,
+  }
+  return iconMap[slug] || <Lightbulb className="w-6 h-6" />
 }
 
 export function ProcessCard({
@@ -28,7 +41,7 @@ export function ProcessCard({
   showContent = false,
 }: ProcessCardProps) {
   const content = (
-    <Card className="h-full min-h-[300px] transition-colors group-hover:bg-muted/50">
+    <Card className="h-full min-h-[300px] transition-colors group-hover:bg-muted/50 relative">
       <CardHeader className="space-y-2">
         <div className="flex items-start justify-between">
           <CardTitle className="text-xl font-bold transition-colors group-hover:text-emerald-400">
@@ -74,6 +87,9 @@ export function ProcessCard({
           </>
         )}
       </CardContent>
+      <div className="absolute bottom-4 left-4 text-muted-foreground/40">
+        {getProcessIcon(slug)}
+      </div>
     </Card>
   )
 
