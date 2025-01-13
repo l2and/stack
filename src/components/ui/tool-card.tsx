@@ -71,15 +71,15 @@ export function ToolCard({ tool, showContent = false }: ToolCardProps) {
   return (
     <div className="group select-none">
       <GlowCard onClick={handleCardClick}>
-        <Card className="h-full min-h-[250px] flex flex-col transition-colors group-hover:bg-muted/50">
-          <CardHeader className="space-y-4">
+        <Card className="h-[250px] flex flex-col transition-colors group-hover:bg-muted/50">
+          <CardHeader className="flex-none space-y-4">
             <div className="flex flex-col items-center gap-4 text-center">
               <div className="flex items-center gap-3">
                 <ToolLogo
                   src={getToolLogo(tool.slug)}
                   alt={`${tool.title} logo`}
                 />
-                <CardTitle className="text-2xl font-bold group-hover:text-primary transition-colors">
+                <CardTitle className="text-2xl font-bold group-hover:text-primary transition-colors truncate">
                   {tool.title}
                 </CardTitle>
               </div>
@@ -129,26 +129,10 @@ export function ToolCard({ tool, showContent = false }: ToolCardProps) {
               <Badge variant="outline">{tool.category}</Badge>
             </div>
           </CardHeader>
-          <CardContent className="flex-grow">
-            <p className="text-muted-foreground mb-4">{tool.description}</p>
-            {showContent && (
-              <div className="grid gap-4 md:grid-cols-2">
-                <div className="space-y-2">
-                  <h3 className="font-semibold">How to Use</h3>
-                  <div className="text-sm text-muted-foreground whitespace-pre-line">
-                    {tool.howToUse}
-                  </div>
-                </div>
-                {tool.caveats && (
-                  <div className="space-y-2">
-                    <h3 className="font-semibold">Caveats</h3>
-                    <div className="text-sm text-muted-foreground whitespace-pre-line">
-                      {tool.caveats}
-                    </div>
-                  </div>
-                )}
-              </div>
-            )}
+          <CardContent className="flex-1 overflow-hidden">
+            <p className="text-muted-foreground line-clamp-3">
+              {tool.description}
+            </p>
           </CardContent>
         </Card>
       </GlowCard>

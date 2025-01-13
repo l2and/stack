@@ -6,6 +6,8 @@ import { notFound } from "next/navigation"
 import { ToolCard } from "@/components/ui/tool-card"
 import { Card, CardContent } from "@/components/ui/card"
 import Markdown from "react-markdown"
+import Link from "next/link"
+import { ChevronLeft } from "lucide-react"
 
 interface PageProps {
   params: Promise<{
@@ -47,6 +49,13 @@ export default async function ToolPage({ params }: PageProps) {
   return (
     <main className="container mx-auto px-4 py-8">
       <div className="max-w-4xl mx-auto space-y-8">
+        <Link
+          href="/tools"
+          className="inline-flex items-center text-sm text-muted-foreground hover:text-foreground transition-colors"
+        >
+          <ChevronLeft className="w-4 h-4 mr-1" />
+          Back to Tools
+        </Link>
         <ToolCard tool={tool} showContent />
         <Card>
           <CardContent className="pt-6">
