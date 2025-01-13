@@ -22,7 +22,7 @@ const Beam = React.forwardRef<HTMLDivElement, BeamProps>(({ width, x, delay, dur
         "--x": `${x}`,
         "--width": `${width}`,
         "--aspect-ratio": `${ar}`,
-        "--background": `linear-gradient(hsl(${hue} 80% 60%), transparent)`,
+        "--background": `linear-gradient(hsl(${hue} 30% 70% / 0.3), transparent)`,
       } as React.CSSProperties}
       className={`absolute left-[var(--x)] top-0 [aspect-ratio:1/var(--aspect-ratio)] [background:var(--background)] [width:var(--width)]`}
       initial={{ y: "100cqmax", x: "-50%" }}
@@ -82,7 +82,7 @@ export const WarpBackground = React.forwardRef<HTMLDivElement, WarpBackgroundPro
   const leftBeams = useMemo(() => generateBeams(), [generateBeams]);
 
   return (
-    <div ref={ref} className={cn("relative rounded border p-20", className)} {...props}>
+    <div ref={ref} className={cn("relative rounded border", className)} {...props}>
       <div
         style={{
           "--perspective": `${perspective}px`,

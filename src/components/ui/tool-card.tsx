@@ -1,6 +1,5 @@
 "use client"
 
-import Link from "next/link"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { GlowCard } from "@/components/ui/glow-card"
@@ -59,10 +58,20 @@ const getStatusTooltip = (status: Tool['status']): string => {
 }
 
 export function ToolCard({ tool, showContent = false }: ToolCardProps) {
+  const handleCardClick = (e: React.MouseEvent) => {
+    // If clicking the badge, don't navigate
+    if (e.target instanceof Element && e.target.closest('.badge')) {
+      return;
+    }
+    
+    // Otherwise, navigate to the tool page
+    window.location.href = `/tools/${tool.slug}`;
+  };
+
   return (
-    <div className="group">
+    <div className="group select-none">
       <GlowCard>
-        <Link href={`/tools/${tool.slug}`} className="block">
+        <div onClick={handleCardClick} className="cursor-pointer">
           <Card className="h-full min-h-[250px] flex flex-col transition-colors group-hover:bg-muted/50">
             <CardHeader className="space-y-4">
               <div className="flex flex-col items-center gap-4 text-center">
@@ -82,11 +91,7 @@ export function ToolCard({ tool, showContent = false }: ToolCardProps) {
                         type="button" 
                         className="touch-manipulation"
                         onClick={(e) => {
-                          // Only prevent navigation if the tooltip is being shown
-                          if (e.target === e.currentTarget) {
-                            e.preventDefault()
-                            e.stopPropagation()
-                          }
+                          e.stopPropagation();
                         }}
                       >
                         <Badge
@@ -103,7 +108,7 @@ export function ToolCard({ tool, showContent = false }: ToolCardProps) {
                               ? "default"
                               : "destructive"
                           }
-                          className={`w-fit ${
+                          className={`w-fit badge ${
                             tool.status === "Building"
                               ? "bg-amber-500 hover:bg-amber-600 animate-pulse shadow-lg shadow-amber-200/50 dark:shadow-amber-900/50"
                               : tool.status === "Trying"
@@ -147,7 +152,7 @@ export function ToolCard({ tool, showContent = false }: ToolCardProps) {
               )}
             </CardContent>
           </Card>
-        </Link>
+        </div>
       </GlowCard>
       {tool.url && (
         <div className="mt-2 px-6 text-center">
