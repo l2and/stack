@@ -28,7 +28,7 @@ export function ProcessCard({
   showContent = false,
 }: ProcessCardProps) {
   const content = (
-    <Card className="h-full transition-colors group-hover:bg-muted/50">
+    <Card className="h-full min-h-[300px] transition-colors group-hover:bg-muted/50">
       <CardHeader className="space-y-2">
         <div className="flex items-start justify-between">
           <CardTitle className="text-xl font-bold transition-colors group-hover:text-emerald-400">

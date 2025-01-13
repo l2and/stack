@@ -63,7 +63,7 @@ export function ToolCard({ tool, showContent = false }: ToolCardProps) {
     <div className="group">
       <GlowCard>
         <Link href={`/tools/${tool.slug}`} className="block">
-          <Card className="h-full min-h-[270px] flex flex-col transition-colors group-hover:bg-muted/50">
+          <Card className="h-full min-h-[250px] flex flex-col transition-colors group-hover:bg-muted/50">
             <CardHeader className="space-y-4">
               <div className="flex flex-col items-center gap-4 text-center">
                 <div className="flex items-center gap-3">
@@ -148,7 +148,7 @@ export function ToolCard({ tool, showContent = false }: ToolCardProps) {
         </Link>
       </GlowCard>
       {tool.url && (
-        <div className="mt-2 px-6">
+        <div className="mt-2 px-6 text-center">
           <ExternalLink 
             href={tool.url}
             className="text-sm text-muted-foreground hover:text-foreground transition-colors"
