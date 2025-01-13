@@ -18,7 +18,10 @@ export default function ToolsPage() {
   return (
     <main className="container mx-auto px-4 py-8">
       <div className="max-w-4xl mx-auto space-y-8">
-        <h1 className="text-4xl font-bold">Tools</h1>
+        <div className="text-center space-y-2">
+          <h1 className="text-4xl font-bold">Tools</h1>
+          <p className="text-lg text-muted-foreground">A curated collection of tools I use daily to enhance productivity and creativity.</p>
+        </div>
         <TabFilter items={tools} type="tool" />
       </div>
     </main>

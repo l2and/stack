@@ -24,7 +24,10 @@ export default function ProcessesPage() {
   return (
     <main className="container mx-auto px-4 py-8">
       <div className="max-w-4xl mx-auto space-y-8">
-        <h1 className="text-4xl font-bold">Processes</h1>
+        <div className="text-center space-y-2">
+          <h1 className="text-4xl font-bold">Processes</h1>
+          <p className="text-lg text-muted-foreground">My systematic approaches to common tasks and workflows.</p>
+        </div>
         <TabFilter items={processes} type="process" />
       </div>
     </main>
