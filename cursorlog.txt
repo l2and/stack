@@ -158,3 +158,10 @@
     - Added hover state transitions to ToolCard
     - Improved visual feedback and interactivity
     - Enhanced overall user experience 
+
+[2024-03-27]
+- Added FlowVoice as a new tool with detailed markdown documentation
+- Created FlowVoice SVG icon with microphone and wave pattern design 
+
+- Added TanStack Query as a new tool with detailed markdown documentation
+- Created TanStack Query SVG icon with data flow visualization 
