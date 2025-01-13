@@ -1,46 +1,32 @@
-import fs from "fs"
-import path from "path"
-import matter from "gray-matter"
-import { Process } from "@/types"
-import { ProcessCard } from "@/components/ui/process-card"
+"use client"
+
+import { useEffect, useState } from "react"
 import { TabFilter } from "@/components/ui/tab-filter"
 
-async function getProcesses() {
-  const processesDir = path.join(process.cwd(), "src/content/processes")
-  const files = fs.readdirSync(processesDir)
-
-  return files.map((filename) => {
-    const filePath = path.join(processesDir, filename)
-    const fileContents = fs.readFileSync(filePath, "utf8")
-    const { data } = matter(fileContents)
-    return {
-      ...data,
-      slug: filename.replace(/\.md$/, ""),
-    } as Process
-  })
+interface Process {
+  title: string
+  category: string
+  description: string
+  slug: string
 }
 
-export default async function ProcessesPage() {
-  const processes = await getProcesses()
-  const categories = ["All", "Personal", "Professional", "Development", "Content", "Other"]
+export default function ProcessesPage() {
+  const [processes, setProcesses] = useState<Process[]>([])
+
+  useEffect(() => {
+    fetch('/api/dev/content')
+      .then(res => res.json())
+      .then(data => {
+        setProcesses(data.processes)
+      })
+  }, [])
 
   return (
-    <div className="container py-6 md:py-12">
-      <div className="flex flex-col items-center justify-center text-center">
-        <h1 className="text-4xl font-bold tracking-tighter">My Processes</h1>
-        <p className="mt-4 text-lg text-muted-foreground">
-          A collection of workflows and methods I use to stay productive and organized.
-        </p>
+    <main className="container mx-auto px-4 py-8">
+      <div className="max-w-4xl mx-auto space-y-8">
+        <h1 className="text-4xl font-bold">Processes</h1>
+        <TabFilter items={processes} type="process" />
       </div>
-
-      <TabFilter
-        items={processes}
-        categories={categories}
-        renderItem={(process) => <ProcessCard {...process} />}
-        filterItem={(process, category) => process.category === category}
-      />
-    </div>
+    </main>
   )
-}
-
-export const revalidate = false // static 
+} 

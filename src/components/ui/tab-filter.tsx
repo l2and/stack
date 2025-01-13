@@ -1,21 +1,52 @@
 import { ReactNode } from "react"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Tool } from "@/types"
+import { ToolCard } from "./tool-card"
+import { ProcessCard, ProcessCardProps } from "./process-card"
+import { Process } from "@/types"
+
+type ProcessCategory = ProcessCardProps["category"]
+
+interface Process {
+  title: string
+  category: ProcessCategory
+  description: string
+  slug: string
+  toolsInvolved: string[]
+  steps: string[]
+  notes?: string
+  showContent?: boolean
+}
 
 interface TabFilterProps<T> {
   items: T[]
-  categories: string[]
+  type: "tool" | "process"
+  categories?: string[]
   defaultCategory?: string
-  renderItem: (item: T) => ReactNode
-  filterItem: (item: T, category: string) => boolean
+  renderItem?: (item: T) => ReactNode
+  filterItem?: (item: T, category: string) => boolean
   gridClassName?: string
 }
 
 export function TabFilter<T>({
   items,
-  categories,
+  type,
+  categories = type === "tool" 
+    ? ["All", "AI", "Productivity", "Development", "Communication", "Design", "Other"]
+    : ["All", "Personal", "Professional", "Development", "Content", "Other"],
   defaultCategory = "All",
-  renderItem,
-  filterItem,
+  renderItem = (item: T) => {
+    if (type === "tool") {
+      return <ToolCard tool={item as Tool} />
+    }
+    return <ProcessCard {...item as Process} />
+  },
+  filterItem = (item: T, category: string) => {
+    const itemCategory = type === "tool" 
+      ? (item as Tool).category 
+      : (item as Process).category
+    return category === "All" || itemCategory === category
+  },
   gridClassName = "grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
 }: TabFilterProps<T>) {
   return (

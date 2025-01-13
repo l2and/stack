@@ -18,6 +18,8 @@ interface ProcessCardProps {
   showContent?: boolean
 }
 
+export type { ProcessCardProps }
+
 const getProcessIcon = (slug: string) => {
   const iconMap: Record<string, React.ReactNode> = {
     'annual-review': <Goal className="w-6 h-6" />,
