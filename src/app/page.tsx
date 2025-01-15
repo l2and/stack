@@ -6,8 +6,8 @@ import { GITHUB_REPO_URL } from "@/lib/constants"
 
 export default function Home() {
   return (
-    <WarpBackground>
-      <main className="relative grid place-items-center min-h-[600px] w-full px-2 py-4 md:px-24 md:py-12 overflow-hidden">
+    <WarpBackground className="min-h-screen">
+      <main className="relative grid place-items-center min-h-screen w-full px-2 py-4 md:px-24 md:py-12 overflow-hidden">
         <div className="relative flex flex-col items-center justify-center gap-1 md:gap-4 text-center">
           {/* Content Section with higher z-index */}
           <div className="relative z-50 flex flex-col items-center">

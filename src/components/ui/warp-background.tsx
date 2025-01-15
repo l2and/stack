@@ -82,7 +82,7 @@ export const WarpBackground = React.forwardRef<HTMLDivElement, WarpBackgroundPro
   const leftBeams = useMemo(() => generateBeams(), [generateBeams]);
 
   return (
-    <div ref={ref} className={cn("relative rounded border", className)} {...props}>
+    <div ref={ref} className={cn("relative rounded border w-full h-full", className)} {...props}>
       <div
         style={{
           "--perspective": `${perspective}px`,
@@ -90,7 +90,7 @@ export const WarpBackground = React.forwardRef<HTMLDivElement, WarpBackgroundPro
           "--beam-size": `${beamSize}%`,
         } as React.CSSProperties}
         className={
-          "pointer-events-none absolute left-0 top-0 size-full overflow-hidden [clip-path:inset(0)] [container-type:size] [perspective:var(--perspective)] [transform-style:preserve-3d]"
+          "pointer-events-none absolute inset-0 overflow-hidden [clip-path:inset(0)] [container-type:size] [perspective:var(--perspective)] [transform-style:preserve-3d]"
         }
       >
         {/* top side */}
@@ -142,7 +142,7 @@ export const WarpBackground = React.forwardRef<HTMLDivElement, WarpBackgroundPro
           ))}
         </div>
       </div>
-      <div className="relative">{children}</div>
+      <div className="relative h-full">{children}</div>
     </div>
   );
 });
