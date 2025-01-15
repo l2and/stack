@@ -165,3 +165,9 @@
 
 - Added TanStack Query as a new tool with detailed markdown documentation
 - Created TanStack Query SVG icon with data flow visualization 
+
+- Added Motion (formerly Framer Motion) as a new tool with detailed markdown documentation
+- Created Motion SVG icon with animation path visualization 
+
+- Added Expo as a new tool with detailed markdown documentation
+- Created Expo SVG icon with mobile device and logo visualization 

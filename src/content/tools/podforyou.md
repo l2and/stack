@@ -1,5 +1,5 @@
 ---
-title: Podforyou
+title: PodForYou
 description: AI-powered platform that automatically generates custom podcasts with AI hosts to summarize your newsletters
 category: AI
 status: Building

@@ -130,7 +130,7 @@ export function ToolCard({ tool }: ToolCardProps) {
             </div>
           </CardHeader>
           <CardContent className="flex-1 overflow-hidden">
-            <p className="text-muted-foreground line-clamp-3">
+            <p className="text-muted-foreground line-clamp-3 text-center">
               {tool.description}
             </p>
           </CardContent>
