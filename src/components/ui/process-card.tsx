@@ -43,30 +43,27 @@ export function ProcessCard({
   showContent = false,
 }: ProcessCardProps) {
   const content = (
-    <Card className="h-full min-h-[300px] transition-colors group-hover:bg-muted/50 relative select-none">
-      <CardHeader className="space-y-2">
+    <Card className="h-full min-h-[300px] transition-colors group-hover:bg-muted/50 relative select-none flex flex-col">
+      <CardHeader className="space-y-4">
         <div className="flex items-start justify-between">
           <CardTitle className="text-xl font-bold transition-colors group-hover:text-emerald-400">
             {title}
           </CardTitle>
-          <Badge variant="outline" className="ml-2 shrink-0">
-            {category}
-          </Badge>
         </div>
         <div className="flex flex-wrap gap-2">
-          {toolsInvolved.slice(0, showContent ? undefined : 3).map((tool) => (
+          {(toolsInvolved || []).slice(0, showContent ? undefined : 3).map((tool) => (
             <Badge key={tool} variant="secondary" className="text-xs">
               {tool}
             </Badge>
           ))}
-          {!showContent && toolsInvolved.length > 3 && (
+          {!showContent && toolsInvolved && toolsInvolved.length > 3 && (
             <Badge variant="secondary" className="text-xs">
               +{toolsInvolved.length - 3} more
             </Badge>
           )}
         </div>
       </CardHeader>
-      <CardContent className="space-y-6">
+      <CardContent className="space-y-6 flex-1">
         <p className="text-sm text-muted-foreground">{description}</p>
         {showContent && (
           <>
@@ -89,8 +86,13 @@ export function ProcessCard({
           </>
         )}
       </CardContent>
-      <div className="absolute bottom-4 left-4 text-muted-foreground/40">
-        {getProcessIcon(slug)}
+      <div className="p-6 mt-auto border-t flex justify-between items-center">
+        <div className="text-muted-foreground/40">
+          {getProcessIcon(slug)}
+        </div>
+        <Badge variant="outline" className="shrink-0">
+          {category}
+        </Badge>
       </div>
     </Card>
   )

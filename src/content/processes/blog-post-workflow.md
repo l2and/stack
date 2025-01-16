@@ -2,10 +2,18 @@
 title: "Blog Post Writing Workflow"
 category: "Content Creation"
 description: "A systematic approach to writing impactful blog posts, starting from authentic inspiration and leveraging AI and human feedback"
-tools:
-  - flowvoice
-  - chatgpt
-  - notion
+toolsInvolved: ["FlowVoice", "ChatGPT", "Notion"]
+steps:
+  - "Find Authentic Inspiration"
+  - "Brain Dump via Voice"
+  - "Transcribe and Process"
+  - "Generate Initial Outline"
+  - "Refine Structure"
+  - "Draft and Edit"
+  - "Gather Diverse Feedback"
+  - "Iterate and Improve"
+  - "Publish and Share"
+  - "Strategic Promotion"
 status: "Active"
 ---
 

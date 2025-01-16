@@ -1,11 +1,17 @@
 ---
 title: "Project-Based Learning Workflow"
-category: "Personal Growth"
+category: "Personal"
 description: "A practical approach to learning through building meaningful projects, with emphasis on documentation and knowledge sharing"
-tools:
-  - anno
-  - chatgpt
-  - cursor
+toolsInvolved: ["Anno", "ChatGPT", "Cursor"]
+steps:
+  - "Project Ideation with Purpose"
+  - "Vision and Scope Definition"
+  - "Research and Exploration"
+  - "Iterative Building and Learning"
+  - "Conscious Documentation"
+  - "Testing and Feedback"
+  - "Knowledge Sharing"
+  - "Reflection and Integration"
 status: "Active"
 ---
 
@@ -90,4 +96,8 @@ A systematic process for learning through building projects that matter, while d
    - Learn from teaching others
    - Build learning communities
    - Contribute to discussions
-   - Create valuable content 
+   - Create valuable content
+
+&nbsp;
+&nbsp;
+&nbsp; 

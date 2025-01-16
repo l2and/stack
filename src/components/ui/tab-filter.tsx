@@ -46,7 +46,7 @@ export function TabFilter<T>({
       : (item as Process).category
     return category === "All" || itemCategory === category
   },
-  gridClassName = "grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+  gridClassName = "grid gap-6 sm:grid-cols-2"
 }: TabFilterProps<T>) {
   return (
     <div className="relative mt-8">
