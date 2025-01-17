@@ -20,7 +20,7 @@ export default function ToolsPage() {
       <div className="max-w-4xl mx-auto space-y-8">
         <div className="text-center space-y-2">
           <h1 className="text-4xl font-bold">Tools</h1>
-          <p className="text-lg text-muted-foreground">A curated collection of tools I use daily to enhance productivity and creativity.</p>
+          <p className="text-lg text-muted-foreground">A curated collection of {tools.length} tools I use daily to enhance productivity and creativity.</p>
         </div>
         <TabFilter items={tools} type="tool" />
       </div>

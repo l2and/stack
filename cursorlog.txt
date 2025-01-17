@@ -175,4 +175,8 @@
 [2024-03-28]
 - Added Mobbin as a new tool with "Plan to Try" status
 - Created Mobbin SVG icon with mobile device and screens design
-- Added detailed documentation based on Avi Schiffman's recommendation 
+- Added detailed documentation based on Avi Schiffman's recommendation
+
+- Added Speechify as a new tool with "Using" status
+- Created Speechify SVG icon with wave pattern design
+- Added detailed documentation about article listening and text-to-speech features 
