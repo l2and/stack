@@ -64,6 +64,11 @@ export function ToolCard({ tool, showContent = false }: ToolCardProps) {
       return;
     }
     
+    // Don't navigate if showing content (detail view)
+    if (showContent) {
+      return;
+    }
+    
     // Otherwise, navigate to the tool page
     window.location.href = `/tools/${tool.id}`;
   };
@@ -71,7 +76,7 @@ export function ToolCard({ tool, showContent = false }: ToolCardProps) {
   return (
     <div className="group select-none">
       <GlowCard onClick={handleCardClick}>
-        <Card className={`flex flex-col transition-colors group-hover:bg-muted/50 ${showContent ? 'min-h-[400px]' : 'h-[250px]'}`}>
+        <Card className={`flex flex-col transition-colors group-hover:bg-muted/50 ${showContent ? '' : 'h-[250px]'}`}>
           <CardHeader className="flex-none space-y-4">
             <div className="flex flex-col items-center gap-4 text-center">
               <div className="flex items-center gap-3">
@@ -134,43 +139,49 @@ export function ToolCard({ tool, showContent = false }: ToolCardProps) {
               )}
             </div>
           </CardHeader>
-          <CardContent className="flex-1 overflow-hidden space-y-4">
-            <p className="text-muted-foreground line-clamp-3 text-center">
+          <CardContent className="flex-1 space-y-6">
+            <p className="text-muted-foreground text-center">
               {tool.description}
             </p>
             {showContent && (
-              <>
-                {tool.useCases && tool.useCases.length > 0 && (
-                  <div className="space-y-2">
-                    <h3 className="font-semibold">Use Cases</h3>
-                    {tool.useCases.map((useCase, index) => (
-                      <div key={index} className="space-y-1">
-                        <h4 className="text-sm font-medium">{useCase.title}</h4>
-                        <ul className="text-sm text-muted-foreground list-disc pl-4">
-                          {useCase.items.map((item, itemIndex) => (
-                            <li key={itemIndex}>{item}</li>
-                          ))}
-                        </ul>
-                      </div>
-                    ))}
-                  </div>
-                )}
-                {tool.tips && tool.tips.length > 0 && (
-                  <div className="space-y-2">
-                    <h3 className="font-semibold">Pro Tips</h3>
-                    {tool.tips.map((tip, index) => (
-                      <div key={index} className="space-y-1">
-                        <h4 className="text-sm font-medium">{tip.title}</h4>
-                        <ul className="text-sm text-muted-foreground list-disc pl-4">
-                          {tip.items.map((item, itemIndex) => (
-                            <li key={itemIndex}>{item}</li>
-                          ))}
-                        </ul>
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="space-y-6">
+                  {/* Use Cases Section */}
+                  {tool.useCases && tool.useCases.length > 0 && (
+                    <div className="space-y-4">
+                      <h2 className="text-lg font-semibold">Use Cases</h2>
+                      {tool.useCases.map((useCase, index) => (
+                        <div key={index} className="space-y-2">
+                          <h3 className="text-sm font-medium text-muted-foreground">{useCase.title}</h3>
+                          <ul className="list-disc pl-4 space-y-1">
+                            {useCase.items.map((item, itemIndex) => (
+                              <li key={itemIndex} className="text-sm text-muted-foreground">{item}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+                <div className="space-y-6">
+                  {/* Pro Tips Section */}
+                  {tool.tips && tool.tips.length > 0 && (
+                    <div className="space-y-4">
+                      <h2 className="text-lg font-semibold">Pro Tips</h2>
+                      {tool.tips.map((tip, index) => (
+                        <div key={index} className="space-y-2">
+                          <h3 className="text-sm font-medium text-muted-foreground">{tip.title}</h3>
+                          <ul className="list-disc pl-4 space-y-1">
+                            {tip.items.map((item, itemIndex) => (
+                              <li key={itemIndex} className="text-sm text-muted-foreground">{item}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </div>
             )}
           </CardContent>
         </Card>

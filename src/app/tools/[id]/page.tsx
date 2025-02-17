@@ -3,7 +3,6 @@ import path from "path"
 import { Tool } from "@/types"
 import { notFound } from "next/navigation"
 import { ToolCard } from "@/components/ui/tool-card"
-import { Card, CardContent } from "@/components/ui/card"
 import Link from "next/link"
 import { ChevronLeft } from "lucide-react"
 
@@ -50,44 +49,6 @@ export default async function ToolPage({ params }: PageProps) {
           Back to Tools
         </Link>
         <ToolCard tool={tool} showContent />
-        {tool.useCases && tool.useCases.length > 0 && (
-          <Card>
-            <CardContent className="pt-6">
-              <div className="prose dark:prose-invert max-w-none">
-                <h2>Primary Use Cases</h2>
-                {tool.useCases.map((useCase, index) => (
-                  <div key={index}>
-                    <h3>{useCase.title}</h3>
-                    <ul>
-                      {useCase.items.map((item, itemIndex) => (
-                        <li key={itemIndex}>{item}</li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
-        )}
-        {tool.tips && tool.tips.length > 0 && (
-          <Card>
-            <CardContent className="pt-6">
-              <div className="prose dark:prose-invert max-w-none">
-                <h2>Pro Tips</h2>
-                {tool.tips.map((tip, index) => (
-                  <div key={index}>
-                    <h3>{tip.title}</h3>
-                    <ul>
-                      {tip.items.map((item, itemIndex) => (
-                        <li key={itemIndex}>{item}</li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
-        )}
       </div>
     </main>
   )
