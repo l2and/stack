@@ -59,20 +59,20 @@ export default function DevPage() {
           <CardContent>
             <div className="space-y-4">
               {tools.map((tool) => (
-                <div key={tool.slug} className="flex items-center space-x-4">
+                <div key={tool.id} className="flex items-center space-x-4">
                   <Checkbox 
-                    id={`tool-${tool.slug}`}
-                    checked={checkedItems[`tool-${tool.slug}`] || false}
+                    id={`tool-${tool.id}`}
+                    checked={checkedItems[`tool-${tool.id}`] || false}
                     onCheckedChange={(checked) => 
-                      handleCheckChange(`tool-${tool.slug}`, checked as boolean)
+                      handleCheckChange(`tool-${tool.id}`, checked as boolean)
                     }
                   />
                   <label 
-                    htmlFor={`tool-${tool.slug}`}
+                    htmlFor={`tool-${tool.id}`}
                     className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                   >
                     <Link 
-                      href={`/tools/${tool.slug}`}
+                      href={`/tools/${tool.id}`}
                       className="hover:underline text-blue-500"
                     >
                       {tool.title}

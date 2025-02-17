@@ -2,30 +2,15 @@ import { NextResponse } from "next/server"
 import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
-import { Tool } from "@/types"
+import { Tool, Process } from "@/types"
 
-interface Process {
-  title: string
-  category: string
-  description: string
-  slug: string
+function getTools(): Tool[] {
+  const toolsPath = path.join(process.cwd(), "src/data/tools.json")
+  const toolsData = JSON.parse(fs.readFileSync(toolsPath, "utf8"))
+  return toolsData.tools
 }
 
-function getTools() {
-  const toolsDir = path.join(process.cwd(), "src/content/tools")
-  const files = fs.readdirSync(toolsDir)
-  
-  return files.map((file) => {
-    const fileContents = fs.readFileSync(path.join(toolsDir, file), "utf8")
-    const { data } = matter(fileContents)
-    return {
-      ...data,
-      slug: file.replace(/\.md$/, ""),
-    } as Tool
-  })
-}
-
-function getProcesses() {
+function getProcesses(): Process[] {
   const processesDir = path.join(process.cwd(), "src/content/processes")
   const files = fs.readdirSync(processesDir)
   

@@ -1,12 +1,22 @@
 export interface Tool {
+  id: string;
   title: string;
-  slug: string;
   status: 'Using' | 'Plan to Try' | 'Plan to Build' | 'Building' | 'Retired' | 'Trying';
-  description: string;
-  howToUse: string;
-  caveats?: string;
   category: 'AI' | 'Productivity' | 'Development' | 'Communication' | 'Design' | 'Other';
-  url?: string;
+  description: string;
+  howToUse: string[];
+  caveats: string[];
+  url: string;
+  useCases: {
+    title: string;
+    items: string[];
+  }[];
+  tips: {
+    title: string;
+    items: string[];
+  }[];
+  addedOn: string | null;
+  recommendedBy: string | null;
 }
 
 export interface Process {

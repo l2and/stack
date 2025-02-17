@@ -57,7 +57,7 @@ const getStatusTooltip = (status: Tool['status']): string => {
   }
 }
 
-export function ToolCard({ tool }: ToolCardProps) {
+export function ToolCard({ tool, showContent = false }: ToolCardProps) {
   const handleCardClick = (e: React.MouseEvent) => {
     // If clicking the badge, don't navigate
     if (e.target instanceof Element && e.target.closest('.badge')) {
@@ -65,18 +65,18 @@ export function ToolCard({ tool }: ToolCardProps) {
     }
     
     // Otherwise, navigate to the tool page
-    window.location.href = `/tools/${tool.slug}`;
+    window.location.href = `/tools/${tool.id}`;
   };
 
   return (
     <div className="group select-none">
       <GlowCard onClick={handleCardClick}>
-        <Card className="h-[250px] flex flex-col transition-colors group-hover:bg-muted/50">
+        <Card className={`flex flex-col transition-colors group-hover:bg-muted/50 ${showContent ? 'min-h-[400px]' : 'h-[250px]'}`}>
           <CardHeader className="flex-none space-y-4">
             <div className="flex flex-col items-center gap-4 text-center">
               <div className="flex items-center gap-3">
                 <ToolLogo
-                  src={getToolLogo(tool.slug)}
+                  src={getToolLogo(tool.id)}
                   alt={`${tool.title} logo`}
                 />
                 <CardTitle className="text-2xl font-bold group-hover:text-primary transition-colors truncate">
@@ -127,12 +127,51 @@ export function ToolCard({ tool }: ToolCardProps) {
             </div>
             <div className="flex gap-2 flex-wrap justify-center">
               <Badge variant="outline">{tool.category}</Badge>
+              {tool.addedOn && (
+                <Badge variant="outline" className="text-xs">
+                  Added {new Date(tool.addedOn).toLocaleDateString()}
+                </Badge>
+              )}
             </div>
           </CardHeader>
-          <CardContent className="flex-1 overflow-hidden">
+          <CardContent className="flex-1 overflow-hidden space-y-4">
             <p className="text-muted-foreground line-clamp-3 text-center">
               {tool.description}
             </p>
+            {showContent && (
+              <>
+                {tool.useCases && tool.useCases.length > 0 && (
+                  <div className="space-y-2">
+                    <h3 className="font-semibold">Use Cases</h3>
+                    {tool.useCases.map((useCase, index) => (
+                      <div key={index} className="space-y-1">
+                        <h4 className="text-sm font-medium">{useCase.title}</h4>
+                        <ul className="text-sm text-muted-foreground list-disc pl-4">
+                          {useCase.items.map((item, itemIndex) => (
+                            <li key={itemIndex}>{item}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
+                )}
+                {tool.tips && tool.tips.length > 0 && (
+                  <div className="space-y-2">
+                    <h3 className="font-semibold">Pro Tips</h3>
+                    {tool.tips.map((tip, index) => (
+                      <div key={index} className="space-y-1">
+                        <h4 className="text-sm font-medium">{tip.title}</h4>
+                        <ul className="text-sm text-muted-foreground list-disc pl-4">
+                          {tip.items.map((item, itemIndex) => (
+                            <li key={itemIndex}>{item}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </>
+            )}
           </CardContent>
         </Card>
       </GlowCard>

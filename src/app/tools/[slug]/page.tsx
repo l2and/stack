@@ -1,46 +1,39 @@
 import fs from "fs"
 import path from "path"
-import matter from "gray-matter"
 import { Tool } from "@/types"
 import { notFound } from "next/navigation"
 import { ToolCard } from "@/components/ui/tool-card"
 import { Card, CardContent } from "@/components/ui/card"
-import Markdown from "react-markdown"
 import Link from "next/link"
 import { ChevronLeft } from "lucide-react"
 
 interface PageProps {
   params: Promise<{
-    slug: string
+    id: string
   }>  
 }
 
-async function getTool(slug: string) {
-  try {
-    const filePath = path.join(process.cwd(), "src/content/tools", `${slug}.md`)
-    const fileContents = fs.readFileSync(filePath, "utf8")
-    const { data, content } = matter(fileContents)
-    return {
-      ...data,
-      content,
-      slug,
-    } as Tool & { content: string }
-  } catch {
-    return null
-  }
+function getTools(): Tool[] {
+  const toolsPath = path.join(process.cwd(), "src/data/tools.json")
+  const toolsData = JSON.parse(fs.readFileSync(toolsPath, "utf8"))
+  return toolsData.tools
+}
+
+async function getTool(id: string): Promise<Tool | null> {
+  const tools = getTools()
+  return tools.find(tool => tool.id === id) || null
 }
 
 export async function generateStaticParams() {
-  const toolsDir = path.join(process.cwd(), "src/content/tools")
-  const files = fs.readdirSync(toolsDir)
-  return files.map((file) => ({
-    slug: file.replace(/\.md$/, ""),
+  const tools = getTools()
+  return tools.map((tool) => ({
+    id: tool.id,
   }))
 }
 
 export default async function ToolPage({ params }: PageProps) {
-  const { slug } = await params
-  const tool = await getTool(slug)
+  const { id } = await params
+  const tool = await getTool(id)
   
   if (!tool) {
     notFound()
@@ -57,13 +50,44 @@ export default async function ToolPage({ params }: PageProps) {
           Back to Tools
         </Link>
         <ToolCard tool={tool} showContent />
-        <Card>
-          <CardContent className="pt-6">
-            <div className="prose dark:prose-invert max-w-none">
-              <Markdown>{tool.content}</Markdown>
-            </div>
-          </CardContent>
-        </Card>
+        {tool.useCases && tool.useCases.length > 0 && (
+          <Card>
+            <CardContent className="pt-6">
+              <div className="prose dark:prose-invert max-w-none">
+                <h2>Primary Use Cases</h2>
+                {tool.useCases.map((useCase, index) => (
+                  <div key={index}>
+                    <h3>{useCase.title}</h3>
+                    <ul>
+                      {useCase.items.map((item, itemIndex) => (
+                        <li key={itemIndex}>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+        )}
+        {tool.tips && tool.tips.length > 0 && (
+          <Card>
+            <CardContent className="pt-6">
+              <div className="prose dark:prose-invert max-w-none">
+                <h2>Pro Tips</h2>
+                {tool.tips.map((tip, index) => (
+                  <div key={index}>
+                    <h3>{tip.title}</h3>
+                    <ul>
+                      {tip.items.map((item, itemIndex) => (
+                        <li key={itemIndex}>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+        )}
       </div>
     </main>
   )
