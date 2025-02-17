@@ -7,20 +7,13 @@ import { GlowCard } from "@/components/ui/glow-card"
 import { Process } from "@/types"
 import { CalendarCheck2, FileEdit, Goal, HeartHandshake, Lightbulb, ListTodo } from "lucide-react"
 
-interface ProcessCardProps {
-  title: string
-  slug: string
-  description: string
-  toolsInvolved: string[]
-  steps: string[]
-  notes?: string
-  category: Process["category"]
+interface ProcessCardProps extends Process {
   showContent?: boolean
 }
 
 export type { ProcessCardProps }
 
-const getProcessIcon = (slug: string) => {
+const getProcessIcon = (id: string) => {
   const iconMap: Record<string, React.ReactNode> = {
     'annual-review': <Goal className="w-6 h-6" />,
     'blog-post-workflow': <FileEdit className="w-6 h-6" />,
@@ -29,17 +22,18 @@ const getProcessIcon = (slug: string) => {
     'relationship-management': <HeartHandshake className="w-6 h-6" />,
     'staying-open': <CalendarCheck2 className="w-6 h-6" />,
   }
-  return iconMap[slug] || <Lightbulb className="w-6 h-6" />
+  return iconMap[id] || <Lightbulb className="w-6 h-6" />
 }
 
 export function ProcessCard({
+  id,
   title,
-  slug,
   description,
   toolsInvolved,
   steps,
-  notes,
   category,
+  status,
+  tips,
   showContent = false,
 }: ProcessCardProps) {
   const content = (
@@ -49,6 +43,9 @@ export function ProcessCard({
           <CardTitle className="text-xl font-bold transition-colors group-hover:text-emerald-400">
             {title}
           </CardTitle>
+          <Badge variant="outline" className="shrink-0">
+            {status}
+          </Badge>
         </div>
         <div className="flex flex-wrap gap-2">
           {(toolsInvolved || []).slice(0, showContent ? undefined : 3).map((tool) => (
@@ -75,20 +72,22 @@ export function ProcessCard({
                 ))}
               </ol>
             </div>
-            {notes && (
-              <div className="space-y-2">
-                <h3 className="font-semibold">Notes</h3>
-                <div className="text-sm text-muted-foreground">
-                  {notes}
-                </div>
+            {Object.entries(tips).map(([section, items]) => (
+              <div key={section} className="space-y-2">
+                <h3 className="font-semibold">{section}</h3>
+                <ul className="list-disc list-inside text-sm text-muted-foreground">
+                  {items.map((item, index) => (
+                    <li key={index} className="mb-1">{item}</li>
+                  ))}
+                </ul>
               </div>
-            )}
+            ))}
           </>
         )}
       </CardContent>
       <div className="p-6 mt-auto border-t flex justify-between items-center">
         <div className="text-muted-foreground/40">
-          {getProcessIcon(slug)}
+          {getProcessIcon(id)}
         </div>
         <Badge variant="outline" className="shrink-0">
           {category}
@@ -103,7 +102,7 @@ export function ProcessCard({
 
   return (
     <div className="group relative">
-      <Link href={`/processes/${slug}`}>
+      <Link href={`/processes/${id}`}>
         <GlowCard>{content}</GlowCard>
       </Link>
     </div>

@@ -4,14 +4,7 @@ import Link from "next/link"
 import { useEffect, useState } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Checkbox } from "@/components/ui/checkbox"
-import { Tool } from "@/types"
-
-interface Process {
-  title: string
-  category: string
-  description: string
-  slug: string
-}
+import { Tool, Process } from "@/types"
 
 export default function DevPage() {
   const [tools, setTools] = useState<Tool[]>([])
@@ -94,20 +87,20 @@ export default function DevPage() {
           <CardContent>
             <div className="space-y-4">
               {processes.map((process) => (
-                <div key={process.slug} className="flex items-center space-x-4">
+                <div key={process.id} className="flex items-center space-x-4">
                   <Checkbox 
-                    id={`process-${process.slug}`}
-                    checked={checkedItems[`process-${process.slug}`] || false}
+                    id={`process-${process.id}`}
+                    checked={checkedItems[`process-${process.id}`] || false}
                     onCheckedChange={(checked) => 
-                      handleCheckChange(`process-${process.slug}`, checked as boolean)
+                      handleCheckChange(`process-${process.id}`, checked as boolean)
                     }
                   />
                   <label 
-                    htmlFor={`process-${process.slug}`}
+                    htmlFor={`process-${process.id}`}
                     className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                   >
                     <Link 
-                      href={`/processes/${process.slug}`}
+                      href={`/processes/${process.id}`}
                       className="hover:underline text-blue-500"
                     >
                       {process.title}

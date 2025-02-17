@@ -1,7 +1,6 @@
 import { NextResponse } from "next/server"
 import fs from "fs"
 import path from "path"
-import matter from "gray-matter"
 import { Tool, Process } from "@/types"
 
 function getTools(): Tool[] {
@@ -11,17 +10,9 @@ function getTools(): Tool[] {
 }
 
 function getProcesses(): Process[] {
-  const processesDir = path.join(process.cwd(), "src/content/processes")
-  const files = fs.readdirSync(processesDir)
-  
-  return files.map((file) => {
-    const fileContents = fs.readFileSync(path.join(processesDir, file), "utf8")
-    const { data } = matter(fileContents)
-    return {
-      ...data,
-      slug: file.replace(/\.md$/, ""),
-    } as Process
-  })
+  const processesPath = path.join(process.cwd(), "src/data/processes.json")
+  const processesData = JSON.parse(fs.readFileSync(processesPath, "utf8"))
+  return processesData.processes
 }
 
 export async function GET() {

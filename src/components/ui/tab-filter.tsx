@@ -1,21 +1,8 @@
 import { ReactNode } from "react"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Tool } from "@/types"
+import { Tool, Process } from "@/types"
 import { ToolCard } from "./tool-card"
-import { ProcessCard, ProcessCardProps } from "./process-card"
-
-type ProcessCategory = ProcessCardProps["category"]
-
-interface Process {
-  title: string
-  category: ProcessCategory
-  description: string
-  slug: string
-  toolsInvolved: string[]
-  steps: string[]
-  notes?: string
-  showContent?: boolean
-}
+import { ProcessCard } from "./process-card"
 
 interface TabFilterProps<T> {
   items: T[]

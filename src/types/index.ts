@@ -20,14 +20,17 @@ export interface Tool {
 }
 
 export interface Process {
+  id: string;
   title: string;
-  slug: string;
   description: string;
   toolsInvolved: string[];
   steps: string[];
-  notes?: string;
   category: 'Personal' | 'Professional' | 'Development' | 'Content' | 'Other';
-  content?: string;
+  status: 'Active' | 'Archived' | 'Draft';
+  tips: {
+    [key: string]: string[];
+  };
+  addedOn: string | null;
 }
 
 export interface SiteConfig {
