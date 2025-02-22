@@ -4988,6 +4988,150 @@
       "tips": [],
       "addedOn": "2025-01-01",
       "recommendedBy": null
+    },
+    {
+      "id": "waitlist",
+      "title": "Waitlist",
+      "status": "Plan to Try",
+      "category": "Development",
+      "description": "A powerful waitlist management platform for launching products, with features for collecting signups, managing access, and analyzing user engagement",
+      "howToUse": [
+        "Create waitlist landing page",
+        "Customize signup form",
+        "Set up email notifications",
+        "Track signup analytics",
+        "Manage access codes"
+      ],
+      "caveats": [
+        "Free tier limitations",
+        "Email delivery rates",
+        "API rate limits",
+        "Integration complexity"
+      ],
+      "url": "https://getwaitlist.com/",
+      "useCases": [
+        {
+          "title": "Product Launch",
+          "items": [
+            "Pre-launch signup collection",
+            "Early access management",
+            "Beta testing coordination",
+            "Launch momentum building"
+          ]
+        },
+        {
+          "title": "User Management",
+          "items": [
+            "Signup queue organization",
+            "Access code distribution",
+            "User engagement tracking",
+            "Referral management"
+          ]
+        },
+        {
+          "title": "Analytics",
+          "items": [
+            "Signup trend analysis",
+            "Conversion tracking",
+            "Engagement metrics",
+            "Referral source tracking"
+          ]
+        }
+      ],
+      "tips": [
+        {
+          "title": "Setup Strategy",
+          "items": [
+            "Customize landing page design",
+            "Set clear expectations",
+            "Enable social sharing",
+            "Test signup flow"
+          ]
+        },
+        {
+          "title": "Engagement",
+          "items": [
+            "Send regular updates",
+            "Reward early signups",
+            "Encourage referrals",
+            "Maintain communication"
+          ]
+        }
+      ],
+      "addedOn": "2024-02-17",
+      "recommendedBy": null
+    },
+    {
+      "id": "supademo",
+      "title": "Supademo Screenshot Tool",
+      "status": "Plan to Try",
+      "category": "Design",
+      "description": "Free online tool for enhancing screenshot backgrounds with beautiful gradients, patterns, and shadows, perfect for creating professional-looking documentation and social media content",
+      "howToUse": [
+        "Upload screenshot or image",
+        "Choose background style",
+        "Adjust padding and shadows",
+        "Customize colors and patterns",
+        "Download enhanced image"
+      ],
+      "caveats": [
+        "Web-based tool only",
+        "Image size limitations",
+        "Limited export formats",
+        "Some styles may be premium"
+      ],
+      "url": "https://supademo.com/tools/screenshot-background-tool",
+      "useCases": [
+        {
+          "title": "Documentation",
+          "items": [
+            "Product screenshots",
+            "Tutorial images",
+            "Feature highlights",
+            "UI documentation"
+          ]
+        },
+        {
+          "title": "Social Media",
+          "items": [
+            "Twitter posts",
+            "LinkedIn content",
+            "Blog illustrations",
+            "Marketing materials"
+          ]
+        },
+        {
+          "title": "Design Enhancement",
+          "items": [
+            "Background styling",
+            "Shadow effects",
+            "Pattern generation",
+            "Color customization"
+          ]
+        }
+      ],
+      "tips": [
+        {
+          "title": "Image Preparation",
+          "items": [
+            "Use high-quality screenshots",
+            "Remove unnecessary elements",
+            "Consider aspect ratios",
+            "Plan background space"
+          ]
+        },
+        {
+          "title": "Style Selection",
+          "items": [
+            "Match brand colors",
+            "Test different patterns",
+            "Balance shadow intensity",
+            "Consider context"
+          ]
+        }
+      ],
+      "addedOn": "2024-02-17",
+      "recommendedBy": null
     }
   ]
 }

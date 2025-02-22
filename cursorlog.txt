@@ -180,3 +180,17 @@
 - Added Speechify as a new tool with "Using" status
 - Created Speechify SVG icon with wave pattern design
 - Added detailed documentation about article listening and text-to-speech features 
+
+[2025-02-17]
+- Added Tweet Hunter as a new tool with "Plan to Try" status
+- Created Tweet Hunter SVG icon with bird and analytics visualization
+- Added detailed documentation about viral tweet creation and analytics features 
+
+[2024-02-17]
+- Added Waitlist as a new tool with "Plan to Try" status
+- Created Waitlist SVG icon with queue and user visualization
+- Added detailed documentation about waitlist management and user engagement features 
+
+- Added Supademo Screenshot Tool as a new tool with "Plan to Try" status
+- Created Supademo SVG icon with screenshot and background visualization
+- Added detailed documentation about screenshot enhancement and design features 
