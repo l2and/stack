@@ -5132,6 +5132,78 @@
       ],
       "addedOn": "2024-02-17",
       "recommendedBy": null
+    },
+    {
+      "id": "screenpipe",
+      "title": "Screenpipe",
+      "status": "Plan to Try",
+      "category": "Development",
+      "description": "Personal desktop activity analytics tool that helps track and understand your computer usage patterns, productivity trends, and application habits",
+      "howToUse": [
+        "Install desktop client",
+        "Configure tracking preferences",
+        "Monitor activity analytics",
+        "Review usage patterns",
+        "Export activity data"
+      ],
+      "caveats": [
+        "Privacy considerations",
+        "Local data storage only",
+        "Resource overhead",
+        "MacOS only currently"
+      ],
+      "url": "https://screenpi.pe/",
+      "useCases": [
+        {
+          "title": "Activity Tracking",
+          "items": [
+            "Application usage analysis",
+            "Time tracking insights",
+            "Productivity patterns",
+            "Focus monitoring"
+          ]
+        },
+        {
+          "title": "Productivity Analysis",
+          "items": [
+            "Work pattern insights",
+            "Distraction identification",
+            "Efficiency metrics",
+            "Habit formation"
+          ]
+        },
+        {
+          "title": "Data Management",
+          "items": [
+            "Local data storage",
+            "Privacy controls",
+            "Export capabilities",
+            "Pattern visualization"
+          ]
+        }
+      ],
+      "tips": [
+        {
+          "title": "Setup Strategy",
+          "items": [
+            "Configure privacy settings",
+            "Set tracking boundaries",
+            "Define work categories",
+            "Plan data retention"
+          ]
+        },
+        {
+          "title": "Usage Optimization",
+          "items": [
+            "Review weekly trends",
+            "Identify peak hours",
+            "Monitor app usage",
+            "Track focus time"
+          ]
+        }
+      ],
+      "addedOn": "2024-02-17",
+      "recommendedBy": null
     }
   ]
 }
