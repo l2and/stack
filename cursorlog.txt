@@ -198,3 +198,8 @@
 - Added Screenpipe as a new tool with "Plan to Try" status
 - Created Screenpipe SVG icon with desktop monitoring visualization
 - Added detailed documentation about activity tracking and productivity analysis features 
+
+[2024-02-17]
+- Added BeeAI Framework as a new tool with "Plan to Try" status
+- Created BeeAI SVG icon with bee and neural network visualization
+- Added detailed documentation about swarm intelligence and agent development features 

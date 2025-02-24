@@ -5204,6 +5204,78 @@
       ],
       "addedOn": "2024-02-17",
       "recommendedBy": null
+    },
+    {
+      "id": "beeai",
+      "title": "BeeAI Framework",
+      "status": "Plan to Try",
+      "category": "Development",
+      "description": "Open-source framework for building autonomous AI agents with swarm intelligence principles, focusing on collaborative behavior and emergent intelligence",
+      "howToUse": [
+        "Clone repository and install dependencies",
+        "Configure agent parameters",
+        "Define swarm behaviors",
+        "Implement custom agents",
+        "Deploy and monitor swarms"
+      ],
+      "caveats": [
+        "Early stage project",
+        "Documentation in progress",
+        "Requires AI/ML knowledge",
+        "Resource intensive"
+      ],
+      "url": "https://i-am-bee.github.io/beeai-framework",
+      "useCases": [
+        {
+          "title": "Agent Development",
+          "items": [
+            "Autonomous agents",
+            "Swarm intelligence",
+            "Multi-agent systems",
+            "Emergent behavior"
+          ]
+        },
+        {
+          "title": "System Architecture",
+          "items": [
+            "Agent communication",
+            "Task coordination",
+            "Resource sharing",
+            "Knowledge distribution"
+          ]
+        },
+        {
+          "title": "Integration Features",
+          "items": [
+            "API endpoints",
+            "Event handling",
+            "State management",
+            "Monitoring tools"
+          ]
+        }
+      ],
+      "tips": [
+        {
+          "title": "Development Strategy",
+          "items": [
+            "Start with simple agents",
+            "Test swarm behaviors",
+            "Monitor resource usage",
+            "Document interactions"
+          ]
+        },
+        {
+          "title": "Performance Optimization",
+          "items": [
+            "Optimize communication",
+            "Balance workloads",
+            "Handle state sync",
+            "Manage resources"
+          ]
+        }
+      ],
+      "addedOn": "2024-02-17",
+      "recommendedBy": null
     }
   ]
 }
