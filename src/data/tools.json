@@ -2166,9 +2166,9 @@
     {
       "id": "hedra",
       "title": "Hedra",
-      "status": "Plan to Try",
+      "status": "Using",
       "category": "AI",
-      "description": "AI-powered platform for generating character videos from text, images, and voice input, featuring controllable multimodal character animation",
+      "description": "AI-powered video generation platform for generating character videos from text, images, and voice input, featuring controllable multimodal character animation",
       "howToUse": [
         "Upload reference images/audio",
         "Define character parameters",
@@ -5276,6 +5276,70 @@
       ],
       "addedOn": "2024-02-17",
       "recommendedBy": null
+    },
+    {
+      "id": "rork",
+      "title": "Rork",
+      "status": "Plan to Try",
+      "category": "Productivity",
+      "description": "A productivity tool designed to help users organize tasks, manage projects, and streamline workflows with a clean, intuitive interface",
+      "howToUse": [
+        "Create an account",
+        "Set up projects and tasks",
+        "Configure workflow preferences",
+        "Integrate with other tools",
+        "Track progress and productivity"
+      ],
+      "caveats": [
+        "Feature availability may vary by plan",
+        "Learning curve for advanced features",
+        "Limited integrations in free tier",
+        "Mobile app may have fewer features"
+      ],
+      "url": "http://rork.app/",
+      "useCases": [
+        {
+          "title": "Task Management",
+          "items": [
+            "Personal to-do lists",
+            "Team task assignment",
+            "Priority management",
+            "Deadline tracking"
+          ]
+        },
+        {
+          "title": "Project Organization",
+          "items": [
+            "Project timeline views",
+            "Resource allocation",
+            "Progress visualization",
+            "Milestone tracking"
+          ]
+        },
+        {
+          "title": "Workflow Optimization",
+          "items": [
+            "Process automation",
+            "Template creation",
+            "Recurring task setup",
+            "Productivity analytics"
+          ]
+        }
+      ],
+      "tips": [
+        {
+          "title": "Getting Started",
+          "items": [
+            "Begin with templates",
+            "Start with simple projects",
+            "Gradually add complexity",
+            "Explore integrations"
+          ]
+        }
+      ],
+      "addedOn": "2024-02-24",
+      "recommendedBy": null,
+      "imageUrl": null
     }
   ]
 }
