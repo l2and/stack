@@ -5340,6 +5340,88 @@
       "addedOn": "2024-02-24",
       "recommendedBy": null,
       "imageUrl": "/images/tools/rork.svg"
+    },
+    {
+      "id": "composio",
+      "title": "Composio",
+      "status": "Plan to Try",
+      "category": "Development",
+      "description": "Integration platform for AI Agents & LLMs that connects to 250+ tools through managed MCP servers with built-in authentication support",
+      "howToUse": [
+        "Sign up for Composio API key",
+        "Select tools from MCP directory",
+        "Connect to Cursor, Claude, or other LLMs",
+        "Use managed authentication",
+        "Integrate with AI agents via SDK"
+      ],
+      "caveats": [
+        "Free tier limited to 10 actions",
+        "Some tools require OAuth setup",
+        "Custom MCP servers not yet available",
+        "Authentication management needed"
+      ],
+      "url": "https://composio.dev/",
+      "useCases": [
+        {
+          "title": "LLM Integration",
+          "items": [
+            "Connect Claude to tools",
+            "Add MCP servers to Cursor",
+            "Access tools via function calling",
+            "Stream tool responses"
+          ]
+        },
+        {
+          "title": "MCP Server Routing",
+          "items": [
+            "Route requests to appropriate tools",
+            "Manage authentication across services",
+            "Optimize tool accuracy",
+            "Standardize API access"
+          ]
+        },
+        {
+          "title": "AI Agent Development",
+          "items": [
+            "Connect agents to external tools",
+            "Streamline API integrations",
+            "Simplify authentication",
+            "Build powerful agent workflows"
+          ]
+        }
+      ],
+      "tips": [
+        {
+          "title": "Integration Strategy",
+          "items": [
+            "Start with free tier",
+            "Test with simple integrations",
+            "Explore documentation examples",
+            "Use framework-specific guides"
+          ]
+        },
+        {
+          "title": "Authentication Setup",
+          "items": [
+            "Follow OAuth instructions",
+            "Secure API credentials",
+            "Manage connections properly",
+            "Review security settings"
+          ]
+        },
+        {
+          "title": "Best Practices",
+          "items": [
+            "Check API limits",
+            "Monitor usage statistics",
+            "Follow example flows",
+            "Join community forums"
+          ]
+        }
+      ],
+      "addedOn": "2024-02-24",
+      "recommendedBy": null,
+      "imageUrl": "/images/tools/composio.svg"
     }
   ]
 }
