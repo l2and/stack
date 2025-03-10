@@ -49,35 +49,6 @@
           ]
         }
       ],
-      "tips": [
-        {
-          "title": "Setup Strategy",
-          "items": [
-            "Configure channels properly",
-            "Test message delivery",
-            "Implement rate limiting",
-            "Monitor agent activity"
-          ]
-        },
-        {
-          "title": "Performance Optimization",
-          "items": [
-            "Cache responses",
-            "Batch messages",
-            "Handle timeouts",
-            "Manage concurrency"
-          ]
-        },
-        {
-          "title": "Best Practices",
-          "items": [
-            "Secure credentials",
-            "Monitor usage",
-            "Handle errors gracefully",
-            "Document integrations"
-          ]
-        }
-      ],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -133,37 +104,6 @@
           ]
         }
       ],
-      "tips": [
-        {
-          "title": "Analytics Strategy",
-          "items": [
-            "Set up key metrics",
-            "Monitor trends regularly",
-            "Track competitors",
-            "Document insights",
-            "Configure alerts"
-          ]
-        },
-        {
-          "title": "ASO Optimization",
-          "items": [
-            "Research keywords thoroughly",
-            "Track ranking changes",
-            "Monitor competition",
-            "Test descriptions",
-            "Analyze reviews"
-          ]
-        },
-        {
-          "title": "Best Practices",
-          "items": [
-            "Regular performance reviews",
-            "Competitor benchmarking",
-            "Data-driven decisions",
-            "Market trend analysis"
-          ]
-        }
-      ],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -184,7 +124,6 @@
       ],
       "url": "https://www.icloud.com/notes",
       "useCases": [],
-      "tips": [],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -222,32 +161,6 @@
             "Enjoy fiction during downtime",
             "Explore various genres and topics",
             "Listen to exclusive Audible originals"
-          ]
-        }
-      ],
-      "tips": [
-        {
-          "title": "Credit Management",
-          "items": [
-            "Buy extra credits during sales",
-            "Use credits on expensive books",
-            "Return books you don\\'t enjoy"
-          ]
-        },
-        {
-          "title": "Listening Experience",
-          "items": [
-            "Adjust playback speed to your comfort",
-            "Use the sleep timer for bedtime listening",
-            "Download books for offline access"
-          ]
-        },
-        {
-          "title": "Value Maximization",
-          "items": [
-            "Check daily deals",
-            "Take advantage of member sales",
-            "Use Whispersync with Kindle books"
           ]
         }
       ],
@@ -301,35 +214,6 @@
             "AI assistants",
             "Language learning",
             "Convoscope features"
-          ]
-        }
-      ],
-      "tips": [
-        {
-          "title": "Development Strategy",
-          "items": [
-            "Start with built-in apps",
-            "Test on supported devices",
-            "Handle battery life",
-            "Consider UX carefully"
-          ]
-        },
-        {
-          "title": "Performance Optimization",
-          "items": [
-            "Minimize resource usage",
-            "Optimize rendering",
-            "Handle connectivity",
-            "Cache effectively"
-          ]
-        },
-        {
-          "title": "Best Practices",
-          "items": [
-            "Follow UI guidelines",
-            "Test in real conditions",
-            "Consider user comfort",
-            "Document features"
           ]
         }
       ],
@@ -387,35 +271,6 @@
           ]
         }
       ],
-      "tips": [
-        {
-          "title": "Development Strategy",
-          "items": [
-            "Use TypeScript",
-            "Leverage sandbox environments",
-            "Implement feature flags",
-            "Monitor performance"
-          ]
-        },
-        {
-          "title": "Cost Management",
-          "items": [
-            "Configure auto-scaling",
-            "Optimize resources",
-            "Monitor usage",
-            "Set up budgets"
-          ]
-        },
-        {
-          "title": "Best Practices",
-          "items": [
-            "Follow security guidelines",
-            "Implement monitoring",
-            "Version control configs",
-            "Document deployments"
-          ]
-        }
-      ],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -436,7 +291,6 @@
       ],
       "url": "https://www.blessout.com",
       "useCases": [],
-      "tips": [],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -457,9 +311,61 @@
       ],
       "url": "https://www.canva.com/",
       "useCases": [],
-      "tips": [],
       "addedOn": "2025-01-01",
       "recommendedBy": null
+    },
+    {
+      "id": "cartesia",
+      "title": "Cartesia",
+      "status": "Plan to Try",
+      "category": "AI",
+      "description": "Advanced voice AI platform offering ultra-low latency, lifelike voices, and voice cloning capabilities for building real-time multimodal applications",
+      "howToUse": [
+        "Sign up for API access",
+        "Integrate Sonic API for text-to-speech",
+        "Use voice cloning for personalized voices",
+        "Implement in voice agents or content creation",
+        "Explore on-device capabilities"
+      ],
+      "caveats": [
+        "API key required",
+        "Usage limits on free tier",
+        "Voice cloning has ethical considerations",
+        "Enterprise features may require paid plans"
+      ],
+      "url": "https://cartesia.ai/",
+      "useCases": [
+        {
+          "title": "Voice Applications",
+          "items": [
+            "Customer support voice agents",
+            "Interactive gaming characters",
+            "Content narration and dubbing",
+            "Healthcare patient interactions"
+          ]
+        },
+        {
+          "title": "Voice Technology",
+          "items": [
+            "Ultra-low latency voice generation",
+            "Voice cloning from short samples",
+            "Expressive, emotional speech",
+            "Multilingual voice support"
+          ]
+        },
+        {
+          "title": "Integration Options",
+          "items": [
+            "Together AI platform integration",
+            "API-based implementation",
+            "On-device deployment",
+            "Real-time streaming capabilities"
+          ]
+        }
+      ],
+      "addedOn": "2024-02-24",
+      "recommendedBy": null,
+      "imageUrl": "/images/tools/cartesia.svg"
     },
     {
       "id": "chatgpt",
@@ -478,7 +384,6 @@
       ],
       "url": "https://chat.openai.com/",
       "useCases": [],
-      "tips": [],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -531,35 +436,6 @@
           ]
         }
       ],
-      "tips": [
-        {
-          "title": "Implementation Strategy",
-          "items": [
-            "Start with basic features",
-            "Plan data structure",
-            "Test search accuracy",
-            "Monitor performance"
-          ]
-        },
-        {
-          "title": "Performance Optimization",
-          "items": [
-            "Index management",
-            "Query optimization",
-            "Batch operations",
-            "Resource allocation"
-          ]
-        },
-        {
-          "title": "Best Practices",
-          "items": [
-            "Regular backups",
-            "Version control",
-            "Monitor usage",
-            "Document schemas"
-          ]
-        }
-      ],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -580,7 +456,6 @@
       ],
       "url": "https://claude.ai/",
       "useCases": [],
-      "tips": [],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -630,35 +505,6 @@
             "Transform data formats",
             "Trigger notifications",
             "Sync data between systems"
-          ]
-        }
-      ],
-      "tips": [
-        {
-          "title": "Performance Optimization",
-          "items": [
-            "Right-size memory allocation",
-            "Implement proper error handling",
-            "Use connection pooling",
-            "Cache frequent operations"
-          ]
-        },
-        {
-          "title": "Cost Management",
-          "items": [
-            "Monitor function execution time",
-            "Optimize cold starts",
-            "Use appropriate memory settings",
-            "Clean up unused functions"
-          ]
-        },
-        {
-          "title": "Development Best Practices",
-          "items": [
-            "Use dependency injection",
-            "Implement proper logging",
-            "Handle retries gracefully",
-            "Test functions locally"
           ]
         }
       ],
@@ -714,35 +560,6 @@
           ]
         }
       ],
-      "tips": [
-        {
-          "title": "Template Usage",
-          "items": [
-            "Use built-in templates",
-            "Customize for needs",
-            "Add user variables",
-            "Structure prompts well"
-          ]
-        },
-        {
-          "title": "Token Management",
-          "items": [
-            "Choose right tokenizer",
-            "Monitor token counts",
-            "Split large codebases",
-            "Optimize prompts"
-          ]
-        },
-        {
-          "title": "Best Practices",
-          "items": [
-            "Respect .gitignore",
-            "Filter relevant files",
-            "Include context",
-            "Use line numbers"
-          ]
-        }
-      ],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -795,35 +612,6 @@
           ]
         }
       ],
-      "tips": [
-        {
-          "title": "Extraction Strategy",
-          "items": [
-            "Use appropriate schemas",
-            "Configure filters",
-            "Handle pagination",
-            "Manage timeouts"
-          ]
-        },
-        {
-          "title": "Performance Optimization",
-          "items": [
-            "Implement caching",
-            "Use parallel processing",
-            "Monitor memory usage",
-            "Handle errors gracefully"
-          ]
-        },
-        {
-          "title": "Best Practices",
-          "items": [
-            "Respect robots.txt",
-            "Set user agents",
-            "Handle rate limits",
-            "Document extractions"
-          ]
-        }
-      ],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -844,7 +632,6 @@
       ],
       "url": "https://cursor.com/",
       "useCases": [],
-      "tips": [],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -865,7 +652,6 @@
       ],
       "url": "https://labs.openai.com/",
       "useCases": [],
-      "tips": [],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -918,35 +704,6 @@
           ]
         }
       ],
-      "tips": [
-        {
-          "title": "Research Strategy",
-          "items": [
-            "Start with clear queries",
-            "Configure depth appropriately",
-            "Monitor API usage",
-            "Review interim results"
-          ]
-        },
-        {
-          "title": "Performance Optimization",
-          "items": [
-            "Adjust concurrency limits",
-            "Cache responses",
-            "Handle rate limits",
-            "Manage resources"
-          ]
-        },
-        {
-          "title": "Best Practices",
-          "items": [
-            "Document research goals",
-            "Save important findings",
-            "Version control reports",
-            "Review AI insights"
-          ]
-        }
-      ],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -966,7 +723,6 @@
       ],
       "url": "https://deepgram.com/",
       "useCases": [],
-      "tips": [],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -987,7 +743,6 @@
       ],
       "url": "https://chat.deepseek.com/",
       "useCases": [],
-      "tips": [],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -1008,7 +763,6 @@
       ],
       "url": "https://www.descript.com/",
       "useCases": [],
-      "tips": [],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -1061,35 +815,6 @@
           ]
         }
       ],
-      "tips": [
-        {
-          "title": "Implementation Strategy",
-          "items": [
-            "Choose appropriate style",
-            "Use consistent seeds",
-            "Cache results",
-            "Handle fallbacks"
-          ]
-        },
-        {
-          "title": "Performance Optimization",
-          "items": [
-            "Implement CDN",
-            "Cache responses",
-            "Optimize image sizes",
-            "Batch requests"
-          ]
-        },
-        {
-          "title": "Best Practices",
-          "items": [
-            "Follow license terms",
-            "Credit creators",
-            "Document seed patterns",
-            "Version control styles"
-          ]
-        }
-      ],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -1110,7 +835,6 @@
       ],
       "url": "https://discord.com/",
       "useCases": [],
-      "tips": [],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -1130,7 +854,6 @@
       ],
       "url": "https://elevenlabs.io/",
       "useCases": [],
-      "tips": [],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -1180,35 +903,6 @@
             "Performance tracking",
             "Resource allocation",
             "Scaling solutions"
-          ]
-        }
-      ],
-      "tips": [
-        {
-          "title": "Development Approach",
-          "items": [
-            "Start with simple agents",
-            "Test interactions thoroughly",
-            "Monitor resource usage",
-            "Implement safety checks"
-          ]
-        },
-        {
-          "title": "Performance Optimization",
-          "items": [
-            "Configure memory limits",
-            "Optimize processing",
-            "Cache responses",
-            "Handle errors gracefully"
-          ]
-        },
-        {
-          "title": "Best Practices",
-          "items": [
-            "Follow documentation",
-            "Join community",
-            "Contribute improvements",
-            "Stay updated"
           ]
         }
       ],
@@ -1264,35 +958,6 @@
           ]
         }
       ],
-      "tips": [
-        {
-          "title": "Search Strategy",
-          "items": [
-            "Use semantic queries",
-            "Filter by source type",
-            "Validate results",
-            "Handle pagination"
-          ]
-        },
-        {
-          "title": "Performance Optimization",
-          "items": [
-            "Cache responses",
-            "Batch requests",
-            "Handle rate limits",
-            "Monitor usage"
-          ]
-        },
-        {
-          "title": "Best Practices",
-          "items": [
-            "Structure queries well",
-            "Process results properly",
-            "Handle errors gracefully",
-            "Document integrations"
-          ]
-        }
-      ],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -1342,35 +1007,6 @@
             "App store submissions",
             "Over-the-air updates",
             "Production monitoring"
-          ]
-        }
-      ],
-      "tips": [
-        {
-          "title": "Development Workflow",
-          "items": [
-            "Use development builds",
-            "Leverage hot reload",
-            "Configure prebuild",
-            "Test on real devices"
-          ]
-        },
-        {
-          "title": "Build Optimization",
-          "items": [
-            "Manage dependencies",
-            "Configure app.json",
-            "Use EAS secrets",
-            "Optimize assets"
-          ]
-        },
-        {
-          "title": "Production Best Practices",
-          "items": [
-            "Set up EAS Update",
-            "Configure build profiles",
-            "Use preview builds",
-            "Monitor metrics"
           ]
         }
       ],
@@ -1426,35 +1062,6 @@
           ]
         }
       ],
-      "tips": [
-        {
-          "title": "Setup Strategy",
-          "items": [
-            "Use recommended GPU",
-            "Follow install guides",
-            "Test with samples",
-            "Start with basics"
-          ]
-        },
-        {
-          "title": "Performance Optimization",
-          "items": [
-            "Monitor resources",
-            "Batch similar jobs",
-            "Cache results",
-            "Optimize settings"
-          ]
-        },
-        {
-          "title": "Best Practices",
-          "items": [
-            "Verify input quality",
-            "Test different modes",
-            "Document workflows",
-            "Regular updates"
-          ]
-        }
-      ],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -1507,35 +1114,6 @@
             "Team management",
             "White labeling",
             "Social inbox"
-          ]
-        }
-      ],
-      "tips": [
-        {
-          "title": "Content Strategy",
-          "items": [
-            "Use AI templates",
-            "Plan content visually",
-            "Test different times",
-            "Monitor engagement"
-          ]
-        },
-        {
-          "title": "Automation Setup",
-          "items": [
-            "Configure triggers",
-            "Set up conditions",
-            "Use dynamic variables",
-            "Schedule recycling"
-          ]
-        },
-        {
-          "title": "Best Practices",
-          "items": [
-            "Maintain brand voice",
-            "Review AI suggestions",
-            "Track analytics",
-            "Test cross-posting"
           ]
         }
       ],
@@ -1597,7 +1175,6 @@
           ]
         }
       ],
-      "tips": [],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -1647,35 +1224,6 @@
             "Database population",
             "Content aggregation",
             "Data pipelines"
-          ]
-        }
-      ],
-      "tips": [
-        {
-          "title": "Scraping Strategy",
-          "items": [
-            "Define clear schemas",
-            "Handle edge cases",
-            "Implement retries",
-            "Monitor success rates"
-          ]
-        },
-        {
-          "title": "Performance Optimization",
-          "items": [
-            "Concurrent requests",
-            "Cache responses",
-            "Batch operations",
-            "Resource management"
-          ]
-        },
-        {
-          "title": "Best Practices",
-          "items": [
-            "Ethical scraping",
-            "Error handling",
-            "Data validation",
-            "Version control"
           ]
         }
       ],
@@ -1731,35 +1279,6 @@
           ]
         }
       ],
-      "tips": [
-        {
-          "title": "Efficiency Optimization",
-          "items": [
-            "Learn voice commands",
-            "Use custom shortcuts",
-            "Practice clear enunciation",
-            "Create command templates"
-          ]
-        },
-        {
-          "title": "Integration Best Practices",
-          "items": [
-            "Set up application-specific shortcuts",
-            "Use with version control",
-            "Configure auto-formatting",
-            "Enable smart punctuation"
-          ]
-        },
-        {
-          "title": "Quality Improvement",
-          "items": [
-            "Review and edit as you go",
-            "Use quiet environment",
-            "Maintain consistent pace",
-            "Learn command phrases"
-          ]
-        }
-      ],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -1779,7 +1298,6 @@
       ],
       "url": "https://www.usegalileo.ai/explore",
       "useCases": [],
-      "tips": [],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -1800,7 +1318,6 @@
       ],
       "url": "https://www.genspark.ai/",
       "useCases": [],
-      "tips": [],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -1849,35 +1366,6 @@
             "Pull request scanning",
             "Automated security checks",
             "Team collaboration on security"
-          ]
-        }
-      ],
-      "tips": [
-        {
-          "title": "Configuration Best Practices",
-          "items": [
-            "Set up custom detection rules",
-            "Configure notification preferences",
-            "Use pre-commit hooks locally",
-            "Define security policies"
-          ]
-        },
-        {
-          "title": "Incident Management",
-          "items": [
-            "Act quickly on alerts",
-            "Document remediation steps",
-            "Rotate exposed credentials",
-            "Learn from past incidents"
-          ]
-        },
-        {
-          "title": "Team Integration",
-          "items": [
-            "Train team on security practices",
-            "Share incident response protocols",
-            "Maintain security documentation",
-            "Regular security reviews"
           ]
         }
       ],
@@ -1934,7 +1422,6 @@
           ]
         }
       ],
-      "tips": [],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -1955,7 +1442,6 @@
       ],
       "url": "https://calendar.google.com/",
       "useCases": [],
-      "tips": [],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -1976,7 +1462,6 @@
       ],
       "url": "https://www.google.com/",
       "useCases": [],
-      "tips": [],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -2029,35 +1514,6 @@
           ]
         }
       ],
-      "tips": [
-        {
-          "title": "Development Best Practices",
-          "items": [
-            "Use TypeScript decorators",
-            "Implement error boundaries",
-            "Structure conversations",
-            "Handle edge cases"
-          ]
-        },
-        {
-          "title": "Performance Optimization",
-          "items": [
-            "Cache responses",
-            "Use connection pools",
-            "Implement throttling",
-            "Optimize webhooks"
-          ]
-        },
-        {
-          "title": "Deployment Strategy",
-          "items": [
-            "Use long polling in dev",
-            "Set up webhooks in prod",
-            "Configure timeouts",
-            "Monitor bot health"
-          ]
-        }
-      ],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -2078,7 +1534,6 @@
       ],
       "url": "https://www.granola.ai/",
       "useCases": [],
-      "tips": [],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -2128,35 +1583,6 @@
             "Customer support",
             "Product tutorials",
             "Process documentation"
-          ]
-        }
-      ],
-      "tips": [
-        {
-          "title": "Recording Strategy",
-          "items": [
-            "Plan workflow beforehand",
-            "Keep segments focused",
-            "Use clear movements",
-            "Maintain steady pace"
-          ]
-        },
-        {
-          "title": "Content Optimization",
-          "items": [
-            "Edit AI descriptions",
-            "Choose appropriate voices",
-            "Add visual highlights",
-            "Structure content well"
-          ]
-        },
-        {
-          "title": "Best Practices",
-          "items": [
-            "Organize by topic",
-            "Maintain consistency",
-            "Test viewer experience",
-            "Update regularly"
           ]
         }
       ],
@@ -2212,35 +1638,6 @@
           ]
         }
       ],
-      "tips": [
-        {
-          "title": "Generation Strategy",
-          "items": [
-            "Use clear reference images",
-            "Provide quality audio",
-            "Test different styles",
-            "Iterate on results"
-          ]
-        },
-        {
-          "title": "Performance Optimization",
-          "items": [
-            "Plan video length",
-            "Optimize assets",
-            "Batch processing",
-            "Resource management"
-          ]
-        },
-        {
-          "title": "Best Practices",
-          "items": [
-            "Test different inputs",
-            "Monitor quality",
-            "Save iterations",
-            "Document settings"
-          ]
-        }
-      ],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -2290,35 +1687,6 @@
             "Model serving",
             "App sharing",
             "Community engagement"
-          ]
-        }
-      ],
-      "tips": [
-        {
-          "title": "Discovery Strategy",
-          "items": [
-            "Use category filters",
-            "Read documentation",
-            "Test thoroughly",
-            "Compare alternatives"
-          ]
-        },
-        {
-          "title": "Performance Optimization",
-          "items": [
-            "Choose right hardware",
-            "Monitor resource usage",
-            "Cache responses",
-            "Handle timeouts"
-          ]
-        },
-        {
-          "title": "Best Practices",
-          "items": [
-            "Document spaces well",
-            "Credit original work",
-            "Maintain versions",
-            "Share improvements"
           ]
         }
       ],
@@ -2374,35 +1742,6 @@
           ]
         }
       ],
-      "tips": [
-        {
-          "title": "Content Strategy",
-          "items": [
-            "Organize video library",
-            "Tag content properly",
-            "Test different styles",
-            "Track performance"
-          ]
-        },
-        {
-          "title": "AI Optimization",
-          "items": [
-            "Use clear prompts",
-            "Iterate on scripts",
-            "Test variations",
-            "Monitor metrics"
-          ]
-        },
-        {
-          "title": "Best Practices",
-          "items": [
-            "Maintain asset library",
-            "Document workflows",
-            "A/B test creatives",
-            "Regular updates"
-          ]
-        }
-      ],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -2423,7 +1762,6 @@
       ],
       "url": "https://support.apple.com/messages",
       "useCases": [],
-      "tips": [],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -2473,35 +1811,6 @@
             "Track cost and usage",
             "Identify bottlenecks",
             "Optimize chain execution"
-          ]
-        }
-      ],
-      "tips": [
-        {
-          "title": "Debugging Optimization",
-          "items": [
-            "Use detailed tracing",
-            "Tag runs for organization",
-            "Monitor error patterns",
-            "Track edge cases"
-          ]
-        },
-        {
-          "title": "Cost Management",
-          "items": [
-            "Monitor token usage",
-            "Track API calls",
-            "Set usage alerts",
-            "Optimize expensive operations"
-          ]
-        },
-        {
-          "title": "Development Best Practices",
-          "items": [
-            "Use structured feedback",
-            "Implement proper logging",
-            "Version control prompts",
-            "Test chain components"
           ]
         }
       ],
@@ -2557,35 +1866,6 @@
           ]
         }
       ],
-      "tips": [
-        {
-          "title": "Development Strategy",
-          "items": [
-            "Start with simple agents",
-            "Test memory persistence",
-            "Monitor resource usage",
-            "Use sandbox environments"
-          ]
-        },
-        {
-          "title": "Performance Optimization",
-          "items": [
-            "Configure memory limits",
-            "Optimize state storage",
-            "Handle context windows",
-            "Manage resources"
-          ]
-        },
-        {
-          "title": "Best Practices",
-          "items": [
-            "Document agent states",
-            "Version control configs",
-            "Monitor interactions",
-            "Regular backups"
-          ]
-        }
-      ],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -2606,7 +1886,6 @@
       ],
       "url": "https://linear.app/",
       "useCases": [],
-      "tips": [],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -2622,7 +1901,6 @@
       ],
       "url": "https://www.apple.com/macbook-pro/",
       "useCases": [],
-      "tips": [],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -2675,35 +1953,6 @@
           ]
         }
       ],
-      "tips": [
-        {
-          "title": "Design Strategy",
-          "items": [
-            "Clear prompting",
-            "Component reuse",
-            "Style consistency",
-            "Version tracking"
-          ]
-        },
-        {
-          "title": "Collaboration Flow",
-          "items": [
-            "Team workspaces",
-            "Design feedback",
-            "Asset organization",
-            "Context sharing"
-          ]
-        },
-        {
-          "title": "Best Practices",
-          "items": [
-            "Start small",
-            "Iterate quickly",
-            "Document components",
-            "Maintain consistency"
-          ]
-        }
-      ],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -2724,7 +1973,6 @@
       ],
       "url": "https://todo.microsoft.com/",
       "useCases": [],
-      "tips": [],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -2745,7 +1993,6 @@
       ],
       "url": "https://www.midjourney.com/",
       "useCases": [],
-      "tips": [],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -2795,35 +2042,6 @@
             "Study industry standards",
             "Track design evolution",
             "Benchmark features"
-          ]
-        }
-      ],
-      "tips": [
-        {
-          "title": "Research Efficiency",
-          "items": [
-            "Organize by categories",
-            "Create collections",
-            "Document findings",
-            "Note design patterns"
-          ]
-        },
-        {
-          "title": "Design Application",
-          "items": [
-            "Adapt patterns thoughtfully",
-            "Consider context",
-            "Mix different approaches",
-            "Maintain originality"
-          ]
-        },
-        {
-          "title": "Best Practices",
-          "items": [
-            "Study user flows",
-            "Analyze interactions",
-            "Note micro-details",
-            "Document insights"
           ]
         }
       ],
@@ -2879,35 +2097,6 @@
           ]
         }
       ],
-      "tips": [
-        {
-          "title": "Performance Optimization",
-          "items": [
-            "Use layout animations sparingly",
-            "Leverage hardware acceleration",
-            "Implement exit animations",
-            "Monitor frame rates"
-          ]
-        },
-        {
-          "title": "Animation Design",
-          "items": [
-            "Use spring physics",
-            "Create reusable variants",
-            "Implement stagger effects",
-            "Chain animations properly"
-          ]
-        },
-        {
-          "title": "Development Best Practices",
-          "items": [
-            "Keep animations subtle",
-            "Test on mobile devices",
-            "Use TypeScript for safety",
-            "Implement fallbacks"
-          ]
-        }
-      ],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -2928,7 +2117,6 @@
       ],
       "url": "https://www.myfinancialfuture.xyz/",
       "useCases": [],
-      "tips": [],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -2981,35 +2169,6 @@
           ]
         }
       ],
-      "tips": [
-        {
-          "title": "Implementation Strategy",
-          "items": [
-            "Start with simple flows",
-            "Test thoroughly",
-            "Document workflows",
-            "Monitor performance"
-          ]
-        },
-        {
-          "title": "Performance Optimization",
-          "items": [
-            "Configure caching",
-            "Handle rate limits",
-            "Optimize data flow",
-            "Manage resources"
-          ]
-        },
-        {
-          "title": "Best Practices",
-          "items": [
-            "Version control flows",
-            "Implement error handling",
-            "Set up monitoring",
-            "Regular backups"
-          ]
-        }
-      ],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -3059,7 +2218,6 @@
           ]
         }
       ],
-      "tips": [],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -3112,35 +2270,6 @@
           ]
         }
       ],
-      "tips": [
-        {
-          "title": "Model Strategy",
-          "items": [
-            "Choose appropriate models",
-            "Compare performance",
-            "Monitor costs",
-            "Test alternatives"
-          ]
-        },
-        {
-          "title": "Performance Optimization",
-          "items": [
-            "Cache responses",
-            "Implement retries",
-            "Handle rate limits",
-            "Batch requests"
-          ]
-        },
-        {
-          "title": "Best Practices",
-          "items": [
-            "Secure API keys",
-            "Monitor usage",
-            "Document integrations",
-            "Version control"
-          ]
-        }
-      ],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -3189,7 +2318,6 @@
           ]
         }
       ],
-      "tips": [],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -3245,37 +2373,6 @@
           ]
         }
       ],
-      "tips": [
-        {
-          "title": "Content Strategy",
-          "items": [
-            "Plan content themes",
-            "Test different lengths",
-            "Optimize for platforms",
-            "Track engagement",
-            "Maintain consistency"
-          ]
-        },
-        {
-          "title": "AI Optimization",
-          "items": [
-            "Use quality source videos",
-            "Review AI selections",
-            "Customize templates",
-            "Test different styles",
-            "Monitor performance"
-          ]
-        },
-        {
-          "title": "Best Practices",
-          "items": [
-            "Maintain brand style",
-            "Test on target platforms",
-            "Track metrics",
-            "Iterate based on data"
-          ]
-        }
-      ],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -3325,35 +2422,6 @@
             "Similar item matching",
             "Semantic search endpoints",
             "Real-time vector operations"
-          ]
-        }
-      ],
-      "tips": [
-        {
-          "title": "Performance Optimization",
-          "items": [
-            "Use appropriate index dimensions",
-            "Batch vector operations",
-            "Implement caching strategies",
-            "Monitor query performance"
-          ]
-        },
-        {
-          "title": "Cost Management",
-          "items": [
-            "Choose optimal pod size",
-            "Clean unused vectors",
-            "Monitor API usage",
-            "Implement TTL for vectors"
-          ]
-        },
-        {
-          "title": "Integration Best Practices",
-          "items": [
-            "Use environment variables",
-            "Implement retry logic",
-            "Handle rate limiting",
-            "Maintain vector metadata"
           ]
         }
       ],
@@ -3409,35 +2477,6 @@
           ]
         }
       ],
-      "tips": [
-        {
-          "title": "Installation Strategy",
-          "items": [
-            "Review requirements first",
-            "Check system compatibility",
-            "Monitor resource usage",
-            "Backup configurations"
-          ]
-        },
-        {
-          "title": "Performance Optimization",
-          "items": [
-            "Manage concurrent services",
-            "Control resource allocation",
-            "Monitor memory usage",
-            "Handle dependencies"
-          ]
-        },
-        {
-          "title": "Best Practices",
-          "items": [
-            "Document configurations",
-            "Version control scripts",
-            "Regular maintenance",
-            "Monitor system health"
-          ]
-        }
-      ],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -3490,35 +2529,6 @@
           ]
         }
       ],
-      "tips": [
-        {
-          "title": "Disk Space Optimization",
-          "items": [
-            "Use store path efficiently",
-            "Clean unused packages",
-            "Manage global cache",
-            "Share dependencies"
-          ]
-        },
-        {
-          "title": "Monorepo Management",
-          "items": [
-            "Configure workspaces",
-            "Use filters effectively",
-            "Share dependencies",
-            "Manage versions"
-          ]
-        },
-        {
-          "title": "Best Practices",
-          "items": [
-            "Enable strict mode",
-            "Use lockfile",
-            "Configure .npmrc",
-            "Set up CI properly"
-          ]
-        }
-      ],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -3544,7 +2554,6 @@
       ],
       "url": "https://podforyou.com/",
       "useCases": [],
-      "tips": [],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -3594,35 +2603,6 @@
             "Environment management",
             "Service monitoring",
             "Log analysis"
-          ]
-        }
-      ],
-      "tips": [
-        {
-          "title": "Deployment Optimization",
-          "items": [
-            "Use Docker containers",
-            "Configure auto-scaling",
-            "Set up health checks",
-            "Implement CI/CD"
-          ]
-        },
-        {
-          "title": "Resource Management",
-          "items": [
-            "Monitor usage limits",
-            "Optimize database queries",
-            "Configure caching",
-            "Set up alerts"
-          ]
-        },
-        {
-          "title": "Cost Optimization",
-          "items": [
-            "Use ephemeral disks",
-            "Implement auto-sleep",
-            "Monitor bandwidth",
-            "Scale appropriately"
           ]
         }
       ],
@@ -3678,35 +2658,6 @@
           ]
         }
       ],
-      "tips": [
-        {
-          "title": "Debugging Strategy",
-          "items": [
-            "Focus on critical paths",
-            "Monitor key components",
-            "Track state changes",
-            "Analyze render trees"
-          ]
-        },
-        {
-          "title": "Performance Optimization",
-          "items": [
-            "Fix infinite loops",
-            "Reduce unnecessary renders",
-            "Optimize hooks usage",
-            "Implement memoization"
-          ]
-        },
-        {
-          "title": "Best Practices",
-          "items": [
-            "Regular scanning",
-            "Baseline metrics",
-            "Document findings",
-            "Share optimizations"
-          ]
-        }
-      ],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -3756,35 +2707,6 @@
             "Use Cog for packaging",
             "Automatic API generation",
             "Production-ready scaling"
-          ]
-        }
-      ],
-      "tips": [
-        {
-          "title": "Development Strategy",
-          "items": [
-            "Test in playground first",
-            "Use appropriate GPU tiers",
-            "Monitor compute costs",
-            "Handle API timeouts"
-          ]
-        },
-        {
-          "title": "Performance Optimization",
-          "items": [
-            "Choose right model size",
-            "Batch requests when possible",
-            "Cache results",
-            "Use webhooks for long runs"
-          ]
-        },
-        {
-          "title": "Best Practices",
-          "items": [
-            "Secure API tokens",
-            "Implement retry logic",
-            "Monitor usage metrics",
-            "Version control models"
           ]
         }
       ],
@@ -3840,35 +2762,6 @@
           ]
         }
       ],
-      "tips": [
-        {
-          "title": "Development Strategy",
-          "items": [
-            "Start with templates",
-            "Customize progressively",
-            "Use AI suggestions",
-            "Export in chunks"
-          ]
-        },
-        {
-          "title": "Code Management",
-          "items": [
-            "Version control exports",
-            "Document customizations",
-            "Maintain consistency",
-            "Organize components"
-          ]
-        },
-        {
-          "title": "Best Practices",
-          "items": [
-            "Test exported code",
-            "Review AI generations",
-            "Follow design patterns",
-            "Keep components modular"
-          ]
-        }
-      ],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -3918,35 +2811,6 @@
             "Click animations",
             "Zoom adjustments",
             "Cursor customization"
-          ]
-        }
-      ],
-      "tips": [
-        {
-          "title": "Recording Setup",
-          "items": [
-            "Configure scenes beforehand",
-            "Test multi-device sync",
-            "Check audio levels",
-            "Plan scene transitions"
-          ]
-        },
-        {
-          "title": "Effect Management",
-          "items": [
-            "Adjust zoom intensity",
-            "Customize cursor style",
-            "Fine-tune animations",
-            "Balance visual effects"
-          ]
-        },
-        {
-          "title": "Best Practices",
-          "items": [
-            "Organize scenes logically",
-            "Use consistent effects",
-            "Plan transitions",
-            "Monitor performance"
           ]
         }
       ],
@@ -4002,35 +2866,6 @@
           ]
         }
       ],
-      "tips": [
-        {
-          "title": "Voice Optimization",
-          "items": [
-            "Choose voices by content type",
-            "Adjust speed per complexity",
-            "Use HD voices for long content",
-            "Match voice to language"
-          ]
-        },
-        {
-          "title": "Content Management",
-          "items": [
-            "Save articles for offline",
-            "Organize by topic",
-            "Queue related content",
-            "Mark important sections"
-          ]
-        },
-        {
-          "title": "Best Practices",
-          "items": [
-            "Clean text before listening",
-            "Remove unnecessary elements",
-            "Use reader mode when possible",
-            "Test different speeds"
-          ]
-        }
-      ],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -4080,35 +2915,6 @@
             "WebGL export",
             "Performance optimization",
             "Responsive design"
-          ]
-        }
-      ],
-      "tips": [
-        {
-          "title": "Design Strategy",
-          "items": [
-            "Start with simple shapes",
-            "Build complexity gradually",
-            "Test interactions early",
-            "Consider load times"
-          ]
-        },
-        {
-          "title": "Performance Optimization",
-          "items": [
-            "Optimize geometry",
-            "Reduce polygon count",
-            "Compress textures",
-            "Manage scene complexity"
-          ]
-        },
-        {
-          "title": "Best Practices",
-          "items": [
-            "Plan for mobile",
-            "Test across browsers",
-            "Consider fallbacks",
-            "Monitor frame rates"
           ]
         }
       ],
@@ -4164,35 +2970,6 @@
           ]
         }
       ],
-      "tips": [
-        {
-          "title": "Development Strategy",
-          "items": [
-            "Start with basic stories",
-            "Use component controls",
-            "Test edge cases",
-            "Document variations"
-          ]
-        },
-        {
-          "title": "Performance Optimization",
-          "items": [
-            "Configure addons wisely",
-            "Use composition",
-            "Manage dependencies",
-            "Optimize builds"
-          ]
-        },
-        {
-          "title": "Best Practices",
-          "items": [
-            "Write clear stories",
-            "Include documentation",
-            "Test interactions",
-            "Share with team"
-          ]
-        }
-      ],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -4213,7 +2990,6 @@
       ],
       "url": "https://substack.com/",
       "useCases": [],
-      "tips": [],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -4234,7 +3010,6 @@
       ],
       "url": "https://super.so/",
       "useCases": [],
-      "tips": [],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -4254,7 +3029,6 @@
       ],
       "url": "https://www.superstack.so/",
       "useCases": [],
-      "tips": [],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -4304,35 +3078,6 @@
             "Optimistic updates",
             "WebSocket integration",
             "Live data synchronization"
-          ]
-        }
-      ],
-      "tips": [
-        {
-          "title": "Performance Optimization",
-          "items": [
-            "Configure staleTime properly",
-            "Use prefetching",
-            "Implement suspense mode",
-            "Leverage query deduplication"
-          ]
-        },
-        {
-          "title": "Cache Management",
-          "items": [
-            "Set up invalidation rules",
-            "Use query keys effectively",
-            "Configure cache time",
-            "Handle cache updates"
-          ]
-        },
-        {
-          "title": "Development Best Practices",
-          "items": [
-            "Implement error boundaries",
-            "Use TypeScript for safety",
-            "Structure query keys well",
-            "Monitor devtools panel"
           ]
         }
       ],
@@ -4388,35 +3133,6 @@
           ]
         }
       ],
-      "tips": [
-        {
-          "title": "Implementation Strategy",
-          "items": [
-            "Use appropriate endpoints",
-            "Handle rate limits",
-            "Cache responses",
-            "Validate sources"
-          ]
-        },
-        {
-          "title": "Performance Optimization",
-          "items": [
-            "Batch requests",
-            "Implement retries",
-            "Monitor usage",
-            "Structure queries"
-          ]
-        },
-        {
-          "title": "Best Practices",
-          "items": [
-            "Follow API guidelines",
-            "Handle timeouts",
-            "Document integrations",
-            "Version control"
-          ]
-        }
-      ],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -4437,7 +3153,6 @@
       ],
       "url": "https://telegram.org/",
       "useCases": [],
-      "tips": [],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -4453,7 +3168,6 @@
       ],
       "url": "https://textexpander.com/",
       "useCases": [],
-      "tips": [],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -4505,35 +3219,6 @@
             "Download analytics",
             "Version control",
             "CDN distribution"
-          ]
-        }
-      ],
-      "tips": [
-        {
-          "title": "Development Strategy",
-          "items": [
-            "Start with basic features",
-            "Test cross-platform",
-            "Implement offline mode",
-            "Monitor performance"
-          ]
-        },
-        {
-          "title": "Feature Integration",
-          "items": [
-            "Use native APIs wisely",
-            "Handle window states",
-            "Manage app lifecycle",
-            "Optimize resources"
-          ]
-        },
-        {
-          "title": "Best Practices",
-          "items": [
-            "Test all platforms",
-            "Secure app signing",
-            "Monitor analytics",
-            "Regular updates"
           ]
         }
       ],
@@ -4589,35 +3274,6 @@
           ]
         }
       ],
-      "tips": [
-        {
-          "title": "Setup Strategy",
-          "items": [
-            "Configure preferences",
-            "Learn key shortcuts",
-            "Set up integrations",
-            "Customize features"
-          ]
-        },
-        {
-          "title": "Performance Optimization",
-          "items": [
-            "Manage resources",
-            "Cache effectively",
-            "Balance AI usage",
-            "Monitor response times"
-          ]
-        },
-        {
-          "title": "Best Practices",
-          "items": [
-            "Regular updates",
-            "Backup settings",
-            "Document workflows",
-            "Share learnings"
-          ]
-        }
-      ],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -4638,7 +3294,6 @@
       ],
       "url": "https://www.itsalltruffles.com/",
       "useCases": [],
-      "tips": [],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -4691,35 +3346,6 @@
           ]
         }
       ],
-      "tips": [
-        {
-          "title": "Screenshot Strategy",
-          "items": [
-            "Use custom themes",
-            "Maintain branding",
-            "Optimize quality",
-            "Batch process"
-          ]
-        },
-        {
-          "title": "Automation Setup",
-          "items": [
-            "Configure webhooks",
-            "Set up triggers",
-            "Handle errors",
-            "Monitor usage"
-          ]
-        },
-        {
-          "title": "Best Practices",
-          "items": [
-            "Test themes first",
-            "Document workflows",
-            "Backup settings",
-            "Version control"
-          ]
-        }
-      ],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -4769,35 +3395,6 @@
             "Visual editing",
             "Component design",
             "Responsive layouts"
-          ]
-        }
-      ],
-      "tips": [
-        {
-          "title": "Design Approach",
-          "items": [
-            "Plan 3D elements carefully",
-            "Consider performance",
-            "Design for accessibility",
-            "Test across devices"
-          ]
-        },
-        {
-          "title": "Performance Optimization",
-          "items": [
-            "Optimize 3D models",
-            "Manage memory usage",
-            "Consider load times",
-            "Handle fallbacks"
-          ]
-        },
-        {
-          "title": "Best Practices",
-          "items": [
-            "Progressive enhancement",
-            "Mobile considerations",
-            "Accessibility features",
-            "Performance monitoring"
           ]
         }
       ],
@@ -4855,7 +3452,6 @@
           ]
         }
       ],
-      "tips": [],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -4908,35 +3504,6 @@
           ]
         }
       ],
-      "tips": [
-        {
-          "title": "Voice Capture",
-          "items": [
-            "Speak naturally",
-            "Share regularly",
-            "Use quiet spaces",
-            "Express freely"
-          ]
-        },
-        {
-          "title": "Notion Integration",
-          "items": [
-            "Set up databases",
-            "Define templates",
-            "Organize structure",
-            "Review regularly"
-          ]
-        },
-        {
-          "title": "Best Practices",
-          "items": [
-            "Daily reflections",
-            "Review insights",
-            "Track patterns",
-            "Stay consistent"
-          ]
-        }
-      ],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -4957,7 +3524,6 @@
       ],
       "url": "https://twitter.com/",
       "useCases": [],
-      "tips": [],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -4985,7 +3551,6 @@
       ],
       "url": "https://www.youtube.com/",
       "useCases": [],
-      "tips": [],
       "addedOn": "2025-01-01",
       "recommendedBy": null
     },
@@ -5035,26 +3600,6 @@
             "Conversion tracking",
             "Engagement metrics",
             "Referral source tracking"
-          ]
-        }
-      ],
-      "tips": [
-        {
-          "title": "Setup Strategy",
-          "items": [
-            "Customize landing page design",
-            "Set clear expectations",
-            "Enable social sharing",
-            "Test signup flow"
-          ]
-        },
-        {
-          "title": "Engagement",
-          "items": [
-            "Send regular updates",
-            "Reward early signups",
-            "Encourage referrals",
-            "Maintain communication"
           ]
         }
       ],
@@ -5110,26 +3655,6 @@
           ]
         }
       ],
-      "tips": [
-        {
-          "title": "Image Preparation",
-          "items": [
-            "Use high-quality screenshots",
-            "Remove unnecessary elements",
-            "Consider aspect ratios",
-            "Plan background space"
-          ]
-        },
-        {
-          "title": "Style Selection",
-          "items": [
-            "Match brand colors",
-            "Test different patterns",
-            "Balance shadow intensity",
-            "Consider context"
-          ]
-        }
-      ],
       "addedOn": "2024-02-17",
       "recommendedBy": null
     },
@@ -5179,26 +3704,6 @@
             "Privacy controls",
             "Export capabilities",
             "Pattern visualization"
-          ]
-        }
-      ],
-      "tips": [
-        {
-          "title": "Setup Strategy",
-          "items": [
-            "Configure privacy settings",
-            "Set tracking boundaries",
-            "Define work categories",
-            "Plan data retention"
-          ]
-        },
-        {
-          "title": "Usage Optimization",
-          "items": [
-            "Review weekly trends",
-            "Identify peak hours",
-            "Monitor app usage",
-            "Track focus time"
           ]
         }
       ],
@@ -5254,26 +3759,6 @@
           ]
         }
       ],
-      "tips": [
-        {
-          "title": "Development Strategy",
-          "items": [
-            "Start with simple agents",
-            "Test swarm behaviors",
-            "Monitor resource usage",
-            "Document interactions"
-          ]
-        },
-        {
-          "title": "Performance Optimization",
-          "items": [
-            "Optimize communication",
-            "Balance workloads",
-            "Handle state sync",
-            "Manage resources"
-          ]
-        }
-      ],
       "addedOn": "2024-02-17",
       "recommendedBy": null
     },
@@ -5323,17 +3808,6 @@
             "Template creation",
             "Recurring task setup",
             "Productivity analytics"
-          ]
-        }
-      ],
-      "tips": [
-        {
-          "title": "Getting Started",
-          "items": [
-            "Begin with templates",
-            "Start with simple projects",
-            "Gradually add complexity",
-            "Explore integrations"
           ]
         }
       ],
@@ -5387,35 +3861,6 @@
             "Streamline API integrations",
             "Simplify authentication",
             "Build powerful agent workflows"
-          ]
-        }
-      ],
-      "tips": [
-        {
-          "title": "Integration Strategy",
-          "items": [
-            "Start with free tier",
-            "Test with simple integrations",
-            "Explore documentation examples",
-            "Use framework-specific guides"
-          ]
-        },
-        {
-          "title": "Authentication Setup",
-          "items": [
-            "Follow OAuth instructions",
-            "Secure API credentials",
-            "Manage connections properly",
-            "Review security settings"
-          ]
-        },
-        {
-          "title": "Best Practices",
-          "items": [
-            "Check API limits",
-            "Monitor usage statistics",
-            "Follow example flows",
-            "Join community forums"
           ]
         }
       ],
