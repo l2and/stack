@@ -315,6 +315,59 @@
       "recommendedBy": null
     },
     {
+      "id": "canopy",
+      "title": "Canopy Labs",
+      "status": "Plan to Try",
+      "category": "AI",
+      "description": "Retrieval Augmented Generation (RAG) framework and context engine that enhances LLMs by integrating external knowledge sources to provide more accurate, contextual responses",
+      "howToUse": [
+        "Set up Pinecone vector database",
+        "Import text data for knowledge base",
+        "Configure retrieval parameters",
+        "Connect with OpenAI LLMs",
+        "Deploy RAG-powered applications"
+      ],
+      "caveats": [
+        "Requires API keys for Pinecone and OpenAI",
+        "Limited to compatible LLM providers",
+        "Text data preparation needed",
+        "Resource requirements for large datasets"
+      ],
+      "url": "https://canopylabs.ai/model-releases",
+      "useCases": [
+        {
+          "title": "Knowledge Base Integration",
+          "items": [
+            "Document retrieval",
+            "Context-aware responses",
+            "Private data querying",
+            "Custom knowledge domains"
+          ]
+        },
+        {
+          "title": "RAG Implementation",
+          "items": [
+            "Reduce LLM hallucinations",
+            "Improve response accuracy",
+            "Dynamic knowledge updates",
+            "Specialized information access"
+          ]
+        },
+        {
+          "title": "Application Development",
+          "items": [
+            "Production-ready RAG systems",
+            "Custom AI assistants",
+            "Domain-specific chatbots",
+            "Knowledge management tools"
+          ]
+        }
+      ],
+      "addedOn": "2024-02-24",
+      "recommendedBy": null,
+      "imageUrl": "/images/tools/canopy.svg"
+    },
+    {
       "id": "cartesia",
       "title": "Cartesia",
       "status": "Plan to Try",
@@ -634,6 +687,59 @@
       "useCases": [],
       "addedOn": "2025-01-01",
       "recommendedBy": null
+    },
+    {
+      "id": "daily",
+      "title": "Daily",
+      "status": "Plan to Try",
+      "category": "Development",
+      "description": "Real-time voice and video API platform for embedding 1-click video calls directly in browsers and applications with no downloads required",
+      "howToUse": [
+        "Sign up for API access",
+        "Create and configure virtual rooms",
+        "Embed video calls with iframe",
+        "Customize permissions and layouts",
+        "Implement recording and analytics"
+      ],
+      "caveats": [
+        "API key required",
+        "Screen sharing limited to desktop browsers",
+        "Browser compatibility considerations",
+        "Advanced features may require paid plans"
+      ],
+      "url": "https://www.daily.co/",
+      "useCases": [
+        {
+          "title": "Video Integration",
+          "items": [
+            "Embedded video meetings",
+            "In-app voice and video chat",
+            "Browser-based conferencing",
+            "Real-time collaboration tools"
+          ]
+        },
+        {
+          "title": "API Features",
+          "items": [
+            "No-download video calls",
+            "Cross-browser compatibility",
+            "Mobile-responsive interfaces",
+            "REST API and webhooks"
+          ]
+        },
+        {
+          "title": "Enterprise Solutions",
+          "items": [
+            "Global mesh network",
+            "Large-scale meetings",
+            "HIPAA and SOC2 compliance",
+            "Call quality analytics"
+          ]
+        }
+      ],
+      "addedOn": "2024-02-24",
+      "recommendedBy": "Lamar",
+      "imageUrl": "/images/tools/daily.svg"
     },
     {
       "id": "dalle",
@@ -1300,6 +1406,59 @@
       "useCases": [],
       "addedOn": "2025-01-01",
       "recommendedBy": null
+    },
+    {
+      "id": "gamma",
+      "title": "Gamma",
+      "status": "Plan to Try",
+      "category": "Design",
+      "description": "AI-powered presentation and document creation platform that generates visually appealing content from text prompts or existing files",
+      "howToUse": [
+        "Generate presentations with AI prompts",
+        "Convert existing documents to visual formats",
+        "Create webpages and interactive content",
+        "Customize designs with brand elements",
+        "Collaborate with team members"
+      ],
+      "caveats": [
+        "Free tier limited to 10 slides per presentation",
+        "400 AI credits limitation on free plan",
+        "Custom domain publishing requires Pro plan",
+        "AI-generated content may need fact checking"
+      ],
+      "url": "https://gamma.app/",
+      "useCases": [
+        {
+          "title": "Presentation Creation",
+          "items": [
+            "Business pitch decks",
+            "Educational materials",
+            "Project reports",
+            "Visual narratives"
+          ]
+        },
+        {
+          "title": "Document Transformation",
+          "items": [
+            "Convert Google Docs to visual formats",
+            "Transform text into engaging layouts",
+            "Import and enhance PowerPoint files",
+            "Create interactive documents"
+          ]
+        },
+        {
+          "title": "Web Content",
+          "items": [
+            "Microsites for events",
+            "Landing pages",
+            "Interactive newsletters",
+            "Embedded multimedia content"
+          ]
+        }
+      ],
+      "addedOn": "2024-02-24",
+      "recommendedBy": "Dallas",
+      "imageUrl": "/images/tools/gamma.svg"
     },
     {
       "id": "genspark",
@@ -3014,6 +3173,59 @@
       "recommendedBy": null
     },
     {
+      "id": "syncity",
+      "title": "SynCity",
+      "status": "Plan to Try",
+      "category": "AI",
+      "description": "Training-free approach for generating immersive 3D worlds from text prompts by combining 2D and 3D generative models in a tile-based system",
+      "howToUse": [
+        "Access the GitHub repository",
+        "Provide text prompts for world generation",
+        "Generate 3D worlds tile by tile",
+        "Explore generated worlds in 3D",
+        "Use fine-grained control for layout and appearance"
+      ],
+      "caveats": [
+        "Code not fully released yet (coming soon)",
+        "Requires powerful hardware for generation",
+        "Processing time increases with world size",
+        "May have seams between tiles in some cases"
+      ],
+      "url": "https://github.com/paulengstler/syncity",
+      "useCases": [
+        {
+          "title": "3D World Generation",
+          "items": [
+            "Virtual environments for games",
+            "Immersive experiences for VR/AR",
+            "Architectural visualizations",
+            "Environment prototyping"
+          ]
+        },
+        {
+          "title": "Content Creation",
+          "items": [
+            "Text-to-3D scene conversion",
+            "Expansive 3D environments",
+            "Custom themed worlds",
+            "Navigable 3D spaces"
+          ]
+        },
+        {
+          "title": "Advanced Features",
+          "items": [
+            "Tile-based world construction",
+            "Seamless tile blending",
+            "Fine-grained layout control",
+            "Context-aware generation"
+          ]
+        }
+      ],
+      "addedOn": "2024-02-24",
+      "recommendedBy": null,
+      "imageUrl": "/images/tools/syncity.svg"
+    },
+    {
       "id": "superstack",
       "title": "SuperStack",
       "status": "Plan to Build",
@@ -3867,6 +4079,59 @@
       "addedOn": "2024-02-24",
       "recommendedBy": null,
       "imageUrl": "/images/tools/composio.svg"
+    },
+    {
+      "id": "tavus",
+      "title": "Tavus",
+      "status": "Plan to Try",
+      "category": "AI",
+      "description": "Advanced AI video platform for creating digital twins with APIs for video generation and real-time conversational video interfaces",
+      "howToUse": [
+        "Sign up for API access",
+        "Record video samples for custom replica",
+        "Integrate APIs into your application",
+        "Generate personalized videos or create conversational interfaces",
+        "Implement with white-label capabilities"
+      ],
+      "caveats": [
+        "Training time for custom replicas",
+        "API key required",
+        "Usage limits on free tier",
+        "Content moderation requirements"
+      ],
+      "url": "https://www.tavus.io/",
+      "useCases": [
+        {
+          "title": "Digital Twin Creation",
+          "items": [
+            "Custom AI video avatars",
+            "Personalized video messages",
+            "Interactive AI replicas",
+            "Multi-language support"
+          ]
+        },
+        {
+          "title": "Video Applications",
+          "items": [
+            "Real-time conversational video",
+            "AI-powered video generation",
+            "White-labeled video solutions",
+            "Script-to-video conversion"
+          ]
+        },
+        {
+          "title": "Integration Options",
+          "items": [
+            "Developer-friendly APIs",
+            "SDK implementation",
+            "Content security features",
+            "Custom model training"
+          ]
+        }
+      ],
+      "addedOn": "2024-02-24",
+      "recommendedBy": "Lamar",
+      "imageUrl": "/images/tools/tavus.svg"
     }
   ]
 }
