@@ -1,55 +1,20 @@
 {
   "tools": [
     {
-      "id": "a1base",
-      "title": "A1Base",
-      "status": "Plan to Try",
-      "category": "Development",
-      "description": "API platform for giving AI agents real-world communication capabilities through verified phone numbers, email addresses, and trusted identities",
+      "id": "typora",
+      "title": "Typora",
+      "status": "Using",
+      "category": "Productivity",
+      "description": "Powerful markdown note taker and reader",
       "howToUse": [
-        "Get API credentials",
-        "Configure communication channels",
-        "Set up agent identities",
-        "Implement messaging APIs",
-        "Monitor agent interactions"
+        "Download",
+        "Configure features and settintgs"
       ],
       "caveats": [
-        "API key required",
-        "Paid service",
-        "Rate limits apply",
-        "Identity verification needed"
+        "Paid tool",
+        "Requires knowledege of Markdown"
       ],
-      "url": "https://www.a1base.com/",
-      "useCases": [
-        {
-          "title": "AI Communication",
-          "items": [
-            "WhatsApp integration",
-            "Email capabilities",
-            "SMS messaging",
-            "Group chat access"
-          ]
-        },
-        {
-          "title": "Identity Management",
-          "items": [
-            "Agent verification",
-            "Spam protection",
-            "Trust building",
-            "Identity security"
-          ]
-        },
-        {
-          "title": "Integration Workflow",
-          "items": [
-            "API implementation",
-            "Channel setup",
-            "Message handling",
-            "Event monitoring"
-          ]
-        }
-      ],
-      "addedOn": "2025-01-01",
+      "url": "https://www.typora.io/",
       "recommendedBy": null
     },
     {

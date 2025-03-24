@@ -49,7 +49,7 @@ npm run dev
 ---
 title: "Tool Name"
 status: "Using" | "Plan to Try" | "Plan to Build" | "Building" | "Retired"
-category: "AI" | "Productivity" | "Development" | "Communication" | "Design" | "Other"
+category: "AI" | "Productivity" | "Development" | "Communication" | "Other"
 description: "Brief description of the tool"
 howToUse: "- Key use case 1\n- Key use case 2\n- Key use case 3"
 caveats: "Optional notes about limitations"
