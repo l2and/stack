@@ -1,11 +1,14 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
+import { useTheme } from "next-themes" 
+import { useState, useEffect } from "react"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { GlowCard } from "@/components/ui/glow-card"
 import { Process } from "@/types"
-import { CalendarCheck2, FileEdit, Goal, HeartHandshake, Lightbulb, ListTodo } from "lucide-react"
+import { GraduationCap, HeartHandshake, Trees, Lightbulb, ListTodo, Workflow } from "lucide-react"
 
 interface ProcessCardProps extends Process {
   showContent?: boolean
@@ -13,14 +16,14 @@ interface ProcessCardProps extends Process {
 
 export type { ProcessCardProps }
 
+// Icon Database: https://lucide.dev/icons/
 const getProcessIcon = (id: string) => {
   const iconMap: Record<string, React.ReactNode> = {
-    'annual-review': <Goal className="w-6 h-6" />,
-    'blog-post-workflow': <FileEdit className="w-6 h-6" />,
+    'learning-workflow': <GraduationCap className="w-6 h-6" />,
     'daily-task-management': <ListTodo className="w-6 h-6" />,
-    'project-evaluation': <Lightbulb className="w-6 h-6" />,
+    'project-evaluation': <Workflow className="w-6 h-6" />,
     'relationship-management': <HeartHandshake className="w-6 h-6" />,
-    'staying-open': <CalendarCheck2 className="w-6 h-6" />,
+    'change-management': <Trees className="w-6 h-6" />,
   }
   return iconMap[id] || <Lightbulb className="w-6 h-6" />
 }
@@ -34,13 +37,26 @@ export function ProcessCard({
   category,
   status,
   tips,
+  processImage,
   showContent = false,
 }: ProcessCardProps) {
+  const { resolvedTheme } = useTheme();
+  const [imageSrc, setImageSrc] = useState<string | null>(null);
+
+  useEffect(() => {
+    // Only attempt to load images if processImage is true
+    if (processImage) {
+      const currentTheme = resolvedTheme === 'dark' ? 'dark' : 'light';
+      const themeImagePath = `/images/processes/${id}/priorities-${currentTheme}.png`;
+      setImageSrc(themeImagePath);
+    }
+  }, [id, processImage, resolvedTheme]);
+  
   const content = (
     <Card className="h-full min-h-[300px] transition-colors group-hover:bg-muted/50 relative select-none flex flex-col">
       <CardHeader className="space-y-4">
         <div className="flex items-start justify-between">
-          <CardTitle className="text-xl font-bold transition-colors group-hover:text-emerald-400">
+          <CardTitle className="text-xl font-bold transition-colors group-hover:text-cyan-400">
             {title}
           </CardTitle>
           <Badge variant="outline" className="shrink-0">
@@ -72,7 +88,7 @@ export function ProcessCard({
                 ))}
               </ol>
             </div>
-            {Object.entries(tips).map(([section, items]) => (
+            {Object.entries(tips).length > 0 && Object.entries(tips).map(([section, items]) => (
               <div key={section} className="space-y-2">
                 <h3 className="font-semibold">{section}</h3>
                 <ul className="list-disc list-inside text-sm text-muted-foreground">
@@ -82,6 +98,17 @@ export function ProcessCard({
                 </ul>
               </div>
             ))}
+            {imageSrc && (
+              <div className="my-8 flex justify-center">
+                <Image 
+                  src={imageSrc} 
+                  alt={`Process diagram for ${title}`}
+                  width={800}
+                  height={500}
+                  className="rounded-md shadow-md"
+                />
+              </div>
+            )}
           </>
         )}
       </CardContent>
@@ -107,4 +134,4 @@ export function ProcessCard({
       </Link>
     </div>
   )
-} 
+}

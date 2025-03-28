@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<svg width="83" height="77" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <mask height="8" id="a" maskUnits="userSpaceOnUse" width="55.9" x="0" y="0.5">
+  <path clip-rule="evenodd" d="m78.8,32.9l-78.8,0l0,-32.4l78.8,0l0,32.4z" fill="#fff" fill-rule="evenodd" id="svg_1"/>
+ </mask>
+ <mask height="32.5" id="b" maskUnits="userSpaceOnUse" width="51.4" x="27.4" y="0.5">
+  <path clip-rule="evenodd" d="m78.8,32.9l-78.8,0l0,-32.4l78.8,0l0,32.4z" fill="#fff" fill-rule="evenodd" id="svg_2"/>
+ </mask>
+ <g class="layer" display="inline">
+  <title>Layer 1</title>
+  <g clip-rule="evenodd" fill-rule="evenodd" id="svg_3" transform="translate(0 -0.7)">
+   <path d="m51.9,8.5l-47.9,0c-2.2,0 -4,-1.8 -4,-4s1.8,-4 4,-4l47.9,0c2.2,0 4,1.8 4,4s-1.8,4 -4,4" fill="#000000" id="svg_5" mask="url(#a)" transform="translate(0 45)"/>
+   <path d="m41.7,33c-3.9,0 -7.8,-0.6 -11.5,-1.7c-2.1,-0.7 -3.3,-2.9 -2.6,-5s2.9,-3.3 5,-2.6c2.9,0.9 6,1.4 9.1,1.4c13.5,-0.1 25.3,-8.8 29.3,-21.8c0.6,-2.1 2.9,-3.3 5,-2.7c2.1,0.6 3.3,2.9 2.7,5c-5.1,16.4 -19.9,27.4 -37,27.4" fill="#000000" id="svg_6" mask="url(#b)" transform="translate(0 45)"/>
+   <path d="m79.3,33.2l-47.9,0c-2.2,0 -4,-1.8 -4,-4s1.8,-4 4,-4l47.9,0c2.2,0 4,1.8 4,4s-1.8,4 -4,4" fill="#000000" id="svg_7"/>
+   <path d="m8.5,33.2c-2.2,0 -4,-1.8 -4,-4c0,-0.4 0.1,-0.8 0.2,-1.2c5,-16.3 19.9,-27.3 37,-27.3c3.9,0 7.8,0.6 11.5,1.7c2.1,0.7 3.3,2.9 2.6,5c-0.7,2.1 -2.9,3.3 -5,2.6c-2.9,-0.9 -6,-1.4 -9.1,-1.4c-13.6,0 -25.4,8.7 -29.3,21.7c-0.6,1.7 -2.1,2.9 -3.9,2.9" fill="#000000" id="svg_8"/>
+   <path d="m69.4,13.9c0,2.2 -1.8,4 -4,4s-4,-1.8 -4,-4s1.8,-4 4,-4s4,1.8 4,4m-47.5,50.8c0,2.2 -1.8,4 -4,4s-4,-1.8 -4,-4s1.8,-4 4,-4s4,1.8 4,4" fill="#000000" id="svg_9"/>
+  </g>
+ </g>
+</svg>

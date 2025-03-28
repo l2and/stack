@@ -2,7 +2,7 @@ export interface Tool {
   id: string;
   title: string;
   status: 'Using' | 'Plan to Try' | 'Plan to Build' | 'Building' | 'Retired' | 'Trying';
-  category: 'AI' | 'Productivity' | 'Development' | 'Communication' | 'Design' | 'Other';
+  category: 'AI' | 'Productivity' | 'Development' | 'Communication' | 'Other';
   description: string;
   howToUse: string[];
   caveats: string[];
@@ -25,12 +25,13 @@ export interface Process {
   description: string;
   toolsInvolved: string[];
   steps: string[];
-  category: 'Personal' | 'Professional' | 'Development' | 'Content' | 'Other';
+  category: 'Personal' | 'Professional' | 'Development' | 'Other';
   status: 'Active' | 'Archived' | 'Draft';
   tips: {
     [key: string]: string[];
   };
   addedOn: string | null;
+  processImage?: boolean;
 }
 
 export interface SiteConfig {

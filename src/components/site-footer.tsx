@@ -5,6 +5,22 @@ export function SiteFooter() {
         <p className="text-sm text-muted-foreground">
           Built by{" "}
           <a
+            href="https://randall.hidajat.me"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium underline underline-offset-4 hover:text-foreground"
+          >
+            Randall Hidajat{" "}
+          </a>
+          <a>
+            <b>
+              |{" "}
+            </b>
+          </a>
+          <a>
+            Original Creator:{" "}
+          </a>
+          <a
             href="https://www.garysheng.com"
             target="_blank"
             rel="noopener noreferrer"

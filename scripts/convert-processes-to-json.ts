@@ -61,7 +61,8 @@ function convertMarkdownToJson(mdContent: string, filename: string): Process {
     steps: data.steps || [],
     status: data.status || 'Active',
     tips,
-    addedOn
+    addedOn,
+    processImage: data.processImage || '',
   }
 }
 

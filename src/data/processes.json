@@ -1,119 +1,28 @@
 {
   "processes": [
     {
-      "id": "annual-review",
-      "title": "Annual Life Review & Goal Setting",
-      "category": "Personal",
-      "description": "End-of-year reflection and goal-setting process for career and life",
-      "toolsInvolved": [
-        "ChatGPT",
-        "My Financial Future",
-        "Notion"
-      ],
-      "steps": [
-        "Conduct end-of-year reflection on career and life progress",
-        "Identify and prioritize top goals for the coming year",
-        "Calculate financial targets using My Financial Future",
-        "Document decisions and rationale in Notion",
-        "Print out key goals and financial targets for daily visibility"
-      ],
-      "status": "Active",
-      "tips": {},
-      "addedOn": "2025-01-01"
-    },
-    {
-      "id": "blog-post-workflow",
-      "title": "Blog Post Writing Workflow",
-      "category": "Content Creation",
-      "description": "A systematic approach to writing impactful blog posts, starting from authentic inspiration and leveraging AI and human feedback",
-      "toolsInvolved": [
-        "FlowVoice",
-        "ChatGPT",
-        "Notion"
-      ],
-      "steps": [
-        "Find Authentic Inspiration",
-        "Brain Dump via Voice",
-        "Transcribe and Process",
-        "Generate Initial Outline",
-        "Refine Structure",
-        "Draft and Edit",
-        "Gather Diverse Feedback",
-        "Iterate and Improve",
-        "Publish and Share",
-        "Strategic Promotion"
-      ],
-      "status": "Active",
-      "tips": {
-        "Maintaining Authenticity": [
-          "Stay true to your voice",
-          "Focus on genuine value",
-          "Balance AI assistance",
-          "Keep human touch",
-          "Trust your instincts"
-        ],
-        "Feedback Management": [
-          "Choose diverse reviewers",
-          "Be open to criticism",
-          "Look for patterns",
-          "Stay true to vision",
-          "Value different perspectives"
-        ],
-        "Quality Control": [
-          "Check facts thoroughly",
-          "Ensure clear writing",
-          "Test readability",
-          "Verify sources",
-          "Polish presentation"
-        ]
-      },
-      "addedOn": "2025-01-01"
-    },
-    {
-      "id": "daily-task-management",
-      "title": "Daily Task & Schedule Management",
-      "category": "Personal",
-      "description": "A streamlined system for managing daily tasks, meetings, and communications",
-      "toolsInvolved": [
-        "Google Calendar",
-        "Microsoft To Do",
-        "Apple Notes",
-        "Notion",
-        "Telegram",
-        "iMessage"
-      ],
-      "steps": [
-        "Schedule meetings and events in Google Calendar",
-        "Manage daily tasks in Microsoft To Do",
-        "Capture quick thoughts in Apple Notes",
-        "Document important information in Notion",
-        "Handle communications via Telegram/iMessage"
-      ],
-      "status": "Active",
-      "tips": {},
-      "addedOn": "2025-01-01"
-    },
-    {
       "id": "learning-workflow",
       "title": "Project-Based Learning Workflow",
       "category": "Personal",
       "description": "A practical approach to learning through building meaningful projects, with emphasis on documentation and knowledge sharing",
+      "status": "Active",
+      "addedOn": "2025-03-26",
+      "processImage": false,
       "toolsInvolved": [
-        "Anno",
-        "ChatGPT",
-        "Cursor"
+        "Typora",
+        "Sublime Text",
+        "Claude AI"
       ],
       "steps": [
-        "Project Ideation with Purpose",
-        "Vision and Scope Definition",
-        "Research and Exploration",
-        "Iterative Building and Learning",
-        "Conscious Documentation",
-        "Testing and Feedback",
-        "Knowledge Sharing",
-        "Reflection and Integration"
+        "Start a project that is interesting",
+        "Identify a goal",
+        "Find what is interesting to accomplish and learn in the project",
+        "Break down the project to individual parts",
+        "Research how others have solved the problem",
+        "Start and create a foundation that is scalable",
+        "Document as you go",
+        "Share and gain feedback"
       ],
-      "status": "Active",
       "tips": {
         "Documentation Best Practices": [
           "Document while learning is fresh",
@@ -127,77 +36,120 @@
           "Learn through doing",
           "Embrace challenges",
           "Stay curious",
-          "Build on existing knowledge"
+          "Apply existing knowledege and skills to the current learning"
         ],
         "Knowledge Sharing": [
           "Share learnings generously",
-          "Learn from teaching others",
+          "Knowledge is free and should be shared",
           "Build learning communities",
-          "Contribute to discussions",
           "Create valuable content"
         ]
-      },
-      "addedOn": "2025-01-01"
+      }
     },
     {
       "id": "project-evaluation",
       "title": "Deciding What to Work On Next",
       "category": "Professional",
       "description": "A systematic approach to evaluating new projects and opportunities",
+      "status": "Active",
+      "addedOn": "2025-03-26",
+      "processImage": true,
       "toolsInvolved": [
-        "Notion"
+        "Typora"
       ],
       "steps": [
-        "Evaluate if project accelerates primary goals",
-        "Assess time and maintenance costs",
-        "Consider skill-building or portfolio potential",
-        "Default to 'No' if unsure about value",
-        "Document decision rationale in Notion"
+        "Identify the impact of how many people benefit from a project along with how does it align with our goals. (high / low)",
+        "Gauge the level of effort and how long it'll take. (high / low)",
+        "With our primary goals, in mind, along with how much time we have, select a project that is appropriate",
+        "Projects that have a low impact and high level of effort are not something to do now.",
+        "Document reasoning and future projects in Typora"
       ],
-      "status": "Active",
-      "tips": {},
-      "addedOn": "2025-01-01"
+      "tips": {
+        "Diagrams": [
+          "Create a 2 column, 2 row chart with the X and Y being impact & level of effort"
+        ]
+      }
     },
     {
       "id": "relationship-management",
-      "title": "Personal Relationship Management",
+      "title": "Relationship Management",
       "category": "Personal",
-      "description": "A systematic approach to maintaining meaningful connections",
+      "description": "A thoughtful approach to maintaining meaningful connections",
+      "status": "Active",
+      "addedOn": "2025-03-26",
+      "processImage": false,
       "toolsInvolved": [
-        "Notion",
-        "BlessOut",
-        "Anno"
+        "Typora",
+        "Gold Belly"
       ],
       "steps": [
-        "Log interactions and meeting notes in Notion",
-        "Regularly review top contacts to stay in touch",
-        "Send thoughtful follow-ups or e-cards via BlessOut",
-        "Record voice reflections after key meetings using Anno"
+        "Keep meetings and notes organized in Typora",
+        "Identify important parts that stood out",
+        "Send a thoughtful email",
+        "If desired, send food via Gold Belly"
       ],
-      "status": "Active",
-      "tips": {},
-      "addedOn": "2025-01-01"
+      "tips": {}
     },
     {
-      "id": "staying-open",
-      "title": "Staying Open to Suggestions",
+      "id": "change-management",
+      "title": "Change Management",
       "category": "Professional",
-      "description": "A process for discovering and evaluating new tools and workflows",
+      "description": "A process to gain buy-in and implement large scale projects",
+      "status": "Active",
+      "addedOn": "2025-03-26",
+      "processImage": false,
       "toolsInvolved": [
-        "Notion",
-        "X (Twitter)",
-        "Perplexity"
+        "Beeper",
+        "Slack",
+        "Google Workspace"
       ],
       "steps": [
-        "Collect recommendations from friends and online sources",
-        "Research tools using Perplexity and X (Twitter)",
-        "Document potential tools in Notion",
-        "Evaluate and test new recommendations",
-        "Track interesting suggestions for future reference"
+        "Receive a full org structure with all functions",
+        "Engage and research all levels of work and interaction",
+        "Be curious and ask questions",
+        "Document an entire wishlist on Google Sheets for each job function",
+        "Have each stakeholder prioritize what they would like (including what they don't want)",
+        "compromise and communicate what is in progress"
       ],
+      "tips": {
+        "Best Practices": [
+          "Start as early as possible",
+          "Engage and stay curious to what others do",
+          "Do not move forward unless there is agreement",
+          "If there is no agreement, compromise till there is"
+        ],
+        "Comunication": [
+          "Interact with as many people as possible.",
+          "receive feedback and implement",
+          "collaborate with all levels of people and work tiers"
+        ],
+        "M.o.S.C.o.W Prioritization": [
+          "Must have",
+          "Should have",
+          "Could have",
+          "Won't have"
+        ]
+      }
+    },
+    {
+      "id": "daily-task-management",
+      "title": "Daily Task & Schedule Management",
+      "category": "Personal",
+      "description": "A streamlined system for managing daily tasks, meetings, and communications",
       "status": "Active",
-      "tips": {},
-      "addedOn": "2025-01-01"
+      "addedOn": "2025-01-01",
+      "processImage": false,
+      "toolsInvolved": [
+        "Google Calendar",
+        "Typora",
+        "Google Keep"
+      ],
+      "steps": [
+        "Schedule meetings, events, and timed reminders in Google Calendar",
+        "Manage daily and weekly tasks in Google Keep",
+        "Capture quick thoughts in Google Keep"
+      ],
+      "tips": {}
     }
   ]
 }

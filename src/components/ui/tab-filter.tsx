@@ -45,7 +45,7 @@ export function TabFilter<T>({
                 <TabsTrigger
                   key={category}
                   value={category}
-                  className="rounded-full bg-muted px-4 py-2 data-[state=active]:bg-emerald-600 data-[state=active]:text-white"
+                  className="rounded-full bg-muted px-4 py-2 data-[state=active]:bg-cyan-600 data-[state=active]:text-white"
                 >
                   {category}
                 </TabsTrigger>

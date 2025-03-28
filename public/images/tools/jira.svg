@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<svg width="255.324" height="285.95638851651023" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+ <linearGradient id="a">
+  <stop offset="0.18" stop-color="#0052cc"/>
+  <stop offset="1" stop-color="#2684ff"/>
+ </linearGradient>
+ <linearGradient id="b" x1="98.031%" x2="58.888%" xlink:href="#a" y1=".161%" y2="40.766%"/>
+ <linearGradient id="c" x1="100.665%" x2="55.402%" xlink:href="#a" y1=".455%" y2="44.727%"/>
+ <g class="layer" display="inline">
+  <title>Layer 1</title>
+  <path d="m244.66,0l-122.95,0a55.5,55.5 0 0 0 55.5,55.5l22.65,0l0,21.87c0.02,30.63 24.84,55.45 55.46,55.47l0,-122.17c0,-5.89 -4.77,-10.67 -10.66,-10.67z" fill="#000000" id="svg_1"/>
+  <path d="m183.82,61.26l-122.95,0c0.02,30.63 24.84,55.45 55.47,55.47l22.65,0l0,21.94c0.04,30.62 24.87,55.43 55.5,55.43l0,-122.17c0,-5.89 -4.78,-10.67 -10.67,-10.67z" fill="#000000" id="svg_2"/>
+  <path d="m122.95,122.49l-122.95,0c0,30.65 24.85,55.5 55.5,55.5l22.72,0l0,21.87c0.02,30.6 24.8,55.41 55.4,55.46l0,-122.16c0,-5.89 -4.78,-10.67 -10.67,-10.67z" fill="#000000" id="svg_3"/>
+ </g>
+</svg>

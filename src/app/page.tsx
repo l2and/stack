@@ -13,10 +13,10 @@ export default function Home() {
           <div className="relative z-50 flex flex-col items-center">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl relative">
               <span className="absolute inset-0 blur-2xl opacity-30 dark:opacity-20 animate-pulse tracking-normal text-white dark:text-black">
-                Gary&apos;s Stack
+                Randall&apos;s Stack
               </span>
-              <span className="relative tracking-normal text-emerald-500 dark:text-emerald-400 drop-shadow-[0_0_15px_rgba(255,255,255,0.8)] dark:drop-shadow-[0_0_15px_rgba(0,0,0,1)]">
-                Gary&apos;s Stack
+              <span className="relative tracking-normal text-cyan-500 dark:text-cyan-400 drop-shadow-[0_0_15px_rgba(255,255,255,0.8)] dark:drop-shadow-[0_0_15px_rgba(0,0,0,1)]">
+                Randall&apos;s Stack
               </span>
             </h1>
             <p className="max-w-[300px] mt-2 md:max-w-[400px] text-sm text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed mb-4 relative">
@@ -30,7 +30,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 w-full sm:w-auto sm:justify-center">
               <Link
                 href="/tools"
-                className="inline-flex h-10 items-center justify-center rounded-md bg-emerald-600 px-8 text-sm font-medium text-white shadow transition-colors hover:bg-emerald-700 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-emerald-700 disabled:pointer-events-none disabled:opacity-50"
+                className="inline-flex h-10 items-center justify-center rounded-md bg-cyan-600 px-8 text-sm font-medium text-white shadow transition-colors hover:bg-cyan-700 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-cyan-700 disabled:pointer-events-none disabled:opacity-50"
               >
                 View My Tools
               </Link>
@@ -49,7 +49,7 @@ export default function Home() {
                 href={GITHUB_REPO_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs text-emerald-600 hover:text-emerald-700 dark:text-emerald-500 dark:hover:text-emerald-400"
+                className="text-xs text-cyan-600 hover:text-cyan-700 dark:text-cyan-500 dark:hover:text-cyan-400"
               >
                 View on GitHub ↗
               </a>
@@ -71,7 +71,7 @@ export default function Home() {
                   path={false}
                 >
                   <Image
-                    src="/images/tools/telegram.svg"
+                    src="/images/tools/homeassistant.svg"
                     alt="Discord"
                     width={40}
                     height={40}
@@ -86,8 +86,8 @@ export default function Home() {
                   path={false}
                 >
                   <Image
-                    src="/images/tools/canva.svg"
-                    alt="Canva"
+                    src="/images/tools/bluebubbles.svg"
+                    alt="beeper"
                     width={40}
                     height={40}
                     className="dark:invert"
@@ -103,8 +103,8 @@ export default function Home() {
                   path={false}
                 >
                   <Image
-                    src="/images/tools/perplexity.svg"
-                    alt="Perplexity"
+                    src="/images/tools/claude.svg"
+                    alt="Claude"
                     width={40}
                     height={40}
                     className="dark:invert"
@@ -118,8 +118,8 @@ export default function Home() {
                   path={false}
                 >
                   <Image
-                    src="/images/tools/descript.svg"
-                    alt="Descript"
+                    src="/images/tools/beeper.svg"
+                    alt="Beeper"
                     width={40}
                     height={40}
                     className="dark:invert"
@@ -135,8 +135,8 @@ export default function Home() {
                   path={false}
                 >
                   <Image
-                    src="/images/tools/cursor.svg"
-                    alt="Cursor"
+                    src="/images/tools/dracula.svg"
+                    alt="Draucula"
                     width={50}
                     height={50}
                     className="dark:invert"
@@ -150,8 +150,8 @@ export default function Home() {
                   path={false}
                 >
                   <Image
-                    src="/images/tools/firebase.svg"
-                    alt="Firebase"
+                    src="/images/tools/vscode.svg"
+                    alt="VSCode"
                     width={50}
                     height={50}
                     className="dark:invert"
@@ -202,8 +202,8 @@ export default function Home() {
                   path={false}
                 >
                   <Image
-                    src="/images/tools/notion.svg"
-                    alt="Notion"
+                    src="/images/tools/segment.svg"
+                    alt="Segment"
                     width={50}
                     height={50}
                     className="dark:invert"

@@ -1,0 +1,29 @@
+id,title,status,category,description,howToUse,caveats,url,addedOn,recommendedBy,useCases0|name,useCases0|items,useCases1|name,useCases1|items,useCases2|name,useCases2|items,tips0|name,tips0|items,tips1|name,tips1|items
+datagrip,DataGrip,Using,Development,"Cross platform IDE for database tools and SQL.","* Connect to multiple database types
+* Execute SQL queries with syntax highlighting
+* Manage database schema changes","* Requires JetBrains subscription
+* Learning curve for beginners",https://jetbrains.com/datagrip,2024-03-15,John Smith,Database Management,"* Connect to multiple databases
+* Write and execute SQL queries
+* Visual query building",Data Analysis,"* Generate reports
+* Data visualization
+* Export query results",Query Optimization,"* Use parameterized queries
+* Create optimized indexes
+* Monitor query performance",Performance Tips,"* Use database schemas to organize connections
+* Set up query history
+* Configure result set limits",Workflow Efficiency,"* Create reusable queries
+* Use versioning for schemas
+* Set up keyboard shortcuts"
+vscode,Visual Studio Code,Using,Development,"Lightweight but powerful source code editor","* Install relevant extensions
+* Customize workspace settings
+* Use integrated terminal","* Some extensions can slow performance
+* Requires configuration for best experience",https://code.visualstudio.com,2024-01-10,,Development,"* Web development
+* Python programming
+* Git integration",Productivity,"* Integrated terminal usage
+* Multi-file editing
+* Project navigation",Extensions,"* Recommended extensions by language
+* Custom extension packs
+* Extension management",Performance,"* Use workspace settings
+* Configure autosave
+* Install language servers",Keyboard Shortcuts,"* Create custom key bindings
+* Set up debug configurations
+* Use snippets library"

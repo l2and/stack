@@ -34,7 +34,7 @@ export function SiteHeader() {
         <div className="flex-1">
           <Link href="/" className="inline-flex items-center gap-3">
             <Logo />
-            <span className="font-bold">Gary&apos;s Stack</span>
+            <span className="font-bold">Randall&apos;s Stack</span>
           </Link>
         </div>
         <div className="hidden md:flex items-center space-x-6 text-sm font-medium">

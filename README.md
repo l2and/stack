@@ -40,6 +40,11 @@ npm run dev
 
 ## 📝 Customizing Content
 
+### General
+1. import the csv [Google Spreadsheet Template](templates/sheets_template.csv)
+2. Fill in the sheet (Support for up to 5 useCases and tips in Tools
+3. run `npm run sync-tools`
+
 ### Tools
 
 1. Navigate to `src/content/tools/`

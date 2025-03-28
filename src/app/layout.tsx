@@ -25,8 +25,8 @@ export const metadata: Metadata = {
   ],
   authors: [
     {
-      name: "Gary Sheng",
-      url: "https://garysheng.com",
+      name: "Randall Hidajat",
+      url: "https://randall.hidajat.me",
     },
   ],
   creator: "Gary Sheng",
