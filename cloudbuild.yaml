@@ -1,4 +1,12 @@
 steps:
+  # Access the secret and write it to a file
+  - name: 'gcr.io/cloud-builders/gcloud'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        gcloud secrets versions access latest --secret=gsheets-credentials > src/config/google-credentials.json
+        
   # Build the container image
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'gcr.io/resume-454421/stack-site', '.']
@@ -21,6 +29,7 @@ steps:
     - '--region'
     - 'us-central1'
     - '--allow-unauthenticated'
+    - '--set-secrets=GOOGLE_APPLICATION_CREDENTIALS=gsheets-credentials:latest'
 
 images:
   - 'gcr.io/resume-454421/stack-site'

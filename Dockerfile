@@ -6,8 +6,11 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 
-# Copy source
+# Copy source and credentials
 COPY . .
+
+# If local, then use file system.
+RUN mkdir -p src/config
 
 # Build the Next.js application
 RUN npm run build
@@ -19,6 +22,9 @@ WORKDIR /app
 # Environment variables
 ENV NODE_ENV production
 ENV PORT 8080
+
+# Create directory for credentials
+RUN mkdir -p src/config
 
 # Copy built application
 COPY --from=builder /app/public ./public

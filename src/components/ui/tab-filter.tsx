@@ -18,8 +18,8 @@ export function TabFilter<T>({
   items,
   type,
   categories = type === "tool" 
-    ? ["All", "AI", "Productivity", "Development", "Communication", "Design", "Other"]
-    : ["All", "Personal", "Professional", "Development", "Content", "Other"],
+    ? ["All", "AI", "Productivity", "Development", "Communication", "Other"]
+    : ["All", "Personal", "Professional"], // removed: "Content" , "Development", "Other"
   defaultCategory = "All",
   renderItem = (item: T) => {
     if (type === "tool") {
