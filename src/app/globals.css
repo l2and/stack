@@ -78,3 +78,8 @@
     text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
   }
 }
+
+body.embed-mode .site-header,
+body.embed-mode .site-footer {
+  display: none !important;
+}

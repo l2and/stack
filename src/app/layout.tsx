@@ -1,11 +1,11 @@
+// src/app/layout.tsx (server component)
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import { siteConfig } from "@/config/site"
 import { ThemeProvider } from "@/components/theme-provider"
-import { SiteHeader } from "@/components/site-header"
-import { cn } from "@/lib/utils"
-import { SiteFooter } from "@/components/site-footer"
+import { LayoutContent } from "@/components/layout-content" // New component
+import { cn } from "@/lib/utils" 
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -64,16 +64,12 @@ export default function RootLayout({
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
-          enableSystem
+          enableSystem={false}
           disableTransitionOnChange
         >
-          <div className="relative flex min-h-screen flex-col">
-            <SiteHeader />
-            <main className="flex-1">{children}</main>
-            <SiteFooter />
-          </div>
+          <LayoutContent>{children}</LayoutContent>
         </ThemeProvider>
       </body>
     </html>
   )
-} 
+}

@@ -15,10 +15,6 @@ export function SiteHeader() {
 
   const routes = [
     {
-      href: "/",
-      label: "Home",
-    },
-    {
       href: "/tools",
       label: "Tools",
     },
@@ -26,10 +22,14 @@ export function SiteHeader() {
       href: "/processes",
       label: "Processes",
     },
+    {
+      href: "https://randall.hidajat.me",
+      label: "About",
+    }
   ]
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 site-header">
       <div className="container flex h-14 items-center">
         <div className="flex-1">
           <Link href="/" className="inline-flex items-center gap-3">
